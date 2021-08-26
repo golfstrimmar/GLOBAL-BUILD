@@ -1,0 +1,126 @@
+// =========================
+
+
+.bunner
+  min-height: 100vh
+  position: relative
+  .container
+    z-index: 2
+    position: relative
+.bunner__bg
+  top: -1px
+  height: calc(100% + 1px)
+
+.bunner__body
+  +fdc
+  padding: 290px 525px 0 0
+  @media (min-width: 768px) and (max-width: 1355px)
+      padding: 369px 0 0
+  @media (max-width: 767px)
+    padding: 150px 0 0 0
+//-------------
+.bunner__pre-title
+  color:  $gold
+  text-transform: uppercase
+
+.bunner__title
+  position: relative
+  margin: 20px 0 0 0
+  h1
+    display: inline
+  span
+    color: white
+    margin: 0 0 0 90px
+
+.bunner__text
+  margin: 23px 0 32px
+  line-height: 1.5
+  p
+    margin: 0 0 10px 0
+    color: #c7c7c7
+
+.slider-main-js
+  max-height: 100%
+
+.bunner__button
+  margin: 50px 0 0 0
+  width: 474px
+  height: 99px
+  font-size:  13px!important
+  position: relative
+  +jucs
+  span
+    padding: 0 0 0 36px
+    line-height: 1.5
+    color: $font
+    transition: all .2s ease-in-out
+  img
+    position: absolute
+    right: -1px
+    top: -33px
+  &:hover
+    span
+      color: $active
+
+
+  @media (min-width: 768px) and (max-width: 1355px)
+      margin: 50px 0 30px
+
+
+
+
+
+
+
+.bunner__key
+  position: absolute
+  top: 74px
+  left: 161px
+
+.bunner__footer
+  margin: 8px 0 0 0
+  +alic
+  span._w-400
+    color: $grey
+    margin: 52px 0 0 50px
+    line-height: 1.5
+
+.bunner__items
+.chips
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(204px, 1fr))
+  column-gap: 36px
+.chips__item
+.chip
+  +jucs
+  color: white
+.chip__icon
+  width: 26px
+  height: 26px
+  background-color: #f7d169
+  border-radius: 50%
+  +center
+  svg
+    width: 14px
+    height: 14px
+.chip__text
+    margin: 2px 0 0 15px
+    line-height: 1.4
+    span
+      margin: 0 0 0 4px
+
+
+
+@media (min-width: 768px) and (max-width: 1355px)
+  .bunner__key
+      top: 54px
+      left: 132px
+      transform: scale(.7)
+@media (max-width: 767px)
+    
+
+
+
+
+
+

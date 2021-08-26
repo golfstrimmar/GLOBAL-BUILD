@@ -1,0 +1,72 @@
+.block-4__title
+	text-align: center
+	h2
+		color: #282828
+
+.projects-card
+	position: relative
+	min-height: 630px
+.projects-card__chip
+		color: #282828
+		width: 121px
+		height: 38px
+		border-radius: 10px
+		background-color: #f7d169
+		z-index: 2
+		+center
+
+.projects-card__body
+	+pro
+	position: relative
+	z-index: 2
+	+fdc
+	padding: 28px 30px 40px
+.block-4
+	margin: 109px 0 0 0
+
+.block-4__wrapper
+
+.block-4-projects
+	display: grid
+	column-gap: 38px
+	grid-template-columns: repeat(auto-fill,minmax(335px,1fr))
+	margin: 69px 0 0 0
+.block-4__column
+
+.block-4__img
+
+.projects-card__title
+	color:  white
+	margin: 24px 0 0 0
+
+.projects-card__price
+	margin: auto 0 27px
+	color:  white
+	span
+		&:nth-child(2)
+			color: #ffe484
+.projects-card__price
+	span:nth-child(2)
+		color: #ffe484
+		margin: 0 10px 0 10px
+.block-4__text
+
+.projects-card__button
+	height: 75px
+	width: 100%
+	margin: 0 0 20px 0
+.projects-card__over
+	text-align: center
+	span
+		color: #ffe484
+		display: inline-block!important
+		border-bottom: 1px dashed #ffe484
+		line-height: 1.4
+
+
+@media (min-width: 768px) and (max-width: 1355px)
+	.block-4-projects
+		grid-template-columns: repeat(auto-fill,minmax(300px,1fr))
+		row-gap: 40px
+	.block-4
+		margin: 65px 0 0

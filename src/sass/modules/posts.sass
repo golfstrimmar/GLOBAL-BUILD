@@ -1,0 +1,170 @@
+.posts
+  margin: 100px 0 0 0
+  
+  
+  
+// версия с кнопками по бокам
+// версия с кнопками по бокам
+// версия с кнопками по бокам
+// версия с кнопками по бокам
+// версия с кнопками по бокам
+// версия с кнопками по бокам
+// версия с кнопками по бокам
+#posts
+  .slick-slide
+    margin: 0 20px
+  .posts__body
+    margin: 0 -20px
+  .slick-dots
+    position: absolute
+    bottom: -30px
+    left: 50%
+    width: 100%
+    transform: translateX(-50%)
+    +jucc
+    li
+      margin: 0 5px
+      font-size: 0
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background: $active
+      transition: all 0.2s ease-in-out
+      &:hover
+        cursor: pointer
+        background: lighten($active, 30%) 
+    li.slick-active
+        background: transparent
+        border: 3px solid $active
+
+
+//  версия с кнопками внизу 
+//  версия с кнопками внизу 
+//  версия с кнопками внизу 
+//  версия с кнопками внизу 
+//  версия с кнопками внизу 
+//  версия с кнопками внизу 
+//  версия с кнопками внизу 
+#posts-low
+  .slick-slide
+    margin: 0 20px
+  .posts__body
+    margin: 0 -20px
+  .slick-arrow 
+    top: auto
+    bottom: -70px
+    z-index: 20
+    transform: translateY(0)
+  .slick-prev
+    left: auto
+    right: 100px
+  .slick-next
+    right: 20px
+  .slick-dots
+    position: absolute
+    bottom: -30px
+    left: 50%
+    width: 100%
+    transform: translateX(-50%)
+    +jucc
+    li
+      margin: 0 5px
+      font-size: 0
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background: $active
+      transition: all 0.2s ease-in-out
+      &:hover
+        cursor: pointer
+        background: lighten($active, 30%) 
+    li.slick-active
+        background: transparent
+        border: 3px solid $active
+
+@media (max-width: 1199px)
+  #posts-low
+    .slick-arrow
+      width: 30px
+      height: 30px
+      bottom: -50px
+      &:after
+        font-size: 15px
+        width: 15px
+        height: 15px
+    .slick-prev
+      left: auto
+      right: 70px
+
+// версия с номерами слайдов
+// версия с номерами слайдов
+// версия с номерами слайдов
+// версия с номерами слайдов
+// версия с номерами слайдов
+// версия с номерами слайдов
+#posts-num
+    .slick-slide
+      margin: 0 20px
+    .posts__body
+      margin: 0 -20px
+    .slick-arrow 
+      top: auto
+      bottom: -10px
+      z-index: 20
+      transform: translateY(0)
+    .slick-prev
+      left: auto
+      right: 250px
+    .slick-next
+      right: 180px
+
+    .slick-dots
+      margin: 50px 20px 0px auto
+      width: 71px
+      height: 38px
+      z-index: 4
+      position: relative
+
+    .slick-dots li:not(.slick-active)
+        display: none
+    .slick-active
+        z-index: 2
+        width: 71px
+        height: 38px
+        border: none
+    
+    .slick-dots-current
+        font-weight: normal
+        font-size: 15px
+        color: white
+        margin: 0 0 0 
+    .slick-dots-total
+        font-weight: normal
+        color: white
+        font-size: 15px
+        margin: 0 0 0 
+    .slick-dots-separator
+        color: white
+        font-size: 15px
+        font-weight: normal
+        margin: 0 5px
+    .slick-dots-button
+        +center 
+        background: transparent
+        width: 71px
+        height: 38px
+        border-radius: 10px
+        background: rgba(24,24,24, .6)
+
+
+@media (max-width: 1199px)
+  #posts-low
+    .slick-arrow
+      width: 30px
+      height: 30px
+      bottom: -50px
+      &:after
+        font-size: 15px
+        width: 15px
+        height: 15px
+

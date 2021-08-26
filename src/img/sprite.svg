@@ -1,0 +1,86 @@
+<svg width="0" height="0" class="hidden">
+
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" id="clock">
+        <path d="M10.989 0C4.917 0 0 4.928 0 11s4.917 11 10.989 11C17.072 22 22 17.072 22 11S17.072 0 10.989 0zM11 19.8A8.798 8.798 0 012.2 11c0-4.862 3.938-8.8 8.8-8.8s8.8 3.938 8.8 8.8-3.938 8.8-8.8 8.8zm.55-14.3H9.9v6.6l5.775 3.465.825-1.353-4.95-2.937V5.5z"
+              fill="#000"></path>
+    </symbol>
+
+
+    <symbol id="search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+            role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+
+        <path d="M21 21l-4.486-4.494M19 10.5a8.5 8.5 0 1 1-17 0a8.5 8.5 0 0 1 17 0z" stroke-width="2"
+              stroke-linecap="round"/>
+
+    </symbol>
+
+    <symbol id="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+            role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+    </symbol>
+
+
+    <symbol id="close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+            role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+        <path d="M15.59 7L12 10.59L8.41 7L7 8.41L10.59 12L7 15.59L8.41 17L12 13.41L15.59 17L17 15.59L13.41 12L17 8.41L15.59 7z"/>
+    </symbol>
+
+    <symbol id="mark" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 8" >
+        <path d="M1 2.25L4.85714 6L10 1" stroke="#414042" stroke-width="2"></path>
+    </symbol>
+
+    <symbol id="lock" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 27" >
+        <path d="M18.3516 9.91406H16.4512V5.57771C16.4512 2.50214 13.8962 0 10.7559 0C7.61548 0 5.06055 2.50214 5.06055 5.57771V9.91406H3.16406C1.4194 9.91406 0 11.3335 0 13.0781V23.8359C0 25.5806 1.4194 27 3.16406 27H18.3516C20.0962 27 21.5156 25.5806 21.5156 23.8359V13.0781C21.5156 11.3335 20.0962 9.91406 18.3516 9.91406ZM7.16992 5.57771C7.16992 3.66525 8.77859 2.10938 10.7559 2.10938C12.7331 2.10938 14.3418 3.66525 14.3418 5.57771V9.91406H7.16992V5.57771ZM19.4062 23.8359C19.4062 24.4175 18.9331 24.8906 18.3516 24.8906H3.16406C2.58251 24.8906 2.10938 24.4175 2.10938 23.8359V13.0781C2.10938 12.4966 2.58251 12.0234 3.16406 12.0234H18.3516C18.9331 12.0234 19.4062 12.4966 19.4062 13.0781V23.8359Z" fill="white"></path>
+        <path d="M10.7578 15.082C9.68019 15.082 8.80664 15.9556 8.80664 17.0332C8.80664 17.7213 9.16312 18.3257 9.70117 18.6731V20.9883C9.70117 21.5707 10.1734 22.043 10.7559 22.043C11.3383 22.043 11.8105 21.5707 11.8105 20.9883V18.6756C12.3508 18.3286 12.709 17.723 12.709 17.0332C12.709 15.9556 11.8354 15.082 10.7578 15.082Z" fill="white"></path>
+    </symbol>
+
+
+
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 911 24" id="bar">
+        <g opacity="0.2">
+            <mask id="mask0" maskType="alpha" maskUnits="userSpaceOnUse" x="0" y="-1" width="911" height="25">
+                <rect x="911" y="24" width="911" height="24.0001" rx="12" transform="rotate(180 911 24)" fill="url(#paint0_linear)"></rect>
+            </mask>
+            <g mask="url(#mask0)">
+                <rect x="898" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 898 -8.98413)" fill="white"></rect>
+                <rect x="810" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 810 -8.98413)" fill="white"></rect>
+                <rect x="722" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 722 -8.98413)" fill="white"></rect>
+                <rect x="634" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 634 -8.98413)" fill="white"></rect>
+                <rect x="546" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 546 -8.98413)" fill="white"></rect>
+                <rect x="458" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 458 -8.98413)" fill="white"></rect>
+                <rect x="370" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 370 -8.98413)" fill="white"></rect>
+                <rect x="282" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 282 -8.98413)" fill="white"></rect>
+                <rect x="194" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 194 -8.98413)" fill="white"></rect>
+                <rect x="106" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 106 -8.98413)" fill="white"></rect>
+                <rect x="18" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 18 -8.98413)" fill="white"></rect>
+                <rect x="854" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 854 -8.98413)" fill="white"></rect>
+                <rect x="766" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 766 -8.98413)" fill="white"></rect>
+                <rect x="678" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 678 -8.98413)" fill="white"></rect>
+                <rect x="590" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 590 -8.98413)" fill="white"></rect>
+                <rect x="502" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 502 -8.98413)" fill="white"></rect>
+                <rect x="414" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 414 -8.98413)" fill="white"></rect>
+                <rect x="326" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 326 -8.98413)" fill="white"></rect>
+                <rect x="238" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 238 -8.98413)" fill="white"></rect>
+                <rect x="150" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 150 -8.98413)" fill="white"></rect>
+                <rect x="62" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 62 -8.98413)" fill="white"></rect>
+                <rect x="-26" y="-8.98413" width="20" height="57" transform="rotate(-26.7942 -26 -8.98413)" fill="white"></rect>
+            </g>
+        </g>
+        <defs>
+            <linearGradient id="paint0_linear" x1="1312.14" y1="-73.0005" x2="1573.81" y2="102.094" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#EBB745"></stop>
+                <stop offset="1" stop-color="#FAD873"></stop>
+            </linearGradient>
+        </defs>
+    </symbol>
+
+
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 172" id="decor">
+        <circle cx="86" cy="86" r="85.5" stroke="#EBB745" stroke-dasharray="5 5"></circle>
+        <circle cx="86" cy="86" r="55.5" stroke="#EBB745" stroke-dasharray="5 5"></circle>
+        <circle cx="85.5" cy="85.5" r="37.5" fill="#FFE484"></circle>
+    </symbol>
+
+
+
+</svg>

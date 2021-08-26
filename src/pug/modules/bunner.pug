@@ -1,0 +1,43 @@
+section.first#first
+  section.bunner#bunner
+      .bunner__bg.imgs
+        picture
+            source(srcset="assets/img/home/bunner.webp"  type="image/webp"  media="(min-width: 1200px)")
+            source(srcset="assets/img/home/bunner-lg.webp"  type="image/webp"  media="(min-width: 768px) and (max-width: 1199px)")
+            source(srcset="assets/img/home/bunner-sm.webp"  type="image/webp"  media="(max-width: 767px)")
+            img(src='assets/img/home/bunner.webp', alt='img')
+      .container
+        .bunner__body
+            .bunner__pre-title._f-14._w-500 Компания Global Build специализируется на таких улугах как:
+            .bunner__title
+              h1 Cтроительство домов под <br> ключ
+              img.bunner__key(data-src='assets/img/home/webp/key.webp', alt='img')
+              span._f-60._w-400 в пригороде Уфы
+            .bunner__text
+                p._f-18._w-400 Строительство из бруса, кирпича или газобетона, по индивидуальному или типовому <br>  проекту, с персонализированным дизайном интерьера.
+            ul.bunner__items.chips
+                li.chips__item.chip
+                    .chip__icon
+                        svg
+                            use(xlink:href='/assets/img/sprite.svg#mark')
+                    .chip__text._f-16._w-400 Строим уютные дома <br> за
+                         span._f-16._w-700 120 дней.
+                li.chips__item.chip
+                                .chip__icon
+                                    svg
+                                        use(xlink:href='/assets/img/sprite.svg#mark')
+                                .chip__text._f-16._w-400 Первоначальный взнос <br>
+                                     span._f-16._w-700 –    всего 50 000 руб.
+                li.chips__item.chip
+                                .chip__icon
+                                    svg
+                                        use(xlink:href='/assets/img/sprite.svg#mark')
+                                .chip__text
+                                        span._f-16._w-700 Цена не меняется
+                                        ._f-16._w-400   до сдачи объекта.
+
+            .bunner__footer
+                a(href="#!").btn.btn--success.bunner__button
+                    span._f-15._w-700 рассчитать предварительную<br> стоимость строительства дома
+                    img(data-src='assets/img/home/webp/house.webp', alt='img')
+                span._f-12._w-400 Жмите на кнопку что бы узнать <br> предварительную стоимость

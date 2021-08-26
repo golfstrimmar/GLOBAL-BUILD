@@ -1,0 +1,145 @@
+.form
+  background: lighten($active, 65%)
+  border-radius: 20px
+  box-shadow: 0 0 10px 10px rgba(0,0,0, .8)
+  padding: 40px 20px
+
+.form__item 
+    position: relative
+    margin-bottom: 52px
+    label 
+      position: absolute
+      top: 0
+      left: 0
+      transition: 0.3s
+      transform: translateY(0)
+      pointer-events: none
+      color: blue
+      width: 100%
+      font-size: 19px
+      line-height: 25px
+      font-weight: 500
+    input, textarea 
+      width: 100%
+      outline: none
+      border: 1px solid transparent
+      background-color: transparent
+      background-repeat: no-repeat
+      background-position: 100% 5px
+      border-bottom: 1px solid #d8d8d8
+      resize: none
+      &:focus + label, &:not(:placeholder-shown) + label, &:-webkit-autofill + label 
+        transform: translateY(-34px)
+
+    @media (max-width: 767px) 
+      padding-bottom: 100px
+    @media (max-width: 576px) 
+      padding-bottom: 40px
+
+
+
+    input[type="submit"] 
+      background: DarkOrange
+      border: 1px solid rgb(0,0,0, 1)
+      border-radius: 10px
+      box-shadow: inset 0 0 8px rgba(0,0,0, .4)
+      +center
+      height: 40px
+
+
+/* ------------------------ */
+.form__item input:focus + label
+  transform: translateY(-34px)
+
+
+.form__item textarea:focus + label
+  transform: translateY(-34px)
+
+.form__item input:not(:placeholder-shown) + label
+  transform: translateY(-34px)
+
+
+.form__item textarea:not(:placeholder-shown) + label
+  transform: translateY(-34px)
+
+.form__item input:-webkit-autofill + label
+  transform: translateY(-34px)
+
+.form__item textarea:-webkit-autofill + label
+  transform: translateY(-34px)
+
+/* -------------------------------------- */
+
+.form__item input::-webkit-input-placeholder, .form__item textarea::-webkit-input-placeholder 
+  color: transparent
+  
+
+.form__item input::-moz-placeholder, .form__item textarea::-moz-placeholder 
+  color: transparent
+.form__item input:-ms-input-placeholder, .form__item textarea:-ms-input-placeholder 
+  color: transparent
+.form__item input:-moz-placeholder, .form__item textarea:-moz-placeholder 
+   color: transparent
+.form__item input:not(:placeholder-shown):invalid, .form__item textarea:not(:placeholder-shown):invalid 
+  color: #fa333c
+  border-bottom: 1px solid #fa333c
+  // background-image: url("warning.svg")
+  font-size: 15px
+  font-weight: 400
+.contacts__file-add 
+  margin-top: 92px
+  padding-bottom: 15px
+  border-bottom: 1px solid #d8d8d8
+  cursor: pointer
+  height: 33px
+.contacts__file-add 
+  input
+    opacity: 0
+.contacts__file-add 
+  label
+    top: 33px
+
+@media (max-width: 767px)
+  .form
+    .submit-button
+        width: 100%
+
+.form
+    .custom-file 
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      flex-direction: row
+      height: 33px
+      input 
+        opacity: 0
+        visibility: hidden
+        position: absolute
+        left: 0
+        pointer-events: none
+        font-size: 15px
+        line-height: 25px
+        font-weight: 400
+        z-index: 5
+      label 
+        transform: translateY(0) 
+        font-size: 19px
+        line-height: 25px
+        font-weight: 400
+
+      &__lb 
+        display: inline-block
+        width: 100%
+        height: 24px
+        border: none
+        position: relative
+        margin: 0
+        &.close 
+          width: 24px
+        &:before 
+          transform: rotate(405deg)
+        .bg 
+            width: 27px
+            height: 27px
+            left: 100%
+            transform: translate(-120%)

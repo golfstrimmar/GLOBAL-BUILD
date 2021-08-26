@@ -1,0 +1,127 @@
+section#quiz.quiz
+    .container
+      .quiz__body
+        .quiz__top
+            .quiz__pre-title._f-14._w-500   Пройдите наш бесплатный опрос
+            .quiz__title
+                h2._f-30._w-700 Ответьте всего на несколько вопросов, <br> и вы узнаете приблизительную стоимость<br> своего будущего дома.
+            .quiz__img
+                .imgs
+                    img(src="assets/img/block-2/b2-1.webp  ")
+
+        .quiz__bar.Quiz-bar
+            .Quiz-bar__track
+                    svg
+                        use(xlink:href='/assets/img/sprite.svg#bar')
+
+        .quiz__content.QContent
+            .QContent__column
+
+                .QBlock.QBlock-active
+                    .QContent__title
+                        h3._f-30._w-700  01. Из какого материала вы планируете строить дом?
+                    ul.QContent__cards
+                        li.QContent__card.QCard.QCard--active
+                            .QCard__img
+                                .imgs
+                                    img(data-src='assets/img/block-2/card-1.webp', alt='img')
+                            .QCard__title._f-18._w-600   Дерево
+                        li.QContent__card.QCard
+                            .QCard__img
+                                .imgs
+                                    img(data-src='assets/img/block-2/card-2.webp', alt='img')
+                            .QCard__title._f-18._w-600   Газобетон
+                        li.QContent__card.QCard
+                            .QCard__img
+                                .imgs
+                                    img(data-src='assets/img/block-2/card-3.webp', alt='img')
+                            .QCard__title._f-18._w-600   Кирпич
+                        li.QContent__card.QCard.QCard--empty
+                            .QCard__img
+                                .imgs
+                            .QCard__title._f-18._w-600   Другой материал
+
+                .QBlock
+                    .QContent__bedroom.QContent-bedroom
+                        .QContent__title
+                            h3._f-30._w-700   02. Количество спален
+                        .QContent-bedroom__item
+                            input#rb1(type='radio' name='rb' checked)
+                            label(for='rb1') 1 спальня
+                        .QContent-bedroom__item
+                            input#rb2(type='radio' name='rb')
+                            label(for='rb2') 2 спальни
+                        .QContent-bedroom__item
+                            input#rb3(type='radio' name='rb')
+                            label(for='rb3') 3 спальни
+                        .QContent-bedroom__item
+                            input#rb4(type='radio' name='rb')
+                            label(for='rb4') 4 спальни
+
+                .QBlock
+                    .QContent__levels.QContent-levels
+                        .QContent__title
+                            h3._f-30._w-700 03. Количество этажей
+                        .QContent-bedroom__item
+                            input#rbl1(type='radio' name='rbl' checked)
+                            label(for='rbl1') 1 этаж
+                        .QContent-bedroom__item
+                            input#rbl2(type='radio' name='rbl')
+                            label(for='rbl2') 2 этажа
+                        .QContent-bedroom__item
+                            input#rbl3(type='radio' name='rbl')
+                            label(for='rbl3') 3 этажа
+
+
+
+                .QBlock
+                    .QContent__levels.QContent-levels
+                        .QContent__title
+                            h3._f-30._w-700 04. На какой бюджет вы рассчитываете?
+                        .QContent__action._f-24._w-400  Ведите ползунок что бы обозначить цену
+                            section.calculator-section(data-type='slider-group' )
+                                p.range
+                                    .range__descriptions
+                                        span.min-value._f-12._w-500 2 м.
+                                        span.max-value._f-12._w-500 5 м.
+                                    .calculator-section__number
+                                        output
+                                    input#price(type='range' min='2000000' max='5000000' value='0' step='1' name='groep1')
+                                    input.calculator-section__double._f-18._w-500(type="text")
+                            span.range-currency руб.
+
+
+
+
+
+
+            .QContent__person.Person
+                .Person__img
+                    .imgs
+                        img(data-src='assets/img/block-2/person.webp', alt='img')
+                .Person__name._f-18._w-700 Алексей Алексеевич
+                .Person__profession._f-14._w-500 Ведущий архитектор
+                .Person__description._f-14._w-400 Здравствуйте меня зовут Алексей, и я помогу вам понять какой бюджет нужен для строительства дома под ключ
+                .Person__devider
+                .Person__resive._f-12._w-500 ответив на вопросы вы получите:
+                .Person__cards
+                    .Person__card.Person-card
+                        .imgs
+                            img(data-src='assets/img/block-2/person-1.webp', alt='img')
+                        .Person-card__icon
+                            svg
+                                use(xlink:href='/assets/img/sprite.svg#lock')
+                        .Person-card__text._f-11._w-600 Орентировочную стоимость строительства
+                    .Person__card.Person-card
+                        .imgs
+                            img(data-src='assets/img/block-2/person-2.webp', alt='img')
+
+                        .Person-card__icon
+                            svg
+                                use(xlink:href='/assets/img/sprite.svg#lock')
+                        .Person-card__text._f-11._w-600  Точную подборку<br> проектов
+
+            .QContent__block-button
+                button.btn.btn--success.QContent__button._f-15._w-700.Q-js
+                    span Следуюший вопрос
+                span._f-12._w-400 Жмите на кнопку что бы узнать<br> предварительную стоимость

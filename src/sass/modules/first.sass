@@ -1,0 +1,262 @@
+//------.first--------
+.first
+  min-height: 100vh
+.header
+      z-index: 1000
+      transition: all 0.2s ease-in-out
+      //position: fixed
+      width: 100%
+      height: 115px
+      background: transparent
+      +alic
+      position: absolute
+      top:  0
+      @media (min-width: 1000px) and (max-width: 1199px)
+        height: 136px
+      @media (max-width: 999px)
+        height: 136px
+
+
+
+
+
+.responciveHeader
+      background:   rgba(0,0,0, .7)!important
+      top: 0!important
+      position: fixed!important
+
+
+
+// =======================================================
+
+.header__body
+  position: relative
+  height: 100%
+  display: grid
+  grid-template-columns: 494px 1fr 208px
+  align-items: center
+  @media (min-width: 1000px) and (max-width: 1355px)
+
+  @media (max-width: 999px)
+    //grid-template-columns: 100px 1fr
+
+
+
+//------определяет высоту header -------
+.header__logo
+  position: relative
+  position: absolute
+  left: 0
+  width:  203px
+  height: 128px
+  background: $ed
+  text-align: center
+  padding: 13px 0 0 0
+  top: -43px
+  border-bottom-right-radius: 3px
+  border-bottom-left-radius: 3px
+  @media (min-width: 768px) and (max-width: 1355px)
+    width:  150px
+  @media (max-width: 767px)
+  img
+      width: 171px
+      height: 133px
+  &:after
+    content:   ""
+    background: transparent
+    position: absolute
+    width: 100%
+    height: 32px
+    left: 0
+    transform: translate(0%,0%)
+    z-index: 2
+    border: 100px solid rgba(0,0,0,0)
+    border-top: 30px solid $ed
+    bottom: -129px
+
+@media (min-width: 768px) and (max-width: 1355px)
+    .header__logo
+        &:after
+            border: 75px solid rgba(0,0,0,0)
+            border-top: 30px solid $ed
+            bottom:   -104px
+
+.header__description
+  width: 45%
+  margin: -30px 37px 0 auto
+
+  p
+    &:first-child
+      color:  $gold
+    &:last-child
+      color: $grey
+
+@media (min-width: 768px) and (max-width: 1200px)
+    .header__block-logo
+      grid-column: 1/3
+    .header__button
+      grid-column: 1/2
+    .header__description
+        width: 45%
+        margin: 16px 37px 80px auto
+    .header__body
+        grid-template-columns:  1fr 30%
+    .header__description
+      margin: 16px 0 80px auto
+      width: 30%
+    .header__menu-wrapper
+        top: 236px
+@media (max-width: 767px)
+
+
+
+
+
+
+
+
+
+
+
+//  -------------------
+
+.header__menu-wrapper
+  position: absolute
+  width: 100%
+  height: 50px
+  +alic
+  z-index: 1000
+  background:  rgba(255, 255, 255, .1)
+  top: 157px
+  transition: background .2s ease-in-out
+.header__menu
+  margin: 0 30px 0 0
+  +jucs
+  //@media (min-width: 1000px) and (max-width: 1199px)
+  //  margin: 0 20px 0 0
+  //@media (max-width: 999px)
+  //  width: 100vw
+  //  min-height: 100vh
+  //  position: fixed
+  //  top: 0
+  //  transform: translateX(-100vw)
+  //  left: 0
+  //  padding: 100px 20px 0 20px
+  //  overflow: auto
+  //  text-align: right
+  //  +fdc
+  //  +jucs
+  //  +alie
+  //  background: rgba(0,0,0,  .95)
+  //  z-index: 1000
+  //  transition: all 0.2s ease-in-out
+
+
+
+
+//.menu-active
+//  @media (max-width: 999px)
+//    transform: translateX(0)
+
+.menu__list
+  +alic
+  +jucb
+  height: 100%
+
+.menu__item
+  +alic
+  height: 100%
+  border: 1px solid transparent
+  margin: 0 65px 0 0
+  &:last-child
+    margin: 0 0 0 0
+
+  //@media (max-width: 999px)
+  //  margin: 0 0 20px 0
+  //  width: 100%
+  //  &:last-child
+  //    margin: 0 0 30px 0
+    
+.menu__link
+  +alic
+  height: 100%
+  padding: 0 0 0 0
+  transition: all .2s ease-in-out
+  color: white
+
+  &:hover
+
+    background: lighten($active,30%)
+    box-shadow: 0px 0px 20px lighten($active,60%)!important
+  &:focus
+    border: 1px solid darken($active,10%)!important
+    background: lighten($active,10%)
+    box-shadow: 0 0 20px lighten($active,60%)!important
+    color: white
+  //@media (max-width: 999px)
+  //  color: white
+  //  border-radius: 10px
+  //  padding: 5px
+  //  background: transparent
+  
+
+.menu__link--active
+  background: $active
+  box-shadow:  0 0 8px white 
+  border-radius: 10px!important
+  padding: 5px
+
+
+
+// ----------------------
+.header__button
+  width: 250px
+  height:  66px
+  font-size:  13px
+  display: block
+  margin: 0 0 0 161px
+  line-height: 1.6
+  +alic
+  +jucs
+  span
+    margin: 0 0 0 22px
+  img
+    position: absolute
+    right: -7px
+    top: -12px
+    
+  @media (min-width: 768px) and (max-width: 1355px)
+      margin: 0 0 0 0
+  @media (max-width: 767px)
+
+//
+.header__info
+  span
+    color: $grey
+  a
+    color: $gold
+    border-bottom: 1px dotted  $gold
+    line-height: 1.4
+    display: inline-block
+.info__phone
+  color: white
+  line-height: 1.5
+  @media (min-width: 1000px) and (max-width: 1199px)
+    padding: 0 0 0 0	
+    +fdc
+    +jucc
+    flex-wrap: nowrap
+  @media (max-width: 999px)
+    display: none!important
+
+.info-active
+  @media (max-width: 999px)
+    display: block!important
+    transition: all 0.2s ease-in-out
+    
+.info__phone
+
+    
+
+
+
