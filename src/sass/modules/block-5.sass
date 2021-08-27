@@ -1,0 +1,103 @@
+.block-5
+	margin: 138px 0 0 0
+
+.block-5__wrapper
+
+.block-5__body
+	+fdc
+	+alic
+
+
+
+.block-5__title
+	+jucc
+	h2
+		text-align: center
+		line-height: 1.2
+
+
+
+
+
+
+
+.future-card
+	min-height: 777px
+	padding: 20px 18px 24px
+	border-radius: 10px
+	box-shadow: 0 4px 100px 0 rgba(46, 36, 25, 0.25)
+	+fdc
+.future-card__pre-title
+	text-transform: uppercase
+	margin: 26px 0 0 0
+.future-card__img
+	position: relative
+	padding: 0 0 200px 0
+.future-card__title
+	margin: 20px 0 29px
+
+.future-card__line
+	margin: 0 0 17px
+	+jucb
+.future-card__line--cost
+	padding: 35px 0 0
+.future-card__divider
+	border-bottom: 1px dashed #9d9d9d
+	margin: 10px 0 26px
+.future-card__
+.future-card__button
+	margin: auto 0 0 0
+	height: 75px
+
+.block-5__more
+	border-bottom: 1px dashed #2f2e2e
+	display: inline-block
+	margin: 50px auto
+	text-transform: uppercase
+	transition: all .2s ease-in-out
+	background: transparent
+	&:hover
+		text-shadow: 0 0 3px rgba(0,0,0, .4)
+
+.block-5__content
+	display: grid!important
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+	column-gap: 38px
+	row-gap: 38px
+	margin: 53px 0 0 0
+	position: relative
+	z-index: 2
+
+
+.projects-js
+	&.more-hidden
+		transform: scaleY(0)
+		max-height: 0
+		transition: max-height .3s linear, transform 0s linear
+
+.projects-js
+	transition: max-height .3s linear, transform .3s linear
+	display: grid
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+	column-gap: 38px
+	row-gap: 38px
+	margin: 53px 0 0 0
+	transform: scaleY(1)
+	will-change: transform
+	transform-origin: top
+	max-height: 5000px
+
+
+.block-5__content-area
+	width: 100%
+	+fdc
+
+@media (min-width: 768px) and (max-width: 1355px)
+	.block-5__content
+		grid-template-columns: repeat(auto-fill,minmax(334px,1fr))
+
+	.block-5
+		margin: 100px 0 0 0
+
+
+
