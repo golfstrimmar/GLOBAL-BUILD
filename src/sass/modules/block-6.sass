@@ -1,0 +1,241 @@
+.block-6
+	margin: 181px 0 0
+	.container
+		position: relative
+		z-index: 2
+.block-6__wrapper
+	position: relative
+.block-6__wrapper-imgs
+		height: calc(100% - 440px)
+.block-6__top
+	text-align: center
+.block-6__body
+
+.block-6__column
+
+.block-6__img
+
+.block-6__title
+	h2
+		line-height: 1.2
+
+.block-6__text
+	margin: 35px 0 0 0
+
+.block-6__button
+
+
+.block-6__form
+	margin: 345px 0 0 0
+
+.block-6-form
+	position: relative
+	padding: 77px 57px
+	margin: 345px 0 0 0
+	.imgs
+		border-radius: 10px
+.block-6-form__title
+	margin: 20px 0 0 0
+	line-height: 1.2
+.block-6-form__text
+	line-height: 1.5
+	margin: 21px 0 0
+
+.block-6-form__body
+	margin: 40px 0 0 0
+	position: relative
+	z-index: 2
+	width: 808px
+	height: 153px
+	padding: 18px 22px 20px 21px
+	border-radius: 10px
+	box-shadow: 0 4px 200px 0 rgba(46, 36, 25, 0.25)
+	background-color: white
+	display: grid
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+	column-gap: 11px
+	row-gap: 10px
+
+
+.block-6-form__item
+	label
+
+	&:nth-child(3)
+		align-self:    flex-end
+.block-6__button
+		margin: 50px auto -14px
+		width: 474px
+		height: 99px
+.block-6-form__content
+	position: relative
+	z-index: 2
+	margin: 42px 0 0 0
+
+.block-6-form__input
+	background:  #f1f1f1
+	max-height: 56px
+	margin: 10px 0 0
+	padding: 0 0 0 20px
+	&::placeholder
+		font-size: 14px
+		color: #8d8d8d
+		font-family: 'Gilroy-Regular', sans-serif
+
+.block-6-form__politic
+	grid-column: 1/4
+	+alic
+	flex-wrap: nowrap
+	svg
+		width: 11px
+		height:  11px
+		margin: 0 10px 0 0
+
+.block-6-form__pre-title
+	text-transform: uppercase
+
+.block-6-form__button
+	width: 249px
+	height: 56px
+	margin: 17px 0 0 0
+
+
+
+
+//----------------------
+
+.block-6-stage
+	margin: 118px 0 0
+
+
+.block-6-stage__title
+	+jucc
+	text-align: center
+	h2
+		line-height: 1.2
+.block-6-stage__buttons
+	display: grid
+	grid-template-columns: repeat(6,1fr)
+	column-gap: 40px
+	margin: 40px 0 44px
+.block-6-stage__button
+	text-transform: uppercase
+	width: 100%
+	height: 75px
+	border-radius: 5px
+	&.button-active
+		background-color: #ffe484
+		color: #2f2e2e
+
+.block-6-stage__inner
+.stage-inner
+	//background: white
+
+
+
+.stage-inner__item
+	display: grid
+	grid-template-columns: 620px 1fr
+	column-gap: 52px
+	position: absolute
+	transform: translate(-150%)
+	transition: all .1s ease-in-out
+	z-index: -1
+	opacity: 0
+
+.stage-active-js
+	position: relative
+	z-index: 1
+	transform: translate(0)
+	opacity: 1
+
+
+
+
+
+.stage-inner__img
+	position: relative
+	min-height: 440px
+	//padding: 0 0 440px
+	+jucc
+	.imgs
+		border-radius: 10px
+		max-width: 620px
+		left: 50%
+		transform: translate(-50%, 0%)
+
+.stage-inner__column
+.stage-inner__pre-title
+	text-transform: uppercase
+.stage-inner__title
+	margin: 24px 0 25px 0
+	line-height: 1.2
+.stage-inner__line
+	display: flex
+	margin: 0px 0 23px 0
+.stage-inner__icon
+	margin: 0 10px 0 0
+.stage-inner__button
+	+alic
+	+jucb
+	width: 249px
+	height: 56px
+	border-radius: 10px
+	background-color: #ebebeb
+	position: absolute
+	z-index: 2
+	bottom: 39px
+	right: 359px
+	padding: 0 21px 0 30px
+	span
+		text-transform: uppercase
+	svg
+		width: 21px
+		height: 10px
+		margin: 0 0 0 0
+
+.block-6-form
+	.imgs
+		img
+			object-fit: contain
+
+
+
+@media (min-width: 768px) and (max-width: 1355px)
+	.block-6
+		margin: 120px 0 0
+	.block-6-form, .block-6__form
+		margin: 180px 0 0
+	.block-6-form__body
+		grid-template-columns:  1fr
+		width: 100%
+		height: auto
+		row-gap:    50px
+	.block-6-form__politic
+		grid-column: 1/1
+	.stage-inner__item
+		grid-template-columns: 1fr
+		row-gap: 40px
+	.stage-inner
+		background: transparent!important
+		padding: 0 0 80px 0
+	.block-6-stage
+		margin: 21px 0 0
+		//background:     rgba(255,255,255,.8)
+		border-radius: 20px
+	.block-6-stage__title
+		padding: 20px 0 0
+	.block-6__wrapper-imgs
+		height: 100%
+	.stage-inner__button
+		left: 0
+		bottom: 0
+	.block-6-stage__title
+		h2
+			background: rgba(255,255,255, 1)
+			padding: 0 20px
+			box-shadow:  0 0 50px 50px rgba(255,255,255, 1)
+	.stage-inner__column
+		background: rgba(255,255,255, 1)
+		box-shadow:  0 0 50px 50px rgba(255,255,255, 1)
+
+@media (max-width: 767px)

@@ -1,11 +1,10 @@
 import $ from 'jquery';
-// import Plyr from "plyr";
+;
 
 // ==============================================
 
 // import "mixitup";
 // import Bootstrap from 'bootstrap/dist/css/bootstrap.css'
-
 
 import './js/common'
 import './js/scrolling'
@@ -17,6 +16,7 @@ import './js/modal'
 import './js/quiz'
 // import './js/contacts'
 import "./js/polzunki";
+import "./js/modal";
 //import "./js/sliderCarousel-1";
 // import "./js/slider-infinity";
 // import "./js/infinity-slider-opacity";
@@ -45,7 +45,7 @@ import './css/fonts.css'
 
 
 
-// import './css/plyr.css';
+import './css/plyr.css';
 
 
 

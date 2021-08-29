@@ -91,20 +91,24 @@
   grid-template-columns: repeat(auto-fill, minmax(204px, 1fr))
   column-gap: 36px
 .chips__item
+
 .chip
-  +jucs
+  display: grid
+  grid-template-columns: 26px 1fr
+  column-gap: 16px
   color: white
 .chip__icon
-  width: 26px
+  width: 26px!important
   height: 26px
   background-color: #f7d169
   border-radius: 50%
+  flex: 0 1 26px
   +center
   svg
     width: 14px
     height: 14px
 .chip__text
-    margin: 2px 0 0 15px
+    margin: 2px 0 0 0
     line-height: 1.4
     span
       margin: 0 0 0 4px
