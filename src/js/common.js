@@ -24,18 +24,50 @@ $(document).ready(function () {
 
 const MyQCard = () => {
     var ul = document.querySelector(".QContent__cards");
-    let singles = Array.prototype.slice.call(ul.children);
+    // let but = document.querySelector(".QCard");
+
+    let singles = Array.prototype.slice.call(ul .childNodes);
     singles.forEach((cell)=>{
         cell.addEventListener('click', function(){
-            singles.forEach((child)=>{
+            ul.childNodes.forEach((child)=>{
                 child.classList.remove("QCard--active")
             });
             cell.classList.add("QCard--active")
         });
     })
+
 };MyQCard();
 
 
+const MyMore = () => {
+
+    let  More = document.querySelector('.more-js');
+    let Projects  = document.querySelector('.projects-js');
+    // let count = 0;
+    More.innerText ="Смотреть все проекты"
+
+   const MoreClick = () => {
+       Projects.classList.toggle("more-hidden")
+
+
+       // const on = More.classList.toggle('on')
+       // More.innerText(on ? 'Закрыть' : 'Смотреть все проекты')
+       More.classList.toggle('on')
+       // let on = More.innerText
+       // ( 'Смотреть все проекты')
+       if(More.classList.contains("on") ){
+           More.innerText = 'Свернуть проекты'
+           More.style.cssText=`bottom: -108px`
+       }else{
+           More.innerText ="Смотреть все проекты"
+           More.style.cssText=`bottom: -58px`
+       }
+
+
+   }
+    More.onclick = MoreClick
+
+};MyMore();
 
 
 const player = new Plyr('#player');
@@ -70,7 +102,7 @@ $(".plyer__close").on("click", function () {
 const MyGalary = () => {
     let  Galery=   document.querySelector('.galery');
     let chost = [];
-    let singles = Array.prototype.slice.call(Galery.children);
+    let singles = Array.prototype.slice.call(Galery.childNodes);
     let count  =   0;
 
     for (var i = 0; i < singles.length; ++i) {
@@ -92,7 +124,7 @@ const MyGalary = () => {
     (function main(counter){
 
         for (var i = 0; i < singles.length*2; ++i) {
-            Galery.children[i].animate([
+            Galery.childNodes[i].animate([
                 { transform: 'translate(0px)' },
                 { transform: 'translate(-210px)' }
             ], {
@@ -100,14 +132,16 @@ const MyGalary = () => {
             })
         }
 
+
         setTimeout(()=>{
             let FirstSlide = Galery.childNodes[0].innerHTML;
             let picture =  document.createElement('div');
             picture.classList.add("galery__item");
             picture.innerHTML =   FirstSlide;
             Galery.append(picture)
-            Galery.children[0].remove();
+            Galery.childNodes[0].remove();
         }, 6000);
+
 
         if(count ===1){
             count--
@@ -122,76 +156,6 @@ const MyGalary = () => {
 
 
 };MyGalary();
-
-
-
-// =============================================
-
-const MyMore = () => {
-    let Projects  = document.querySelector('.projects-js');
-    let isOpen = true;
-    let More  =  Projects.nextElementSibling;
-    let  cellHeight =    Projects.offsetHeight;
-    Projects.setAttribute("style", "max-height: 0px;  z-index: -2; opacity:  0;");
-
-
-     More.addEventListener('click',  function(){
-         if(isOpen=== false){
-             Projects.setAttribute("style", "max-height: 0px;  z-index: -2; opacity:  0;");
-             More.textContent = 'Смотреть все проекты';
-             More.style.cssText=`bottom: -58px; `
-             isOpen = true;
-         }else{
-             Projects.setAttribute("style", "max-height: " +cellHeight + "px;  z-index: 1; opacity:  1;");
-             isOpen = false;
-             More.textContent = 'Закрыть';
-             More.style.cssText=`bottom: -100px; `
-         }
-        })
-
-};MyMore();
-
-
-// ===========
-const MyHidden = () => {
-    let hidden  =   document.querySelectorAll('.reviews-card-review__hidden');
-    let singles = Array.from(hidden);
-    let isOpen = true;
-    singles.forEach((cell)=>{
-        cell.style.cssText=``;
-        let more  =  cell.nextElementSibling;
-        let  cellHeight =    cell.offsetHeight;
-        cell.setAttribute("style", "max-height: 0px;  z-index: -1; ");
-        more.addEventListener('click',  function(){
-            console.log(cellHeight);
-            if (isOpen === false) {
-                cell.setAttribute("style", "max-height: 0px;  z-index: -1;");
-                isOpen = true;
-            } else if (isOpen !== false) {
-                cell.setAttribute("style", "max-height:" + cellHeight + "px;  z-index: 1; ");
-                isOpen = false;
-            }
-        });
-    })
-
-};MyHidden();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
