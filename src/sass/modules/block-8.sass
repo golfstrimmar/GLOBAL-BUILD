@@ -7,15 +7,49 @@
 	+jucc
 	h2
 		text-align: center
+		line-height: 1.2
 
 
 .reviews__body
-	margin: 50px 0 0 0
+	margin: 38px 0 0 0
 
 .reviews-card__column
 	+fdc
 	overflow: hidden
 //-------------------------------------------
+.reviews__top
+	position: relative
+	.slick-arrow
+			position: relative
+			position: absolute
+			top: 20px
+			z-index: 20
+			border-radius: 50%
+			transition: all 0.2s ease-in-out
+			width: 38px
+			height: 38px
+			transform: translate(0%, 0%)
+			+center
+			background-color: #ebebeb
+			svg
+				width: 10px
+				height: 15px
+				stroke: #2F2E2E
+				stroke-width: 3px
+				transition: all .2s ease-in-out
+			&:hover
+				cursor: pointer
+				svg
+					stroke: $active
+					stroke-width: 6px
+
+
+
+	.slick-prev
+			left: -54px
+	.slick-next
+			right: -54px
+
 .slider-js-1
 	margin: 0 -20px
 	.reviews__item
@@ -47,11 +81,11 @@
 //----------------------
 .reviews-card__left
 	position: relative
-	min-height: 440px
+	height: 440px!important
 	max-width:  620px
 	border-radius: 10px
 	overflow: hidden
-	margin: 0 0 33px 0
+	margin: 0 0 22px
 	&:after
 		content:   ""
 		background: rgba(38,38,38, .8)
@@ -91,8 +125,22 @@
 //------------------------------------------
 
 .reviews__low
-	margin: 40px 0 0 0
+	margin: 44px 0 0 0
+	position: relative
+.reviews__low
+	.reviews-slick-arrow
+		width: 90px
+		height: 90px
+		top: 216px
+		+center
+		svg
+			width: 20px
+			height: 30px
 
+	.slick-prev
+		left: -128px
+	.slick-next
+		right: -128px
 .reviews-card__body
 	display: grid
 	grid-template-columns: 620px 1fr
@@ -102,15 +150,15 @@
 .reviews-card__right
 	+fdc
 
-.reviews-card-review
-	*
-		height: auto!important
 
-
+.reviews-card__title
+	height: auto!important
 .reviews-card-title-line
 	display: grid
 	grid-template-columns: repeat(2, 1fr)
 	align-content: center
+	height: auto!important
+	margin: 23px 0 0 0
 
 .reviews-card-title-line__chip
 	width: 330px!important
@@ -119,18 +167,26 @@
 	background-color: #ffe484
 	+center
 
+.reviews-card__price
+	margin: 18px 0 0 0
+
+
+
 
 .reviews-card-title-line__text
 	+alic
+	height: auto!important
+
 
 .reviews-card-review
 	padding: 29px 26px 39px 44px
 	background-color:   #f1f1f1
 	border-radius: 5px
-
 .reviews-card-review__head
 	display: grid
 	grid-template-columns: 84px 1fr 50px
+	height: auto!important
+	margin: 0 0 26px 0
 .reviews-card-review__img
 	position: relative
 	height:  84px!important
@@ -150,15 +206,36 @@
 		height:  25px!important
 		margin: 0 0 2px 0
 
+.reviews-card__description
+			margin: 41px 0 0 0
+
+.reviews-card-review__text,.reviews-card__title-line,.reviews-card__description,.reviews-card__price, .reviews-card-review
+	height: auto!important
+
+.reviews-card-review
+	margin: auto 0 0 0
+
+.reviews-card-review__head-title
+	padding: 15px 0 0 34px
+	p
+		margin: 12px 0 0 0
+.reviews-card-review__text
+	line-height: 1.5
+	margin: 0 0 5px
+//--------------------------
+.slick-slide div.reviews-card-review__hidden
+	transform-origin: top
+	transition:  all .3s ease-in-out
+	position: relative
+	overflow: hidden
+	line-height:  1.5
 
 
+.reviews-card-review__more
+	margin: 20px 0 0 0
 
 
-
-
-
-
-
-
-
+@media  (max-width: 1617px)
+	.slick-arrow
+		display:  none!important
 
