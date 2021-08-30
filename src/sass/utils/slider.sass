@@ -73,36 +73,16 @@
     width: 50px
     height: 50px
     background: #fff
-    border: 1px solid blue
-    &:after
-      font-family: icomoon
-      position: absolute
-      font-size: 20px
-      width: 20px
-      height: 20px
-      top: 50% 
-      left: 50%
-      z-index: 22
-      transform: translate(-50%,-50%)
-      color: #000
-      transition: all 0.1s ease-in-out
+    +center
+
     &:hover
       cursor: pointer
       border: none
-      background: $active
-      &:after
-        color: white
   .slick-prev
-    left: -67px
-    &:after
-      content: '\e902'
-      transform: translate(-50%,-50%) rotate(180deg)
-      // content: '\e90c'
+    left: 67px
   .slick-next
-    right: -67px
-    &:after
-      content: '\e902'
-      // content: '\e91a'
+    right: 67px
+
 
 
   

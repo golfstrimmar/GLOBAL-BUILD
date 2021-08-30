@@ -1,5 +1,4 @@
 import $ from 'jquery';
-;
 
 // ==============================================
 
@@ -7,16 +6,18 @@ import $ from 'jquery';
 // import Bootstrap from 'bootstrap/dist/css/bootstrap.css'
 
 import './js/common'
-import './js/scrolling'
-import './js/first'
+// import './js/scrolling'
+// import './js/first'
 // import './js/select'
 // import './js/start-button'
 // import "./js/jquery.nicescroll.min";
 import './js/modal'
 import './js/quiz'
+import './js/stage'
 // import './js/contacts'
 import "./js/polzunki";
-import "./js/modal";
+// import "./js/modal";
+import "./js/tabs";
 //import "./js/sliderCarousel-1";
 // import "./js/slider-infinity";
 // import "./js/infinity-slider-opacity";

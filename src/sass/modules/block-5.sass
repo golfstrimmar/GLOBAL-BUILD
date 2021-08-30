@@ -1,8 +1,6 @@
 .block-5
 	margin: 138px 0 0 0
 
-.block-5__wrapper
-
 .block-5__body
 	+fdc
 	+alic
@@ -57,7 +55,7 @@
 	text-transform: uppercase
 	transition: all .2s ease-in-out
 	background-image: linear-gradient(to top, #f1f1f1 , white )
-	width: 100%
+	width: 97%
 	height: 120px
 	position: absolute
 	bottom: -58px
@@ -78,35 +76,39 @@
 	display: grid!important
 	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
 	column-gap: 38px
-	row-gap: 38px
+	row-gap: 30px
 	margin: 53px 0 50px 0
 	position: relative
 	z-index: 2
 
 
 .projects-js
-	&.more-hidden
+	//&.more-hidden
 		transform: scaleY(0)
 		max-height: 0!important
 		transition: max-height .3s linear, transform 0s linear
 
 .projects-js
-	transition: max-height .3s linear, transform .3s linear
+	//transition: max-height .3s linear, transform .3s linear
+	transition: all .5s ease-in-out
 	display: grid
 	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
 	column-gap: 38px
 	row-gap: 38px
 	margin: 0 0 50px 0
-	transform: scaleY(1)
-	will-change: transform
-	transform-origin: top
-	max-height: 5000px
+	position: relative
+	//transform: scaleY(1)
+	//will-change: transform
+	//transform-origin: top
+	//max-height: 5000px
+.more-hidden
 
 
 .block-5__content-area
 	width: 100%
 	+fdc
 	position: relative
+
 
 @media (min-width: 768px) and (max-width: 1355px)
 	.block-5__content,.projects-js

@@ -179,47 +179,27 @@ $(Document).ready(function() {
             slidesToShow: 6,
             speed: 800,
             easing: "ease",
-            // cssEase: "linear",
             centerMode: false,
             asNavFor: ".slider-js-2",
-            // autoplay: true,
-            // autoplaySpeed: 2000,
-            // centerMode: true,
-            // infinite: true,
-            // initialSlide: 10,
-            // pauseOnFocus: true,
-            // pauseOnHover: true,
-            // customPaging: function (slider, i) {
-            //   var current = i + 1;
-            //   current = current < 10 ? "" + current : current;
-
-            //   var total = slider.slideCount;
-            //   total = total < 10 ? "" + total : total;
-
-            //   return (
-            //     '<button type="button" role="button" tabindex="0" class="slick-dots-button">\
-            // 		<span class="slick-dots-current">' +
-            //     current +
-            //     '</span>\
-            // 		<span class="slick-dots-separator">из</span>\
-            // 		<span class="slick-dots-total">' +
-            //     total +
-            //     "</span></button>"
-            //   );
-            // },
+            prevArrow: document.querySelector('.reviews-top-slick-prev'),
+            nextArrow: document.querySelector('.reviews-top-slick-next'),
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 4,
+                    },
+                },
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+            ],
 
         });
 
-        // $(".slider-js-galary").slick({
-        //     arrows: false,
-        //     slidesToShow: 3,
-        //     speed: 1000,
-        //     easing: "ease",
-        //     centerMode: false,
-        //     autoplay: true,
-        //     autoplaySpeed: 8000,
-        //     infinite: true,
-        // });
 
 
         $(".slider-js-1 .slick-slide").on("click", function () {
@@ -243,28 +223,45 @@ $(Document).ready(function() {
             // centerMode: true,
             infinite: true,
             asNavFor: ".slider-js-1",
-            // initialSlide: 1,
+            prevArrow: document.querySelector('.reviews-low-slick-prev'),
+            nextArrow: document.querySelector('.reviews-low-slick-next'),
             // pauseOnFocus: true,
             // pauseOnHover: true,
-            // customPaging: function (slider, i) {
-            //   var current = i + 1;
-            //   current = current < 10 ? "" + current : current;
 
-            //   var total = slider.slideCount;
-            //   total = total < 10 ? "" + total : total;
-
-            //   return (
-            //     '<button type="button" role="button" tabindex="0" class="slick-dots-button">\
-            // 		<span class="slick-dots-current">' +
-            //     current +
-            //     '</span>\
-            // 		<span class="slick-dots-separator">из</span>\
-            // 		<span class="slick-dots-total">' +
-            //     total +
-            //     "</span></button>"
-            //   );
-            // },
         });
+
+    $(".slider-js-sertif").slick({
+            // dots: true,
+            // arrows: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 800,
+            easing: "ease",
+            // cssEase: "linear",
+            // centerMode: false,
+            // autoplay: true,
+            // autoplaySpeed: 2000,
+            // centerMode: true,
+            infinite: true,
+            prevArrow: document.querySelector('.reviews-10-slick-prev'),
+            nextArrow: document.querySelector('.reviews-10-slick-next'),
+            responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+
+
+    });
 
 
 

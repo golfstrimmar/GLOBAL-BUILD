@@ -42,54 +42,53 @@
 
 
 
-//------определяет высоту header -------
-.header__logo
-  position: relative
-  position: absolute
-  left: 0
-  width:  203px
-  height: 128px
-  background: $ed
-  text-align: center
-  padding: 13px 0 0 0
-  top: -43px
-  border-bottom-right-radius: 3px
-  border-bottom-left-radius: 3px
-  @media (min-width: 768px) and (max-width: 1355px)
-    width:  150px
-  @media (max-width: 767px)
-  img
-      width: 171px
-      height: 133px
-  &:after
-    content:   ""
-    background: transparent
-    position: absolute
-    width: 100%
-    height: 32px
-    left: 0
-    transform: translate(0%,0%)
-    z-index: 2
-    border: 100px solid rgba(0,0,0,0)
-    border-top: 30px solid $ed
-    bottom: -129px
-
-@media (min-width: 768px) and (max-width: 1355px)
-    .header__logo
-        &:after
-            border: 75px solid rgba(0,0,0,0)
-            border-top: 30px solid $ed
-            bottom:   -104px
-
-.header__description
-  width: 45%
-  margin: -30px 37px 0 auto
-
-  p
-    &:first-child
-      color:  $gold
-    &:last-child
-      color: $grey
+//.header__logo
+//  position: relative
+//  position: absolute
+//  left: 0
+//  width:  203px
+//  height: 128px
+//  background: $ed
+//  text-align: center
+//  padding: 13px 0 0 0
+//  top: -43px
+//  border-bottom-right-radius: 3px
+//  border-bottom-left-radius: 3px
+//  @media (min-width: 768px) and (max-width: 1355px)
+//    width:  150px
+//  @media (max-width: 767px)
+//  img
+//      width: 171px
+//      height: 133px
+//  &:after
+//    content:   ""
+//    background: transparent
+//    position: absolute
+//    width: 100%
+//    height: 32px
+//    left: 0
+//    transform: translate(0%,0%)
+//    z-index: 2
+//    border: 100px solid rgba(0,0,0,0)
+//    border-top: 30px solid $ed
+//    bottom: -129px
+//
+//@media (min-width: 768px) and (max-width: 1355px)
+//    .header__logo
+//        &:after
+//            border: 75px solid rgba(0,0,0,0)
+//            border-top: 30px solid $ed
+//            bottom:   -104px
+//
+//.header__description
+//  width: 45%
+//  margin: -30px 37px 0 auto
+//
+//  p
+//    &:first-child
+//      color:  $gold
+//    &:last-child
+//      color: $grey
 
 @media (min-width: 768px) and (max-width: 1200px)
     .header__block-logo
@@ -127,11 +126,13 @@
   +alic
   z-index: 1000
   background:  rgba(255, 255, 255, .1)
-  top: 157px
+  top: 159px
   transition: background .2s ease-in-out
 .header__menu
   margin: 0 30px 0 0
   +jucs
+
+
   //@media (min-width: 1000px) and (max-width: 1199px)
   //  margin: 0 20px 0 0
   //@media (max-width: 999px)
@@ -154,9 +155,19 @@
 
 
 
-//.menu-active
-//  @media (max-width: 999px)
-//    transform: translateX(0)
+.header__block-logo
+    .imgs
+        top: -37px
+
+.header
+    .block-logo__logo
+        margin: 0 0 59px 0
+    .block-logo__description
+        top: 23px
+        right: 43px
+
+
+
 
 .menu__list
   +alic
@@ -214,7 +225,7 @@
   height:  66px
   font-size:  13px
   display: block
-  margin: 0 0 0 161px
+  margin: 0 0 53px 161px
   line-height: 1.6
   +alic
   +jucs
@@ -231,6 +242,7 @@
 
 //
 .header__info
+  margin: 0 0 54px 0
   span
     color: $grey
   a
