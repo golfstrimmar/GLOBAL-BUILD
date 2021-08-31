@@ -7,35 +7,26 @@ import $ from 'jquery';
 
 import './js/common'
 // import './js/scrolling'
-// import './js/first'
+import './js/first'
 // import './js/select'
 // import './js/start-button'
 // import "./js/jquery.nicescroll.min";
 import './js/modal'
 import './js/quiz'
 import './js/stage'
-// import './js/contacts'
 import "./js/polzunki";
-// import "./js/modal";
 import "./js/tabs";
-//import "./js/sliderCarousel-1";
-// import "./js/slider-infinity";
-// import "./js/infinity-slider-opacity";
-// import "./js/slider-track";
-// import "./js/slider-my"
+import "./js/infinity-galary";
+import "./js/more-button";
+import "./js/myPlyr";
+import "./js/MyQcard";
+import "./js/more-reviewes";
 
 
 
-// bootstrap;
-// import "bootstrap";
-// import "popper.js";
-// import "bootstrap/js/dist/tab";
-// import "bootstrap/js/dist/button";
-// import "bootstrap/js/dist/collapse";
 
 
-// slick;
-// import "slick-carousel";
+
 import "./js/slick.js";
 import "./js/mySlick.js";
 import './css/slick.css';

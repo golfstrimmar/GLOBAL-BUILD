@@ -3,7 +3,11 @@ header.header
         .header__body
             .header__block-logo.block-logo
                 .imgs
-                    img(data-src='assets/img/logo/logo-bg.webp', alt='img')
+                    picture
+                        source(srcset="assets/img/logo/logo-bg.webp"  type="image/webp"  media="(min-width: 1200px)")
+                        source(srcset="assets/img/logo/logo-bg.webp"  type="image/webp"  media="(min-width: 768px) and (max-width: 1199px)")
+                        source(srcset="assets/img/logo/logo-bg-sm.webp"  type="image/webp"  media="(max-width: 767px)")
+                        img(src='assets/img/logo/logo-bg.webp', alt='img')
                 .block-logo__logo
                     img(src='assets/img/home/svg/logo.svg', alt='img')
 
@@ -26,17 +30,16 @@ header.header
 .header__menu-wrapper
     .container
         nav.header__menu.menu
-            ul.menu__list
+            ul.menu__list.menu-list
                 li.menu__item
                     a.menu__link._f-18._w-600(href="#!") Готовые дома
-                -
-                    items = [
-                        {title: "Строительство под заказ", url: "#!"},
-                        {title: "Дизайн интерьеров", url: "#!"},
-                    ]
-                each item in items
+                    svg
+                        use(xlink:href='/assets/img/sprite.svg#arrow-down')
+                .menu-list__hidden-sm-area
                     li.menu__item
-                        a.menu__link._f-18._w-600(href=item.url)=item.title
+                        a.menu__link._f-18._w-600(href="#!") Строительство под заказ
+                    li.menu__item
+                        a.menu__link._f-18._w-600(href="#!") Дизайн интерьеров
 
 
 

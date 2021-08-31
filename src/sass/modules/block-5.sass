@@ -19,6 +19,46 @@
 
 
 
+
+
+.block-5__more
+	display: inline-block
+	margin: 0px 0px
+	text-transform: uppercase
+	transition: all .2s ease-in-out
+	background-image: linear-gradient(to top, #f1f1f1 , white )
+	width: 97%
+	height: 120px
+	position: absolute
+	bottom: -107px
+	left:   50%
+	transform: translate(-50%, 0%)
+	border-radius: 10px
+
+	z-index: 4
+	span
+		border-bottom: 1px dashed #2f2e2e
+
+	&:hover
+		text-shadow: 0 0 3px rgba(0,0,0, .4)
+
+
+.block-5__content-area
+	width: 100%
+	+fdc
+	position: relative
+
+.projects-js
+	display: grid!important
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+	column-gap: 38px
+	row-gap: 30px
+	margin: 53px 0 50px 0
+	position: relative
+	z-index: 2
+	transition: all .5s ease-in-out
+
+
 .future-card
 	min-height: 777px
 	padding: 20px 18px 24px
@@ -43,71 +83,12 @@
 .future-card__divider
 	border-bottom: 1px dashed #9d9d9d
 	margin: 10px 0 26px
-.future-card__
+
 .future-card__button
 	margin: auto 0 0 0
 	height: 75px
 
 
-.block-5__more
-	display: inline-block
-	margin: 0px 0px
-	text-transform: uppercase
-	transition: all .2s ease-in-out
-	background-image: linear-gradient(to top, #f1f1f1 , white )
-	width: 97%
-	height: 120px
-	position: absolute
-	bottom: -58px
-	left:   50%
-	transform: translate(-50%, 0%)
-	border-radius: 10px
-
-	z-index: 4
-	span
-		border-bottom: 1px dashed #2f2e2e
-
-	&:hover
-		text-shadow: 0 0 3px rgba(0,0,0, .4)
-
-
-
-.block-5__content
-	display: grid!important
-	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
-	column-gap: 38px
-	row-gap: 30px
-	margin: 53px 0 50px 0
-	position: relative
-	z-index: 2
-
-
-.projects-js
-	//&.more-hidden
-		transform: scaleY(0)
-		max-height: 0!important
-		transition: max-height .3s linear, transform 0s linear
-
-.projects-js
-	//transition: max-height .3s linear, transform .3s linear
-	transition: all .5s ease-in-out
-	display: grid
-	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
-	column-gap: 38px
-	row-gap: 38px
-	margin: 0 0 50px 0
-	position: relative
-	//transform: scaleY(1)
-	//will-change: transform
-	//transform-origin: top
-	//max-height: 5000px
-.more-hidden
-
-
-.block-5__content-area
-	width: 100%
-	+fdc
-	position: relative
 
 
 @media (min-width: 768px) and (max-width: 1355px)

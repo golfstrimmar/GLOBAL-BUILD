@@ -1,20 +1,59 @@
-.popup
+#popup.popup
     .popup__overlay
       .popup__inner
-          .form
-              .form__item
-                input#name(type='text' required='' placeholder=' Denzel Washington')
-                label(for='name') What is your name?
-              .form__item
-                input#email(type='email' required='' placeholder=' thebestmail@mail.com')
-                label(for='email') What is your email?
-              .form__item
-                textarea#message(type='text' required='' placeholder=' Your awesome         message' cols=' 40' rows='6')
-                label(for='message') Write your message
-              .form__item.contacts__file-add
-                input#customFile.custom-file-input(type='file')
-                label.name__text(for='customFile') Add "attachment
-                .custom-file
-              .form__item
-                input.submit-button.btn.btn--success(type='submit'  placeholder="Send message") 
-          i.icon-close21.popup__close.popup__close
+          .block-6-form__body
+              .block-6-form__item
+                  label._f-12._w-600._28
+                      | Введите Ваше имя:
+                      input.block-6-form__input(type='text' placeholder='Алексей')
+              .block-6-form__item
+                  label._f-12._w-600._28
+                      | Введите Ваш номер телефона:
+                      input.block-6-form__input(type='phone' placeholder='+7 983 358 25-20')
+              .block-6-form__item
+                  a.btn.btn--success.block-6-form__button(href='#!')
+                      span._f-12._w-700._2f заказать звонок
+              .block-6-form__politic
+                  svg
+                      use(xlink:href='/assets/img/sprite.svg#bird')
+                  span._f-10._w-400._39
+                      | Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+
+          i.popup__close.popup__close
+              svg
+                use(xlink:href='/assets/img/sprite.svg#close')
+
+
+
+
+section#modaL.modaL
+    .popup-player.slide-player-1-popup
+        .popup-player__overlay
+            .popup-player__inner
+                i.icon-x.popup__close.close-js
+                //.player-1(data-plyr-provider='youtube' data-plyr-embed-id="bTqVqk7FSmY")
+    .popup-player.slide-player-2-popup
+        .popup-player__overlay
+            .popup-player__inner
+                i.icon-x.popup__close.close-js
+                //.player-2(data-plyr-provider='youtube' data-plyr-embed-id="75UQsEeH0jo")
+    .popup-player.slide-player-3-popup
+        .popup-player__overlay
+            .popup-player__inner
+                i.icon-x.popup__close.close-js
+                //.player-3(data-plyr-provider='youtube' data-plyr-embed-id="vr0qNXmkUJ8")
+    .popup-player.slide-player-4-popup
+        .popup-player__overlay
+            .popup-player__inner
+                i.icon-x.popup__close.close-js
+                //.player-4(data-plyr-provider='youtube' data-plyr-embed-id="x4Xb8yACha4")
+    .popup-player.slide-player-5-popup
+        .popup-player__overlay
+            .popup-player__inner
+                i.icon-x.popup__close.close-js
+                //.player-5(data-plyr-provider='youtube' data-plyr-embed-id="x4Xb8yACha4")
+    .popup-player.slide-player-6-popup
+        .popup-player__overlay
+            .popup-player__inner
+                i.icon-x.popup__close.close-js
+                //.player-6(data-plyr-provider='youtube' data-plyr-embed-id="x4Xb8yACha4")

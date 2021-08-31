@@ -3,9 +3,9 @@
 // ------------------------------------------------
 
 const Header = () => {
-  const burger =   document.querySelector('.header__burger');
-  const menu =  document.querySelector('.menu');
-  const info = document.createElement('div');
+  // const burger =   document.querySelector('.header__burger');
+  // const menu =  document.querySelector('.menu');
+  // const info = document.createElement('div');
 
 //   burger.addEventListener('click', function (event) {
 //   menu.classList.add("menu-active");
@@ -31,101 +31,52 @@ const Header = () => {
 // --------------------------
 
 
-  let  YOffset  = 157
-   window.addEventListener("scroll", function (event) {
+  // let  YOffset  = 157
+  //  window.addEventListener("scroll", function (event) {
+  //
+  //    if (window.pageYOffset > YOffset) {
+  //      let  wrapper =  document.querySelector(".header__menu-wrapper" );
+  //      wrapper.classList.add('responciveHeader');
+  //    } else {
+  //      document.querySelector(".header__menu-wrapper").classList.remove("responciveHeader");
+  //    }
+  //  });
+  //
+  // window.onresize = function (){
+  //   if (window.innerWidth <= 1200) {
+  //     YOffset = 236
+  //   }else{
+  //     YOffset  = 157
+  //   }
+  //
+  // }
 
-     if (window.pageYOffset > YOffset) {
-       let  wrapper =  document.querySelector(".header__menu-wrapper" );
-       wrapper.classList.add('responciveHeader');
-     } else {
-       document.querySelector(".header__menu-wrapper").classList.remove("responciveHeader");
-     }
-   });
+  let menuList  =   document.querySelector('.menu-list');
+  let  hidden =   document.querySelector('.menu-list__hidden-sm-area');
+  let c  =   true;
+  // let   =   document.querySelector('');
+  let singles = Array.prototype.slice.call(menuList .children);
+  for (var i = 0; i < singles.length; ++i) {
+  singles[i].style.cssText= "max-height: 0; opacity: 0; z-index: -2;"
+  }
+  singles[0].style.cssText= "max-height: 100px; opacity: 1; z-index: 1;"
 
-  window.onresize = function (){
-    if (window.innerWidth <= 1200) {
-      YOffset = 236
+  singles[0].addEventListener('click',(e) =>{
+    if(c === true){
+      singles[0].nextElementSibling.style.cssText= "max-height: 100px; opacity: 1; z-index: 1;background: hsla(0,0%,100%,.5)"
+      singles[0].querySelector('svg').style.cssText= "transform: rotate(180deg); transition: all .2s ease-in-out;";
+
+      c = false
     }else{
-      YOffset  = 157
+      singles[0].nextElementSibling.style.cssText= "max-height: 0; opacity: 0; z-index: -2;background: hsla(0,0%,100%,.5)"
+      singles[0].querySelector('svg').style.cssText= "transform: rotate(0deg);transition: all .2s ease-in-out;";
+      c = true
     }
 
-  }
-// ---------------------------------------------
-// window.onresize = function (){
-//   if (window.innerWidth >= 999) {
-//     menu.querySelector('.header__info').remove();
-//     menu.classList.remove("menu-active");
-//     document.querySelector('.info').classList.remove("info-active");
-//     document.querySelector('body').classList.remove("lock");
-//   }
-//   }
+
+
+  });
 
 };Header();
-
-
-// $(document).ready(function (e) {
-
-  // $(".header__burger").on("click", function () {
-    
-  //   $(".menu")
-  //     .addClass("menu-active")
-  //     .append(
-  //       $(
-  //         "<div class='header__info info'><a class='info_phone' href='#!'>+7(000) 123 45 65</a><div class='info_search '><input type='text' placeholder='Поиск' /><svg> <use xlink:href='/assets/img/sprite.svg#search'></use></svg><input type='submit'/></div></div>"
-  //       )
-  //     );
-      
-  //     setTimeout(function () {
-  //       $(".info").addClass("info-active");
-  //     }, 200);
-
-  //   $("body").addClass("lock");
-  // }); 
-
-
-
-
-// $(".header__close").on("click", function () {
-// $(".menu")
-//   .removeClass("menu-active")
-//   .find(".header__info")
-//   .remove();
-//   $(".info").removeClass("info-active");
-// $("body").removeClass("lock");
-//   });
-
-// });
-
- 
-
-  // ----- header меняется в размерах и цвете
-//    window.addEventListener("scroll", function (event) {
-//      if (window.pageYOffset > 100) {
-//        document.querySelector(
-//          ".header"
-//        ).classList.add("responciveHeader");
-
-//      } else {
-//        document.querySelector(".header").classList.remove("responciveHeader");
-//      }
-//    });
-
-
-// //--- сворачивается открытый header при увеличении окна 768
-
-// window.onresize = function () {
-//   if (window.innerWidth >= 999) {
-//     $(".menu").removeClass("menu-active").find(".header__info").remove();
-//     $(".info").removeClass("info-active");
-//     $("body").removeClass("lock");
-// // alert("");
-//   }
-  
-// };
-
-
-
-
-
 
 

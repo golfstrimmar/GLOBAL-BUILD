@@ -11,15 +11,18 @@ section#quiz.quiz
 
         .quiz__bar.Quiz-bar
             .Quiz-bar__track
-                    svg
-                        use(xlink:href='/assets/img/sprite.svg#bar')
+
+                    //svg
+                    //    use(xlink:href='/assets/img/sprite.svg#bar')
 
         .quiz__content.QContent
             .QContent__column
 
                 .QBlock.QBlock-active
                     .QContent__title
-                        h3._f-30._w-700  01. Из какого материала вы планируете строить дом?
+                        h3._f-30._w-700
+                            span 01.
+                            span Из какого материала вы планируете строить дом?
                     ul.QContent__cards
                         li.QContent__card.QCard.QCard--active
                             .QCard__img

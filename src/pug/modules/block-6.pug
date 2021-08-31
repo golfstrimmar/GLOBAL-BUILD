@@ -1,7 +1,11 @@
 section#block-6.block-6
   .block-6__wrapper
     .imgs.block-6__wrapper-imgs
-          img(data-src="assets/img/block-6/i-2.webp" alt="img")
+          picture
+            source(srcset='assets/img/block-6/i-2.webp'  type='image/png'  media='(min-width: 1200px)')
+            source(srcset='assets/img/block-6/i-2.webp' type='image/png'  media='(min-width: 768px) and (max-width: 1199px)')
+            source(srcset='assets/img/block-6/i-2-sm.webp' type='image/png'  media='(max-width: 767px)')
+            img(src='assets/img/block-6/i-2.webp', alt='img')
     .container
         .block-6__top
             .block-6__title
