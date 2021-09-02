@@ -13,7 +13,7 @@ import './js/first'
 // import "./js/jquery.nicescroll.min";
 import './js/modal'
 import './js/quiz'
-import './js/stage'
+// import './js/stage'
 import "./js/polzunki";
 import "./js/tabs";
 import "./js/infinity-galary";

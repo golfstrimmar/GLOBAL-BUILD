@@ -44,27 +44,34 @@ section#block-6.block-6
                         use(xlink:href='/assets/img/sprite.svg#bird')
                     span._f-10._w-400._39 Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
 
-        .block-6__stage.block-6-stage
-            section#block-6-stage.block-6-stage
-                .container
+        section#block-6-stage.block-6-stage
                     .block-6-stage__title
                         h2._f-40._w-700._28 6 простых этапов строительства <br> вашего дома
-                    ul.block-6-stage__buttons
-                        li
-                            button(type="button").block-6-stage__button._f-14._w-700._a8 1 этап
-                        li
-                            button(type="button").block-6-stage__button._f-14._w-700._a8 2 этап
-                        li
-                            button(type="button").block-6-stage__button._f-14._w-700._a8 3 этап
-                        li
-                            button(type="button").block-6-stage__button._f-14._w-700._a8 4 этап
-                        li
-                            button(type="button").block-6-stage__button._f-14._w-700._a8 5 этап
-                        li
-                            button(type="button").block-6-stage__button._f-14._w-700._a8 6 этап
+
+                    .block-6-stage__buttons
+                        .slick-arrow-stage-1-prev.stage-arrow
+                                svg
+                                    use(xlink:href='/assets/img/sprite.svg#arrow-left')
+                        .slick-arrow-stage-1-next.stage-arrow
+                                svg
+                                    use(xlink:href='/assets/img/sprite.svg#arrow-right')
+
+                        ul.slider__body.slider-js-stage-1
+                                li
+                                    button(type="button").block-6-stage__button._f-14._w-700._a8 1 этап
+                                li
+                                    button(type="button").block-6-stage__button._f-14._w-700._a8 2 этап
+                                li
+                                    button(type="button").block-6-stage__button._f-14._w-700._a8 3 этап
+                                li
+                                    button(type="button").block-6-stage__button._f-14._w-700._a8 4 этап
+                                li
+                                    button(type="button").block-6-stage__button._f-14._w-700._a8 5 этап
+                                li
+                                    button(type="button").block-6-stage__button._f-14._w-700._a8 6 этап
 
 
-                    ul.block-6-stage__inner.stage-inner
+                    ul.block-6-stage__inner.stage-inner.slider__body.slider-js-stage-2
                         li.stage-inner__item
                             .stage-inner__img
                                 .imgs
@@ -72,7 +79,7 @@ section#block-6.block-6
                             .stage-inner__column
                                 .stage-inner__pre-title._f-14._w-600._b1 2 -3 недели
                                 .stage-inner__title
-                                    h4._f-30._w-600._28  Возведение стен, перекрытий<br>и монтаж кровли
+                                    h4._f-30._w-600._28  Возведение стен, перекрытий<br>&nbsp;и монтаж кровли
                                 .stage-inner__line
                                     .chip
                                         .chip__icon

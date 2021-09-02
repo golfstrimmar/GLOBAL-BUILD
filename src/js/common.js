@@ -1,5 +1,4 @@
 import $ from "jquery";
-import Plyr from "plyr";
 
 
 $(document).ready(function () {
@@ -15,9 +14,6 @@ $(document).ready(function () {
         img.removeAttribute('data-src');
     };
   });
-
-
-
 
 
 

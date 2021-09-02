@@ -5,11 +5,6 @@ import $ from "jquery";
 
 $(Document).ready(function() {
 
-
-
-
-
-
         $(".slider-js-1").slick({
             // dots: true,
             // arrows: false,
@@ -31,16 +26,10 @@ $(Document).ready(function() {
                 {
                     breakpoint: 767,
                     settings: {
-                        slidesToShow: 2,
-                        arrows: true
-                    },
-                },   {
-                    breakpoint: 500,
-                    settings: {
                         slidesToShow: 1,
                         arrows: true
                     },
-                },
+                }
             ],
 
         });
@@ -75,6 +64,70 @@ $(Document).ready(function() {
 
         });
 
+
+        // -----------------
+
+    $(".slider-js-stage-1").slick({
+        // dots: true,
+        // arrows: false,
+        slidesToShow: 6,
+        speed: 800,
+        easing: "ease",
+        centerMode: false,
+        asNavFor: ".slider-js-stage-2",
+        prevArrow: document.querySelector('.slick-arrow-stage-1-prev'),
+        nextArrow: document.querySelector('.slick-arrow-stage-1-next'),
+        responsive: [
+
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: true
+                },
+            }
+        ],
+
+    });
+
+
+
+    $(".slider-js-stage-1 .slick-slide").on("click", function () {
+        const index = $(this).attr("data-slick-index");
+        $(".slider-js-stage-1").slick("slickGoTo", index);
+    });
+
+
+
+
+    $(".slider-js-stage-2").slick({
+        // dots: true,
+        // arrows: false,
+        slidesToShow: 1,
+        speed: 800,
+        easing: "ease",
+        // cssEase: "linear",
+        // centerMode: false,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        // centerMode: true,
+        infinite: true,
+        asNavFor: ".slider-js-stage-1",
+        nextArrow: document.querySelector('.stage-inner__button'),
+        // pauseOnFocus: true,
+        // pauseOnHover: true,
+
+    });
+
+
+
+
+
+
+
+
+
+// ----------------------
     $(".slider-js-sertif").slick({
             // dots: true,
             // arrows: false,

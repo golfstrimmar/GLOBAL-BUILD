@@ -28,7 +28,6 @@ const Header = () => {
   }
 
 
-
 window.addEventListener('resize', function(event){
 
   if(window.innerWidth <= 767){
@@ -42,10 +41,6 @@ window.addEventListener('resize', function(event){
 
   });
 
-
-
-  
-  
 
 
 

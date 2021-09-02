@@ -12,7 +12,6 @@
         track.innerText = Text;
 
 
-
         Q.addEventListener('click', function (event) {
 
             function initPopup() {
@@ -26,8 +25,11 @@
                     document.querySelector("body").style.cssText= "overflow: visible"
                 });
                 overlay.addEventListener('click',(e) =>{
-                    pop.style.cssText= "display: none; opacity: 0;  "
-                    document.querySelector("body").style.cssText= "overflow: visible"
+                    if (e.target.classList.contains("popup__overlay")) {
+                        console.log('block-6-form__body')
+                        pop.style.cssText= "display: none; opacity: 0;  "
+                        document.querySelector("body").style.cssText= "overflow: visible"
+                    }
                 });
             }
 

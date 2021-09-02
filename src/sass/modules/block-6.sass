@@ -6,7 +6,7 @@
 .block-6__wrapper
 	position: relative
 .block-6__wrapper-imgs
-		height: calc(100% - 440px)
+		height: calc(100% - 393px)
 .block-6__top
 	text-align: center
 .block-6__body
@@ -116,47 +116,63 @@
 	h2
 		line-height: 1.2
 .block-6-stage__buttons
-	display: grid
-	grid-template-columns: repeat(6,1fr)
-	column-gap: 40px
-	margin: 40px 0 44px
+	//display: grid
+	//grid-template-columns: repeat(6,1fr)
+	//column-gap: 40px
+	margin: 40px -20px 44px
+	height: 75px
+	position: relative
 .block-6-stage__button
 	text-transform: uppercase
 	width: 100%
 	height: 75px
 	border-radius: 5px
-	&.button-active
+
+
+.slider-js-stage-1
+	.slider__body
+		margin: 0 -40px
+	button
+		transition: all .2s ease-in-out
+
+	.slick-current button
 		background-color: #ffe484
 		color: #2f2e2e
 
+	.slick-slide
+		margin: 0 20px
+
+
+.slider-js-stage-2
+	.slick-prev
+		display: none!important
+	//.slick-next
+	//	display: block!important
 
 
 
 
 .stage-inner__item
-	display: grid
+	display: grid!important
 	grid-template-columns: 620px 1fr
 	column-gap: 52px
-	position: absolute
-	transform: translate(-150%)
-	transition: all .1s ease-in-out
-	z-index: -1
-	opacity: 0
 
-.stage-active-js
-	position: relative
-	z-index: 1
-	transform: translate(0)
-	opacity: 1
+.stage-inner__column
+	.stage-inner__title,  .stage-inner__line, .chip__text, .chip, .chip__icon,  .stage-inner__pre-title
+		height: auto!important
 
-
-
+	.chip__icon
+		width: 26px
+		height: 26px!important
 
 
 .stage-inner__img
 	position: relative
 	min-height: 440px
-	+jucc
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
 	.imgs
 		border-radius: 10px
 		max-width: 620px
