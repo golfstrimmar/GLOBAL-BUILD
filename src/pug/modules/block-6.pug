@@ -16,7 +16,11 @@ section#block-6.block-6
 
         .block-6__form.block-6-form
             .imgs
-                  img(src='assets/img/block-6/i-1.webp', alt='img')
+                  picture
+                    source(srcset='assets/img/block-6/i-1.webp'  type='image/png'  media='(min-width: 1200px)')
+                    source(srcset='assets/img/block-6/i-1-lg.webp' type='image/png'  media='(min-width: 768px) and (max-width: 1199px)')
+                    source(srcset='assets/img/block-6/i-1-sm.webp' type='image/png'  media='(max-width: 767px)')
+                    img(src='assets/img/block-6/i-1.webp', alt='img')
             .block-6-form__content
                 .block-6-form__pre-title._f-14._w-500._ff    У вас есть вопросы?
                 .block-6-form__title

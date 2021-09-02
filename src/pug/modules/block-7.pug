@@ -2,6 +2,11 @@ section#block-7.block-7
   .block-7__wrapper
     .imgs
       img(data-src='assets/img/block-7/i-bg.webp', alt='img')
+      picture
+        source(srcset='assets/img/block-7/i-bg.webp'  type='image/png'  media='(min-width: 1200px)')
+        source(srcset='assets/img/block-7/i-bg.webp' type='image/png'  media='(min-width: 768px) and (max-width: 1199px)')
+        source(srcset='assets/img/block-7/i-bg-sm.webp' type='image/png'  media='(max-width: 767px)')
+        img(src='assets/img/block-7/i-bg.webp', alt='img')
     .container
         .block-7__title
           span._f-40._w-400._28 Вы получаете сразу 5 гарантий, потому что

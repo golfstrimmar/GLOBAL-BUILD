@@ -24,12 +24,13 @@ const MyTabs = () => {
                 single.classList.remove("act")
                 setTimeout(()=>{   hidden.innerHTML=    ""  }, 400);
                 icon.setAttribute("style", "transform: rotate(0deg); ");
-                title.setAttribute("style", "color: #b18223;");
+                title.classList.remove("title-active")
+
             }else{
-                hidden.setAttribute("style", "max-height: 200px;  z-index: 1; ");
+                hidden.setAttribute("style", "max-height: 1000px;  z-index: 1; ");
                 setTimeout(()=>{   hidden.innerHTML=    texts[c]  }, 200);
                 icon.setAttribute("style", "transform: rotate(180deg);  stroke: #2f2e2e;");
-                title.setAttribute("style", "color: #2f2e2e;");
+                title.classList.add("title-active")
                 single.classList.add("act")
             }
         }

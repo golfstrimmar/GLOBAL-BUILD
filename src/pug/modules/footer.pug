@@ -3,7 +3,11 @@ footer#footer.footer
         .footer__body
             .footer__logo-block.block-logo
                 .imgs
-                    img(data-src='assets/img/logo/logo-bg.webp', alt='img')
+                    picture
+                        source(srcset="assets/img/logo/logo-bg.webp"  type="image/webp"  media="(min-width: 1200px)")
+                        source(srcset="assets/img/logo/logo-bg.webp"  type="image/webp"  media="(min-width: 768px) and (max-width: 1199px)")
+                        source(srcset="assets/img/logo/logo-bg-sm.webp"  type="image/webp"  media="(max-width: 767px)")
+                        img(src='assets/img/logo/logo-bg.webp', alt='img')
                 .block-logo__logo
                     img(src='assets/img/home/svg/logo.svg', alt='img')
 
@@ -34,6 +38,10 @@ footer#footer.footer
                     .contacts-content__phone._f-24._w-700._2f + 7 (983) 465 65-65
                     .contacts-content__email._f-16._w-600._eb
                         span global_build@mail.ru
+
+                    a(href="#!").contacts-content__order._f-16._w-600._eb
+                        span Заказать звонок
+
             .footer__politic
                 p._f-12._w-400 Политика конфиденциальности и обработки персональных данных
                 p._f-12._w-400 Задизайнено в &nbsp;

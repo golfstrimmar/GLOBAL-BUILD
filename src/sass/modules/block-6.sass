@@ -83,8 +83,11 @@
 
 .block-6-form__politic
 	grid-column: 1/4
-	+alic
-	flex-wrap: nowrap
+	display: grid
+	grid-template-columns: 11px 1fr
+	column-gap: 10px
+	align-items: start
+
 	svg
 		width: 11px
 		height:  11px
@@ -126,9 +129,7 @@
 		background-color: #ffe484
 		color: #2f2e2e
 
-.block-6-stage__inner
-.stage-inner
-	//background: white
+
 
 
 
@@ -155,7 +156,6 @@
 .stage-inner__img
 	position: relative
 	min-height: 440px
-	//padding: 0 0 440px
 	+jucc
 	.imgs
 		border-radius: 10px
@@ -163,7 +163,6 @@
 		left: 50%
 		transform: translate(-50%, 0%)
 
-.stage-inner__column
 .stage-inner__pre-title
 	text-transform: uppercase
 .stage-inner__title
@@ -200,42 +199,3 @@
 
 
 
-@media (min-width: 768px) and (max-width: 1355px)
-	.block-6
-		margin: 120px 0 0
-	.block-6-form, .block-6__form
-		margin: 180px 0 0
-	.block-6-form__body
-		grid-template-columns:  1fr
-		width: 100%
-		height: auto
-		row-gap:    50px
-	.block-6-form__politic
-		grid-column: 1/1
-	.stage-inner__item
-		grid-template-columns: 1fr
-		row-gap: 40px
-	.stage-inner
-		background: transparent!important
-		padding: 0 0 80px 0
-	.block-6-stage
-		margin: 21px 0 0
-		//background:     rgba(255,255,255,.8)
-		border-radius: 20px
-	.block-6-stage__title
-		padding: 20px 0 0
-	.block-6__wrapper-imgs
-		height: 100%
-	.stage-inner__button
-		left: 0
-		bottom: 0
-	.block-6-stage__title
-		h2
-			background: rgba(255,255,255, 1)
-			padding: 0 20px
-			box-shadow:  0 0 50px 50px rgba(255,255,255, 1)
-	.stage-inner__column
-		background: rgba(255,255,255, 1)
-		box-shadow:  0 0 50px 50px rgba(255,255,255, 1)
-
-@media (max-width: 767px)
