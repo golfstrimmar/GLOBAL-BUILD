@@ -1,5 +1,7 @@
+
 import $ from "jquery";
 // import "./slick.js";
+
 
 
 
@@ -114,8 +116,60 @@ $(Document).ready(function() {
         infinite: true,
         asNavFor: ".slider-js-stage-1",
         nextArrow: document.querySelector('.stage-inner__button'),
-        // pauseOnFocus: true,
-        // pauseOnHover: true,
+    });
+
+    $('.slider-js-stage-2').on('beforeChange', function(event){
+        document.querySelector('.stage-inner__button ').style.cssText= "opacity: 0;  transition: all .1s ease-in-out; ";
+    });
+
+ $('.slider-js-stage-2').on('afterChange', function(event){
+        document.querySelector('.stage-inner__button ').style.cssText= "opacity: 1;  transition: all .1s ease-in-out; ";
+    });
+
+// ------------------------------------------
+
+    $(".slider-single-bottom-js").slick({
+        // dots: true,
+        // arrows: false,
+        slidesToShow: 3,
+        speed: 800,
+        easing: "ease",
+        // cssEase: "linear",
+        // centerMode: false,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        // centerMode: true,
+        infinite: true,
+        asNavFor: ".slider-single-top-js",
+
+    });
+
+
+    $(".slider-single-bottom-js .slick-slide").on("click", function () {
+        const index = $(this).attr("data-slick-index");
+        $(".slider-single-bottom-js").slick("slickGoTo", index);
+    });
+
+
+    $(".slider-single-top-js").slick({
+        // dots: true,
+        // arrows: false,
+        slidesToShow: 1,
+        speed: 800,
+        easing: "ease",
+        centerMode: false,
+        fade: true,
+        asNavFor: ".slider-single-bottom-js",
+        responsive: [
+
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: true
+                },
+            }
+        ],
 
     });
 
@@ -129,17 +183,10 @@ $(Document).ready(function() {
 
 // ----------------------
     $(".slider-js-sertif").slick({
-            // dots: true,
-            // arrows: false,
             slidesToShow: 3,
             slidesToScroll: 1,
             speed: 800,
             easing: "ease",
-            // cssEase: "linear",
-            // centerMode: false,
-            // autoplay: true,
-            // autoplaySpeed: 2000,
-            // centerMode: true,
             infinite: true,
             prevArrow: document.querySelector('.reviews-10-slick-prev'),
             nextArrow: document.querySelector('.reviews-10-slick-next'),
@@ -167,3 +214,9 @@ $(Document).ready(function() {
 
 
 });
+
+
+
+
+
+

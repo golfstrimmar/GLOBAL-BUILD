@@ -149,7 +149,9 @@
 		margin: 0 0 48px 0
 
 
-
+.quiz .block-6-form__body
+	margin: 10px
+	width: auto
 
 
 .QCard__title
@@ -255,28 +257,42 @@
 	row-gap: 31px
 	margin: 12px 0 0
 	column-gap: 11px
+	position: relative
 .Person-card
 	width: 176px
 	height: 113px
 	border-radius: 3px
-	background-color: #222
+	//background-color: #222
 	display: grid
 	justify-items:  center
 	padding: 25px 0 0 0
 	position: relative
 
+.Person-card__mask
+	position: absolute
+	top: 0
+	left: 0
+	+pro
+	background: rgba(34,34,34, .8)
+	z-index: 2
+
 .Person-card__icon
 	width: 22px
 	height: 27px
 	position: relative
+	z-index: 20
+	transition: all .2s ease-in-out
 	svg
 		width: 22px
 		height: 27px
+
 .Person-card__text
 	position: relative
 	color:  white
 	text-align: center
 	line-height: 1.5
+	z-index: 20
+	transition: all .2s ease-in-out
 
 .calculator-section
 	position: relative

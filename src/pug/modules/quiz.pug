@@ -93,7 +93,23 @@ section#quiz.quiz
                                     input.calculator-section__double._f-18._w-500(type="text")
                             span.range-currency руб.
 
-
+                .QBlock.block-6-form__body
+                        .block-6-form__item
+                            label._f-12._w-600._28
+                                | Введите Ваше имя:
+                                input.block-6-form__input(type='text' placeholder='Алексей')
+                        .block-6-form__item
+                            label._f-12._w-600._28
+                                | Введите Ваш номер телефона:
+                                input.block-6-form__input(type='phone' placeholder='+7 983 358 25-20')
+                        .block-6-form__item
+                            a.btn.btn--success.block-6-form__button(href='#!')
+                                span._f-12._w-700._2f заказать звонок
+                        .block-6-form__politic
+                            svg
+                                use(xlink:href='/assets/img/sprite.svg#bird')
+                            span._f-10._w-400._39
+                                | Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
 
 
 
@@ -111,6 +127,7 @@ section#quiz.quiz
                     .Person__card.Person-card
                         .imgs
                             img(data-src='assets/img/block-2/person-1.webp', alt='img')
+                        .Person-card__mask
                         .Person-card__icon
                             svg
                                 use(xlink:href='/assets/img/sprite.svg#lock')
@@ -118,7 +135,7 @@ section#quiz.quiz
                     .Person__card.Person-card
                         .imgs
                             img(data-src='assets/img/block-2/person-2.webp', alt='img')
-
+                        .Person-card__mask
                         .Person-card__icon
                             svg
                                 use(xlink:href='/assets/img/sprite.svg#lock')

@@ -19,6 +19,7 @@
 	background-image: linear-gradient(to top, #f1f1f1 , white )
 	width: 97%
 	height: 120px
+	position: relative
 	position: absolute
 	bottom: -107px
 	left:   50%
@@ -28,6 +29,11 @@
 	z-index: 4
 	span
 		border-bottom: 1px dashed #2f2e2e
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -69%)
+		white-space: nowrap
 
 	&:hover
 		text-shadow: 0 0 3px rgba(0,0,0, .4)
@@ -79,7 +85,8 @@
 	height: 75px
 
 
-
+.stage-inner__button
+	transition: all .2s ease-in-out
 
 
 

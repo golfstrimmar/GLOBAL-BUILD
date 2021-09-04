@@ -55,15 +55,67 @@
 	.menu__item:nth-child(2)
 		padding-top: 15px
 
+	.single-slider-bottom .slick-slide .imgs
+		width: 80px
+
+	.single-slider-bottom	.galery__item
+			height: 60px!important
+	.single-slider-bottom .slick-slide
+		margin: 0 5px
+		height: 68px
+		.galery__item
+			min-width: 80px!important
+	.single-slider-bottom .slider__body
+		margin: 0
+		max-width: 320px
+		width: 100%
+	.single-slider-top
+		max-width: 320px
+		width: 100%
+	.reviews-card__column--single
+		align-items: center
+
+
+
+	.bunner__title
+		&.bunner__title--single
+			text-align: left
+
+	.reviews
+		&.reviews--single
+			margin: 0
+			padding:  0 10px
+
+
+	.plan-single___title
+		+jucc
+
+	.reviews-card__column--plan
+		min-height: 312px
+		.imgs
+			left: 50%
+			transform: translate(-50%,0%)
 
 
 
 
 
+	.QContent__column
+		max-height: 400px
+		padding: 0 10px
 
+
+
+	.single-slider-bottom
+		margin: 30px 0
 
 	.bunner__body
 		+jucc
+	.reviews-card__squear--single
+		padding: 0 0 0 0
+
+	.plan-single___title
+		margin: 12px 0 12px
 
 
 	.bunner__title
@@ -280,12 +332,14 @@
 	.projects-card__body
 		+alic
 	.block-4-projects
-		margin: 27px 0 0 0
+		margin: 27px auto 0
+		max-width: 400px
 	.block-5__title
 		padding: 0 20px
 
 	.block-5__content, .projects-js
 		grid-template-columns: 1fr
+		justify-items: center
 
 	.projects-card__body
 		padding: 21px 10px 32px
@@ -308,7 +362,6 @@
 		font-size: 30px
 
 	.future-card__button
-		max-width: 280px
 		width: 100%
 		height: 60px
 		margin:  auto 0 0
@@ -327,11 +380,12 @@
 		font-size: 18px
 
 	.block-6__form
-		margin: 162px 10px 0
+		margin: 162px auto 0
 		+fdc
 		align-items: center
 		padding: 43px 10px 6px
-
+		max-width: 400px
+		width: calc(100% - 20px)
 	.block-6
 		margin: 165px 0 0
 
@@ -386,6 +440,8 @@
 		margin: 26px 0 0
 	.future-card
 		min-height: 600px
+		max-width: 400px
+		width: 100%
 	.future-card__price
 		margin: 10px 0 22px 0
 		span
@@ -405,13 +461,17 @@
 		margin: 27px -20px 27px
 
 
-
-
-
+	.calculator-section
+		width: 100%
+		input[type=range]
+			width: 100%
+	.calculator-section__number, .range-currency
+			font-size: 30px
+	.range-currency
+		left: 155px
 
 	.block-6-form__politic
 		grid-column: 1/2
-		color:  white
 		display: grid
 		grid-template-columns: 11px 1fr
 		column-gap: 10px
@@ -421,6 +481,11 @@
 		span
 			opacity: 0.7
 			line-height: 1.4
+			color: white
+
+	.popup	.block-6-form__politic
+		span
+			color: $font
 
 	.block-6__button
 		display: none
@@ -436,14 +501,17 @@
 	.block-6-form__item
 		label
 			text-align: center
-
+			display: inline-block
 		input
 			height: 56px
+			border-radius: 5px
+			background: white
+			border: 0.5px solid #E4E4E4
 
 
 	.block-6__wrapper-imgs
 		height: 572px
-		top: 13.4%
+		object-fit: cover
 
 	.block-6-stage__title h2    br
 		display: none
@@ -456,7 +524,8 @@
 		font-size: 14px
 
 
-
+	.block-9 .block-6-form__politic span
+		color: #393939
 
 
 
@@ -609,6 +678,28 @@
 		font-size: 14px
 	.reviews-card__right
 		text-align: center
+		margin: 20px 0 -20px
+
+
+	.plan-stages
+		margin: 30px 0 120px 0
+
+	.plan-stages .block-6-stage__title h2
+		text-align: center
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	.reviews-card__title h3
 		font-size: 18px
@@ -633,6 +724,8 @@
 	.block-9__form
 		grid-column: 1/2
 		margin: -24px 0 0 0
+		*
+			background: transparent!important
 
 	.block-9__column
 		grid-row: 2/3
@@ -806,7 +899,7 @@
 		transform: translate(calc(50% - 30px), 0%)
 		text-align: center
 		padding: 0 13px
-		top: 96px
+		top: 93px
 		p, span
 			color: #2f2e2e
 
@@ -823,23 +916,54 @@
 			margin: 0 0 23px 0
 			line-height: 1.4
 
-	.footer__logo-block
+	.footer__politic p:first-child
 		padding: 0 0 0 0
-		min-height: 80px
-		width: 118px
-
+		margin: 0 0 0 0
+	//
+	//
+	//.footer__logo-block
+	//	padding: 0 0 0 0
+	//	min-height: 80px
+	//	width: 118px
+	//
 	.footer__soc .soc
 		justify-content: center
-		margin: 85px 0 0 0
+		margin:  0
+	//
+	.footer
+			.block-logo
+				min-height: 166px
+				overflow: hidden
+				padding: 0 0 0 0
+				width: 100%
+			.block-logo__description
+				width: 100%
+				padding: 0 0 0 0
+				left: 50%
+				transform: translate(-50%)
+			.block-logo .imgs
+				top: 0
+				width: 118px
+				height: 79px
+				left: 50%
+				transform: translate(-50%, 0%)
+			.block-logo__logo
+				width: 100px
+				height: 53px
+				margin: 0 auto
+				position: relative
+				top: 14px
+
+	.footer__contacts
+		margin: 32px 0 0
+		width: 100%
+
+	.contacts-content__phone
+		padding: 7px 0 2px
+
 
 	.contacts-content__text-low
 		text-align: center
-	.footer .block-logo__logo
-		width: 94px
-		height: 52px
-		margin: 0 auto
-	.footer__contacts
-		margin: 39px 0 0
 
 	.contacts-content__phone
 		font-size: 24px
@@ -865,7 +989,36 @@
 	.footer	.contacts-content__info
 			text-align: center
 	.footer__politic
-		margin: 98px 0 0 0
+		margin: 93px 0 0 0
+		p
+			&:last-child
+				margin: 23px 0 30px 0
+
+	.footer__soc
+		padding: 0 0 0 0
+
+
+	.block-12--single .container
+		+jucc
+	.block-6-form---single
+		max-width: 320px
+		margin: 0 auto
+
+
+	.reviews-card__column--plan .imgs
+		max-width: 320px
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	.block-6-stage
@@ -923,9 +1076,13 @@
 				display: inline-block
 
 
+	.bunner__bg--single ,.bunner--single, .first--single
+		height: 342px!important
+		max-height: 342px!important
+		min-height: 342px!important
 
-
-
+	.bunner__body--single
+		padding: 190px 10px 0
 
 
 

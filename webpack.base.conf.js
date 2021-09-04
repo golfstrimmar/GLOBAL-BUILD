@@ -122,8 +122,8 @@ module.exports = {
       
     new HtmlWebpackPlugin({
       // hash: false,
-      template: "src/pug/pages/animals.pug",
-      filename: "./animals.html",
+      template: "src/pug/pages/single.pug",
+      filename: "./single.html",
     }),
 
     new CopyWebpackPlugin({

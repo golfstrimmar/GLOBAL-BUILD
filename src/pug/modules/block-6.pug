@@ -2,17 +2,17 @@ section#block-6.block-6
   .block-6__wrapper
     .imgs.block-6__wrapper-imgs
           picture
-            source(srcset='assets/img/block-6/i-2.webp'  type='image/png'  media='(min-width: 1200px)')
-            source(srcset='assets/img/block-6/i-2.webp' type='image/png'  media='(min-width: 768px) and (max-width: 1199px)')
-            source(srcset='assets/img/block-6/i-2-sm.webp' type='image/png'  media='(max-width: 767px)')
+            //source(srcset='assets/img/block-6/i-2.webp'  type='image/png'  media='(min-width: 1200px)')
+            //source(srcset='assets/img/block-6/i-2.webp' type='image/png'  media='(min-width: 768px) and (max-width: 1199px)')
+            //source(srcset='assets/img/block-6/i-2-sm.webp' type='image/png'  media='(max-width: 767px)')
             img(src='assets/img/block-6/i-2.webp', alt='img')
     .container
         .block-6__top
             .block-6__title
                 h2._f-40._w-600._28 Если ни один из готовых проектов не подходит, можете <br> заказать индивидуальный проект, и мы построим для вас <br>уникальный дом, равных которому не будет.
             .block-6__text._f-24._w-400._65 Жмите на кнопку ниже, чтобы связаться с менеджером и обсудить<br> проект своего будущего дома!
-            a(href="#!").btn.btn--success.block-6__button
-                span._f-15._w-700._2f связаться с менеджером
+            a(href="#!").btn.btn--success.block-6__button.popup-init-js
+                span._f-15._w-700 связаться с менеджером
 
         .block-6__form.block-6-form
             .imgs
@@ -75,63 +75,41 @@ section#block-6.block-6
                         li.stage-inner__item
                             .stage-inner__img
                                 .imgs
-                                    img(data-src='assets/img/block-6/i-3.webp', alt='img')
-                            .stage-inner__column
-                                .stage-inner__pre-title._f-14._w-600._b1 2 -3 недели
-                                .stage-inner__title
-                                    h4._f-30._w-600._28  Возведение стен, перекрытий<br>&nbsp;и монтаж кровли
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Стены из заводского газобетона автоклавного производства,  облицовочного кирпича. Перекрытия только из новых железобетонных плит по ГОСТу и СНиПу.
-
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Крыша утеплённая из заводского профнастила
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Монтаж заводских МПО и входной двери с терморазрывом
-
-                        li.stage-inner__item
-                            .stage-inner__img
-                                .imgs
                                     img(data-src='assets/img/block-6/i-4.webp', alt='img')
                             .stage-inner__column
-                                .stage-inner__pre-title._f-14._w-600._b1 2 -3 недели
+                                .stage-inner__pre-title._f-14._w-600._b1
                                 .stage-inner__title
-                                    h4._f-30._w-600._28  Возведение стен, перекрытий<br>и монтаж кровли
+                                    h4._f-30._w-600._28  Заключаем договор
                                 .stage-inner__line
                                     .chip
                                         .chip__icon
                                             svg
                                                 use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Стены из заводского газобетона автоклавного производства,  облицовочного кирпича. Перекрытия только из новых железобетонных плит по ГОСТу и СНиПу.
+                                        .chip__text._f-18._w-400._2f Выбираем место под строительство
 
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Крыша утеплённая из заводского профнастила
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Монтаж заводских МПО и входной двери с терморазрывом
+
+
 
                         li.stage-inner__item
                             .stage-inner__img
                                 .imgs
                                     img(data-src='assets/img/block-6/i-5.webp', alt='img')
+                            .stage-inner__column
+                                .stage-inner__pre-title._f-14._w-600._b1 2 -3 недели
+                                .stage-inner__title
+                                    h4._f-30._w-600._28  Возведение фундамента.
+                                .stage-inner__line
+                                    .chip
+                                        .chip__icon
+                                            svg
+                                                use(xlink:href='/assets/img/sprite.svg#mark')
+                                        .chip__text._f-18._w-400._2f Бетон М-250, нагрузка рассчитывается строго по проекту.
+
+
+                        li.stage-inner__item
+                            .stage-inner__img
+                                .imgs
+                                    img(data-src='assets/img/block-6/i-3.webp', alt='img')
                             .stage-inner__column
                                 .stage-inner__pre-title._f-14._w-600._b1 2 -3 недели
                                 .stage-inner__title
@@ -163,82 +141,50 @@ section#block-6.block-6
                             .stage-inner__column
                                 .stage-inner__pre-title._f-14._w-600._b1 2 -3 недели
                                 .stage-inner__title
-                                    h4._f-30._w-600._28  Возведение стен, перекрытий<br>и монтаж кровли
+                                    h4._f-30._w-600._28  Монтаж инженерных коммуникаций (электрика, вода, канализация).
                                 .stage-inner__line
                                     .chip
                                         .chip__icon
                                             svg
                                                 use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Стены из заводского газобетона автоклавного производства,  облицовочного кирпича. Перекрытия только из новых железобетонных плит по ГОСТу и СНиПу.
+                                        .chip__text._f-18._w-400._2f Установка счётчиков, оформление необходимых документов под ключ.
 
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Крыша утеплённая из заводского профнастила
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Монтаж заводских МПО и входной двери с терморазрывом
+
+
 
                         li.stage-inner__item
                             .stage-inner__img
                                 .imgs
                                     img(data-src='assets/img/block-6/i-7.webp', alt='img')
                             .stage-inner__column
-                                .stage-inner__pre-title._f-14._w-600._b1 2 -3 недели
+                                .stage-inner__pre-title._f-14._w-600._b1 1 неделя
                                 .stage-inner__title
-                                    h4._f-30._w-600._28  Возведение стен, перекрытий<br>и монтаж кровли
+                                    h4._f-30._w-600._28  Внутренняя отделка (штукатурка, полы).
                                 .stage-inner__line
                                     .chip
                                         .chip__icon
                                             svg
                                                 use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Стены из заводского газобетона автоклавного производства,  облицовочного кирпича. Перекрытия только из новых железобетонных плит по ГОСТу и СНиПу.
+                                        .chip__text._f-18._w-400._2f Готовые стены под обои, тёплые полы под ламинат.
 
                                 .stage-inner__line
                                     .chip
                                         .chip__icon
                                             svg
                                                 use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Крыша утеплённая из заводского профнастила
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Монтаж заводских МПО и входной двери с терморазрывом
+                                        .chip__text._f-18._w-400._2f Установка немецких радиаторов с высокой теплоотдачей.
+
+
 
                         li.stage-inner__item
                             .stage-inner__img
                                 .imgs
                                     img(data-src='assets/img/block-6/i-8.webp', alt='img')
                             .stage-inner__column
-                                .stage-inner__pre-title._f-14._w-600._b1 2 -3 недели
+                                .stage-inner__pre-title._f-14._w-600._b1
                                 .stage-inner__title
-                                    h4._f-30._w-600._28  Возведение стен, перекрытий<br>и монтаж кровли
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Стены из заводского газобетона автоклавного производства,  облицовочного кирпича. Перекрытия только из новых железобетонных плит по ГОСТу и СНиПу.
+                                    h4._f-30._w-600._28  Получаете ключи и въезжаете.
 
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Крыша утеплённая из заводского профнастила
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Монтаж заводских МПО и входной двери с терморазрывом
 
 
                     button(type="button").stage-inner__button
