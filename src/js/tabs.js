@@ -3,7 +3,6 @@ if(window.location.pathname == '/') {
 
     const MyTabs = () => {
         let tabs = document.querySelector('.block-11__body');
-        let p = true;
 
 
         let singles = Array.prototype.slice.call(tabs.children);
@@ -12,6 +11,7 @@ if(window.location.pathname == '/') {
             let span = title.querySelector(' span');
             let hidden = cell.querySelector('.block-11-tab__hidden');
             let svg = cell.querySelector('.block-11-tab__title svg');
+            let p = true;
 
             function openItems(e) {
                 if (p === true) {

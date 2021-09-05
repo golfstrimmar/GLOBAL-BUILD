@@ -34,19 +34,7 @@ $(".bunner__button").on("click", function (event) {
   event.preventDefault();
   let id = $(this).attr("href"),
     top = $(id).offset().top;
- // $("a").removeClass("menu__link--active");
-  // $(this).addClass("menu__link--active");
-// $('a[href="#' + id + '"').addClass("menu__link--active");
-  $("body,html").animate({ scrollTop: top - 80}, 800);
-
- // setTimeout(function () {
- //   $(".menu").removeClass("menu-active")
- //     .find(".header__info")
- //     .remove();
- //     $(".info").removeClass("info-active");
- //   $("body").removeClass("lock");
- // }, 1000);
-
+    $("body,html").animate({ scrollTop: top - 80}, 800).then(function(){$("body,html").offset()});
 
 });
 

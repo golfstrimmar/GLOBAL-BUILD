@@ -449,7 +449,7 @@
 
 
 	.block-6-form__body
-		margin: 9px 0 0
+		margin: 117px 0 0
 
 	.block-6-form__item:nth-child(3)
 		width: calc(100% + 40px)
@@ -476,7 +476,7 @@
 		grid-template-columns: 11px 1fr
 		column-gap: 10px
 		align-items: start
-		width: calc(100% + 40px)
+		width: 100%
 		margin: -4px 0 0 -20px
 		span
 			opacity: 0.7
@@ -502,11 +502,14 @@
 		label
 			text-align: center
 			display: inline-block
+			width:  100%
 		input
 			height: 56px
 			border-radius: 5px
-			background: white
+			//background: white
 			border: 0.5px solid #E4E4E4
+
+
 
 
 	.block-6__wrapper-imgs
@@ -562,7 +565,7 @@
 		height: 483px
 		top: auto
 		bottom: -496px
-		max-width: 300px
+		//max-width: 300px
 		right: 0
 		left: auto
 
@@ -662,7 +665,7 @@
 		margin: 0 auto
 
 	.reviews-card-review
-		padding: 12px 10px 25px
+		padding: 12px 10px 47px
 
 	.reviews-card__title-line
 		grid-template-columns:  1fr
@@ -700,7 +703,6 @@
 
 
 
-
 	.reviews-card__title h3
 		font-size: 18px
 
@@ -721,11 +723,31 @@
 	.block-9-content__text
 		margin: 0 0 24px
 
+
+
+
+
 	.block-9__form
 		grid-column: 1/2
-		margin: -24px 0 0 0
-		*
-			background: transparent!important
+		position: relative
+
+	.block-9-content__span
+		box-shadow: 0px 4px 200px rgba(46, 36, 25, 0.25)
+		margin: 0 0 0 0
+		top: -100px
+
+	.block-9 .block-6-form__body
+		padding: 18px 0px 20px 0px
+	.block-9 .block-6-form__item input
+		z-index: 200
+		overflow: hidden
+		padding: 0 0 0 0
+		&::placeholder
+			text-align: center
+
+
+
+
 
 	.block-9__column
 		grid-row: 2/3
@@ -743,6 +765,25 @@
 		row-gap: 0
 
 
+	.chip__icon--9
+		width: 26px!important
+		height: 26px
+	.block-9-content__card .block-9-card__text
+		font-size: 16px
+		margin: 3px 0 21px
+	.block-9-column__img
+		margin: 69px 0 0!important
+
+
+
+
+
+
+
+
+
+
+
 	.content-sm
 		display: inline-block
 		margin: 8px 0 0 0
@@ -752,13 +793,17 @@
 		font-size: 24px
 	.block-9-column__text
 		padding: 0px 29px
-
-	.block-9 .block-6-form__body
-		margin: -17px 0
-		padding: 18px 0px 20px 0px
-
+		line-height: 1.4
+		margin: 8px 0 0
+	.block-9-content__form .block-6-form__item:first-of-type
+		padding: 0 0 0 0
+	.block-9-content__form .block-6-form__item:nth-child(3)
+		padding: 0 20px 0
 	.block-9 .block-6-form__item input
 		margin: 15px 0 0
+		z-index: 2222
+		position: relative
+		background: white
 	.block-10__slider
 		max-width: 380px
 
@@ -850,7 +895,7 @@
 
 	.block-12 .block-6-form
 		padding: 37px 8px
-		margin: 0 10px
+		margin: 0 auto
 
 	.block-12	.block-6-form__pre-title
 		font-size: 14px
@@ -879,7 +924,7 @@
 	.contacts
 		margin: 55px 10px 0
 	.contacts__body
-		min-height: 504px
+		min-height: 522px
 		border-top-left-radius: 20px
 		border-top-right-radius: 20px
 		margin: 20px 0 0
@@ -888,10 +933,12 @@
 			width: 100%
 	.contacts__content
 		width: 100%
+		max-width: 300px
 		height: 273px
-		left:   0
+		left:   50%
 		top: auto
 		bottom: 0px
+		transform: translate(-50% , 0%)
 
 	.footer .block-logo__description
 		display: block
@@ -899,10 +946,12 @@
 		transform: translate(calc(50% - 30px), 0%)
 		text-align: center
 		padding: 0 13px
-		top: 93px
+		top: 95px
 		p, span
 			color: #2f2e2e
 
+	.contacts-content__decor--footer
+		margin: 27px 0 0 0
 
 	.footer__body
 		grid-template-columns: 1fr
@@ -911,6 +960,7 @@
 	.footer__politic
 		grid-column: 1/2
 		grid-template-columns: 1fr
+		border: none
 		p
 			text-align: center
 			margin: 0 0 23px 0
@@ -955,7 +1005,7 @@
 				top: 14px
 
 	.footer__contacts
-		margin: 32px 0 0
+		margin: 2px 0 0
 		width: 100%
 
 	.contacts-content__phone
@@ -976,7 +1026,7 @@
 		max-width: 300px
 		width:  100%
 		height: 60px
-		margin: 21px 0
+		margin: 21px auto
 		border-radius: 10px
 		background-image: linear-gradient(to top, #ffe484, #e7ac35)
 		+center
@@ -989,7 +1039,7 @@
 	.footer	.contacts-content__info
 			text-align: center
 	.footer__politic
-		margin: 93px 0 0 0
+		margin: 97px 0 0 0
 		p
 			&:last-child
 				margin: 23px 0 30px 0
@@ -1088,6 +1138,7 @@
 
 
 
+
 @media (min-width: 999px)
 	.block-9-content__visible-sm
 		display: none
@@ -1097,14 +1148,14 @@
 @media (min-width: 768px)
 	.contacts-content__email
 		display: block
-	.contacts-content__order
-		display: none
+	//.contacts-content__order
+	//	display: none
 	.menu__item svg
 		display: none
 	.menu__hidden-area
 		+alic
 		flex-wrap: nowrap
-	.bunner__pre-title-sm
+	.bunner__pre-title-sm, .contacts-content__decor
 		display: none
 
 	.block-7__title span br

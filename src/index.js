@@ -7,7 +7,7 @@ import './js/modal'
 import './js/quiz'
 import "./js/polzunki";
 import "./js/tabs";
-import "./js/infinity-galary";
+// import "./js/infinity-galary";
 import "./js/more-button";
 import "./js/myPlyr";
 import "./js/MyQcard";
