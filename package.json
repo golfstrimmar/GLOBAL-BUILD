@@ -41,6 +41,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
     "plyr": "^3.6.3",

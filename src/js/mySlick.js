@@ -73,7 +73,7 @@ $(Document).ready(function() {
         // dots: true,
         // arrows: false,
         slidesToShow: 6,
-        speed: 800,
+        speed: 500,
         easing: "ease",
         centerMode: false,
         asNavFor: ".slider-js-stage-2",
@@ -85,7 +85,7 @@ $(Document).ready(function() {
                 breakpoint: 767,
                 settings: {
                     slidesToShow: 1,
-                    arrows: true
+                    arrows:  true
                 },
             }
         ],
@@ -103,28 +103,49 @@ $(Document).ready(function() {
 
 
     $(".slider-js-stage-2").slick({
-        // dots: true,
-        // arrows: false,
         slidesToShow: 1,
-        speed: 800,
+        speed: 500,
         easing: "ease",
-        // cssEase: "linear",
-        // centerMode: false,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
-        // centerMode: true,
         infinite: true,
         asNavFor: ".slider-js-stage-1",
         nextArrow: document.querySelector('.stage-inner__button'),
-    });
+        });
+
+    // $('.slider-js-stage-2').find('.slick-slide').css('height', $('.slick-current ').find('.stage-inner__item').height() );
+
+
+function ChangeSlide(){
+    function SliderHeight(par){
+        let slider = document.querySelector('.slider-js-stage-2');
+        let stage = document.querySelector('.slider-js-stage-2 .slick-track ');
+        let singles = Array.prototype.slice.call(stage.children);
+        for (var i = 0; i < singles.length; ++i) {
+            if(singles[i].classList.contains("slick-current")){
+                let stageHeight = singles[i+par].querySelector('.stage-inner__item').offsetHeight
+                slider.style.cssText= `height:  ${stageHeight}px; `;
+            }
+        }
+    }
+    SliderHeight(0);
 
     $('.slider-js-stage-2').on('beforeChange', function(event){
-        document.querySelector('.stage-inner__button ').style.cssText= "opacity: 0;  transition: all .1s ease-in-out; ";
+        document.querySelector('.stage-inner__button ').style.cssText= "opacity: 0;  transition: all .2s ease-in-out; ";
+        // $('.slick-slide').css('height', $('.slick-current ').next().find('.stage-inner__item').height() );
+
     });
 
- $('.slider-js-stage-2').on('afterChange', function(event){
-        document.querySelector('.stage-inner__button ').style.cssText= "opacity: 1;  transition: all .1s ease-in-out; ";
+    $('.slider-js-stage-2').on('afterChange', function(event){
+        document.querySelector('.stage-inner__button ').style.cssText= "opacity: 1;  transition: all .2s ease-in-out; ";
+        SliderHeight(0);
     });
+}
+    ChangeSlide();
+
+window.addEventListener('resize',(e) =>{
+    ChangeSlide();
+});
+
+
 
 // ------------------------------------------
 
@@ -209,11 +230,65 @@ $(Document).ready(function() {
 
     });
 
+// ---------------------------
+    $(".reviews-card-galery-js").slick({
+        // dots: true,
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        speed: 2000,
+        easing: "ease",
+        autoplay: true,
+        autoplaySpeed: 4000,
+        infinite: true,
+        asNavFor: ".reviews-card-left-js",
+        prevArrow: document.querySelector('.galery-arrow-left'),
+        nextArrow: document.querySelector('.galery-arrow-right'),
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    arrows:  true
+                },
+            },
+        ],
+    });
+
+
+    $(".reviews-card-galery-js .slick-slide").on("click", function () {
+        const index = $(this).attr("data-slick-index");
+        $(".reviews-card-galery-js").slick("slickGoTo", index);
+    });
+
+
+    $(".reviews-card-left-js").slick({
+        // dots: true,
+        arrows: false,
+        slidesToShow: 1,
+        speed: 800,
+        easing: "ease",
+        centerMode: false,
+        fade: true,
+        asNavFor: ".reviews-card-galery-js",
+        responsive: [
+
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: true
+                },
+            }
+        ],
+
+    });
 
 
 
 
-});
+
+    });
 
 
 

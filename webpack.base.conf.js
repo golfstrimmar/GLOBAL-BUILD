@@ -32,6 +32,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /fancybox[\/\\]dist[\/\\]js[\/\\]jquery.fancybox.cjs.js/,
+        use: "imports-loader?jQuery=jquery,$=jquery,this=>window"
+      },
+      {
         test: /\.js$/,
         loader: "babel-loader",
         exclude: "/node_modules/",

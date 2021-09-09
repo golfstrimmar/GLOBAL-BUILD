@@ -1,4 +1,11 @@
-import $ from 'jquery';
+// import $ from 'jquery';
+//
+
+const jquery = require("jquery");
+const $ = require("jquery");
+const jQuery = require("jquery");
+window.jQuery = $;
+const fancybox = require("@fancyapps/fancybox");
 
 // ==============================================
 import './js/common'
@@ -14,6 +21,7 @@ import "./js/MyQcard";
 import "./js/more-reviewes";
 import './js/scrolling';
 import './js/bg-6';
+// import './js/yandex-map';
 
 
 
@@ -33,10 +41,7 @@ import './css/slick.css';
 
 
 import './css/fonts.css'
-
-
-
-
+import './css/jquery.fancybox.min.css'
 import './css/plyr.css';
 
 

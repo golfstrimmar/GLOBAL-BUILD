@@ -155,10 +155,11 @@
 
 
 .stage-inner__item
-	display: grid!important
-	grid-template-columns: 620px 1fr
-	column-gap: 52px
-
+	//display: grid!important
+	//grid-template-columns: 620px 1fr
+	//column-gap: 52px
+	display: flex!important
+	justify-content: space-between
 .stage-inner__column
 	.stage-inner__title,  .stage-inner__line, .chip__text, .chip, .chip__icon,  .stage-inner__pre-title
 		height: auto!important
@@ -175,6 +176,8 @@
 	flex-wrap: wrap
 	justify-content: center
 	align-items: center
+	flex:  1 0  620px
+	margin: 0 53px 0 0
 	.imgs
 		border-radius: 10px
 		max-width: 620px
