@@ -12,20 +12,19 @@
 		line-height: 1.2
 
 .block-5__more
-	display: inline-block
-	margin: 0px 0px
+	display: block
 	text-transform: uppercase
 	transition: all .2s ease-in-out
 	background-image: linear-gradient(to top, #f1f1f1 , white )
 	width: 97%
 	height: 120px
 	position: relative
-	position: absolute
-	bottom: -107px
-	left:   50%
-	transform: translate(-50%, 0%)
 	border-radius: 10px
-
+	//position: absolute
+	//bottom: -127px
+	//left: 50%
+	//transform: translate(-50%, 0%)
+	margin: 0 auto
 	z-index: 4
 	span
 		border-bottom: 1px dashed #2f2e2e
@@ -34,6 +33,7 @@
 		left: 50%
 		transform: translate(-50%, -69%)
 		white-space: nowrap
+		transition: all .2s ease-in-out
 
 	&:hover
 		text-shadow: 0 0 3px rgba(0,0,0, .4)
@@ -43,18 +43,23 @@
 	width: 100%
 	+fdc
 	position: relative
+	padding: 53px 0 0 0
 
-.projects-js
+.projects-cards
 	display: grid!important
 	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
 	column-gap: 38px
 	row-gap: 30px
-	margin: 53px 0 50px 0
+	margin:  0 0 30px
 	position: relative
 	z-index: 2
 	transition: all .5s ease-in-out
-
-
+.projects-cards
+	&.act
+		margin: 0 0 30px 0!important
+.projects-cards
+	&.more-hidden-js
+		margin: 0 0 0 0
 .future-card
 	min-height: 777px
 	padding: 20px 18px 24px
@@ -75,10 +80,11 @@
 	margin: 0 0 17px
 	+jucb
 .future-card__line--cost
-	padding: 35px 0 0
+	padding: 0 0 5px
 .future-card__divider
 	border-bottom: 1px dashed #9d9d9d
 	margin: 10px 0 26px
+	width: 100%
 
 .future-card__button
 	margin: auto 0 0 0

@@ -74,7 +74,19 @@
 		width: 100%
 	.reviews-card__column--single
 		align-items: center
-
+	.popup-common
+			.slick-arrow
+				width: 30px
+				height: 30px
+				opacity: .6
+				svg
+					position: absolute
+					width: 15px
+					height: 15px
+				&.slick-prev
+					left: 57px!important
+				&.slick-next
+					right: 57px!important
 	.reviews--single__button
 		min-width: 300px
 	.reviews--single__button span
@@ -393,7 +405,7 @@
 		max-width: 400px
 		width: calc(100% - 20px)
 	.block-6
-		margin: 165px 0 0
+		margin: 57px 0 0
 
 	.block-6__title
 		padding: 0 20px
@@ -448,6 +460,7 @@
 		min-height: 600px
 		max-width: 400px
 		width: 100%
+		margin: 0 auto
 	.future-card__price
 		margin: 10px 0 22px 0
 		span
@@ -455,16 +468,17 @@
 
 
 	.block-6-form__body
-		margin: 117px 0 0
+		margin: 30px 0 0
 
 	.block-6-form__item:nth-child(3)
 		width: calc(100% + 40px)
 		margin: 0 0 0 -20px
 
-
+	.projects-cards
+		grid-template-columns: repeat(auto-fill,minmax(270px,1fr))
 
 	.block-6-stage__buttons
-		margin: 27px -20px 27px
+		margin: 27px 0 27px
 
 
 	.calculator-section
@@ -543,6 +557,9 @@
 		color: #393939
 
 
+	.stage-inner__column .stage-inner__title, .stage-inner__column .stage-inner__line
+			+jucc
+			text-align: center
 
 	.stage-inner__title
 		padding: 0 22px
@@ -562,9 +579,20 @@
 
 
 
+	.swiper-stage
+		max-width: 180px
+		margin: 0 auto
 
 
-
+	.block-6-stage__buttons .swiper-arrow
+		display: block
+		top: 50%
+		transform: translate(0,-50%)
+		background: #EBEBEB
+	.block-6-stage__buttons	.arrow--prev
+		left: 0
+	.block-6-stage__buttons	.arrow--next
+		right: 0
 
 	.block-6-stage .stage-inner__button
 			right: 50%
@@ -665,8 +693,8 @@
 	.reviews-card-review__img
 		width: 84px!important
 
-	.reviews-card-review__text
-		margin: -12px 0 -9px
+	//.reviews-card-review__text
+	//	margin: -12px 0 -9px
 
 
 	//------------
@@ -696,7 +724,7 @@
 		position: absolute
 		top: 50%!important
 		transform: translate(0%, -50%)!important
-		z-index: 2
+		z-index: 200
 		width: 38px!important
 		height: 38px!important
 		background: #FFE484!important
@@ -704,8 +732,8 @@
 		+center
 
 		svg
-			width: 24px
-			height: 24px
+			width: 14px
+			height: 14px
 			stroke: #2b2b2b
 			stroke-width: 3px
 			position: absolute
@@ -777,7 +805,11 @@
 
 
 
-
+	.reviews-divider-sm
+		width: 100%
+		height: 1px
+		background:  #D9D9D9
+		margin: 26px 0 -28px 0
 
 
 
@@ -814,10 +846,10 @@
 	.block-9-content__span
 		box-shadow: 0px 4px 200px rgba(46, 36, 25, 0.25)
 		margin: 0 0 0 0
-		top: -100px
+		top: -14px
 
 	.block-9 .block-6-form__body
-		padding: 18px 0px 20px 0px
+		padding: 103px 0px 26px
 	.block-9 .block-6-form__item input
 		z-index: 200
 		overflow: hidden
@@ -914,21 +946,7 @@
 	.block-10__slider .slider-card-10
 		text-align: center
 
-	.block-10__slider .slick-prev
-			left: 10px
-	.block-10__slider .slick-next
-			right: 10px
 
-
-	.block-10__slider .slick-arrow
-		top: auto
-		bottom: -5px
-		width: 38px
-		height: 38px
-		background: $active
-		svg
-			width: 10px
-			height: 12px
 
 	.block-11__title
 		h2
@@ -1191,14 +1209,18 @@
 		.slick-arrow-stage-1-next
 			right: 20px
 
+	.stage-inner__item
+		grid-template-columns: 1fr
+		row-gap: 40px
+		column-gap: 0
 
 
 	.stage-inner__img
 		max-height: 212px
 		min-height: 212px
 		width:  100%
-		max-width: 300px
-		margin: 0 auto
+		max-width: 100%
+		margin: 0!important
 
 	.stage-inner__column
 		margin: 22px 0 0 0

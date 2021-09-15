@@ -45,6 +45,7 @@
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
     "plyr": "^3.6.3",
+    "swiper": "^7.0.5",
     "uglifyjs-webpack-plugin": "^2.2.0"
   }
 }

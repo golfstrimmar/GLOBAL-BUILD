@@ -1,608 +1,397 @@
+
+
+
+
 section#reviews.reviews
     .container
         .reviews__title
             h2._f-40._w-700._28 Отзывы клиентов которым мы уже <br>  построили уютный дом
         .reviews__body
-            .slider__slider.reviews__top.slider
-                .reviews-top-slick-prev.reviews-slick-arrow.slick-arrow.slick-prev
-                    svg
-                        use(xlink:href='/assets/img/sprite.svg#arrow-left')
-                .reviews-top-slick-next.reviews-slick-arrow.slick-arrow.slick-next
-                    svg
-                        use(xlink:href='/assets/img/sprite.svg#arrow-right')
-                ul.reviews__slider.slider__body.slider-js-1
+                .reviews__top
+                        button(type='button').reviews-top-prev.swiper-arrow.arrow--prev
+                            svg
+                                use(xlink:href='/assets/img/sprite.svg#arrow-left')
+                        button(type='button').reviews-top-next.swiper-arrow.arrow--next
+                            svg
+                                use(xlink:href='/assets/img/sprite.svg#arrow-right')
 
-                    li.reviews__item.slider-card
-                        .slider-card__title
-                            p Коттедж 2 эт.
-                            p 257 кв.м
+                        .reviews-top-swiper.swiper-container
+                            ul.slider-reviews-top.swiper-wrapper
+                                    li.reviews__item.slider-card.swiper-slide
+                                        .slider-card__title
+                                            p Коттедж 2 эт.
+                                            p 257 кв.м
 
-                    li.reviews__item.slider-card
-                        .slider-card__title
-                            p Коттедж 2 эт.
-                            p 257 кв.м
+                                    li.reviews__item.slider-card.swiper-slide
+                                        .slider-card__title
+                                            p Коттедж 2 эт.
+                                            p 257 кв.м
 
-                    li.reviews__item.slider-card
-                        .slider-card__title
-                            p Коттедж 2 эт.
-                            p 257 кв.м
+                                    li.reviews__item.slider-card.swiper-slide
+                                        .slider-card__title
+                                            p Коттедж 2 эт.
+                                            p 257 кв.м
 
-                    li.reviews__item.slider-card
-                        .slider-card__title
-                            p Коттедж 2 эт.
-                            p 257 кв.м
+                                    li.reviews__item.slider-card.swiper-slide
+                                        .slider-card__title
+                                            p Коттедж 2 эт.
+                                            p 257 кв.м
 
-                    li.reviews__item.slider-card
-                        .slider-card__title
-                            p Коттедж 2 эт.
-                            p 257 кв.м
+                                    li.reviews__item.slider-card.swiper-slide
+                                        .slider-card__title
+                                            p Коттедж 2 эт.
+                                            p 257 кв.м
 
-                    li.reviews__item.slider-card
-                        .slider-card__title
-                            p Коттедж 2 эт.
-                            p 257 кв.м
+                                    li.reviews__item.slider-card.swiper-slide
+                                        .slider-card__title
+                                            p Коттедж 2 эт.
+                                            p 257 кв.м
 
-                    li.reviews__item.slider-card
-                        .slider-card__title
-                            p Коттедж 2 эт.
-                            p 257 кв.м
+                                    li.reviews__item.slider-card.swiper-slide
+                                        .slider-card__title
+                                            p Коттедж 2 эт.
+                                            p 257 кв.м
 
-                    li.reviews__item.slider-card
-                        .slider-card__title
-                            p Коттедж 2 эт.
-                            p 257 кв.м
 
-                .reviews__low
-                    .reviews-low-slick-prev.reviews-slick-arrow.slick-arrow.slick-prev
+
+                .reviews__low.reviews-low
+                    button(type='button').reviews-low-prev.swiper-arrow.arrow--prev
                         svg
                             use(xlink:href='/assets/img/sprite.svg#arrow-left')
-                    .reviews-low-slick-next.reviews-slick-arrow.slick-arrow.slick-next
+                    button(type='button').reviews-low-next.swiper-arrow.arrow--next
                         svg
                             use(xlink:href='/assets/img/sprite.svg#arrow-right')
-                    ul.slider__body.slider-js-2
-                        li.reviews__item.reviews-card
-                            .reviews-card__body
-                                .reviews-card__column
+                    .reviews-low-swiper.swiper-container
+                        ul.slider-reviews-low.swiper-wrapper
+                               li.reviews__item.reviews-card.swiper-slide
+                                    .reviews-card__body
+                                        .reviews-card__column
 
-                                    .reviews-card__left.reviews-card-left
-                                        .slider
-                                            .slider__body.reviews-card-left-js
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-1.webp', alt='img')
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-2.webp', alt='img')
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-3.webp', alt='img')
-
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/i-1.webp', alt='img')
+                                            .reviews-card__left
+                                                section.reviews-card-left
+                                                    .container
+                                                         .posts__item.posts-item
+                                                                    a(href="#!" rel=".slide-player-1-popup").popup-init-js
+                                                                        svg
+                                                                            use(xlink:href='/assets/img/sprite.svg#Vector-video')
+                                                                    .posts-item__img.imgs
+                                                                        img(src='assets/img/block-8/galary-1.webp', alt='img')
 
 
-                                    .reviews-card__galery
 
-                                            .slider.galery
-                                                .slider__body.reviews-card-galery-js
-                                                    .galery__item.galery__item-1
-                                                        a(data-fancybox="gallery1" href="#hidden-1")
-                                                        .imgs
-                                                            img(src='assets/img/block-8/galary-1.webp', alt='img')
-                                                    .galery__item.galery__item-2
-                                                        a(data-fancybox="gallery1" href="#hidden-2")
-                                                        .imgs
-                                                            img(src='assets/img/block-8/galary-2.webp', alt='img')
-                                                    .galery__item.galery__item-3
-                                                        a(data-fancybox="gallery1" href="#hidden-3")
-                                                        .imgs
-                                                                img(src='assets/img/block-8/galary-3.webp', alt='img')
-                                                    .galery__item
-                                                        a(data-fancybox="gallery1" href="#hidden-4")
-                                                        .imgs
-                                                                img(src='assets/img/block-8/i-1.webp', alt='img')
+                                            .reviews-card__galery.reviews-card__galery-1.swiper-container
+                                                        .slider__body.galery.swiper-wrapper
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1"  name="0" ).button-popup
+                                                                .imgs
+                                                                    img(src='assets/img/block-8/galary-1.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="1").button-popup
+                                                                .imgs
+                                                                    img(src='assets/img/block-8/galary-2.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="2").button-popup
+                                                                .imgs
+                                                                        img(src='assets/img/block-8/galary-3.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="3").button-popup
+                                                                .imgs
+                                                                        img(src='assets/img/block-8/i-1.webp', alt='img')
+                                                        button.galery-arrow.arrow-prev.reviews-card-arrow-prev-1(type='button')
+                                                            svg
+                                                                    use(xlink:href='/assets/img/sprite.svg#arrow-left')
+                                                        button.galery-arrow.arrow-next.reviews-card-arrow-next-1(type='button')
+                                                            svg
+                                                                use(xlink:href='/assets/img/sprite.svg#arrow-right')
 
-                                                .galery-arrow.galery-arrow-left
-                                                    svg
-                                                        use(xlink:href='/assets/img/sprite.svg#arrow-left')
-                                                .galery-arrow.galery-arrow-right
-                                                    svg
-                                                        use(xlink:href='/assets/img/sprite.svg#arrow-right')
+                                        include includes/revieves-right
 
+                               li.reviews__item.reviews-card.swiper-slide
+                                    .reviews-card__body
+                                        .reviews-card__column
 
-                                .reviews-card__right
-                                    .reviews-card__title
-                                        h3._f-30._w-600._28   Кирпичный коттедж 257 кв.м
-                                    .reviews-card__title-line.reviews-card-title-line
-                                        .reviews-card-title-line__text
-                                            span._w-400 Проект:
-                                            span “Ракета”
-                                        .reviews-card-title-line__chip._f-18._w-500 Построили под ключ за 60 дней
-                                    .reviews-card__description._f-16._w-400  Стоимость строительства:
-                                    .reviews-card__price
-                                        span._f-50._w-700    от
-                                        span._f-50._w-700._eb    4 199 000
-                                        span._f-50._w-700    руб.
-                                    .reviews-card__review.reviews-card-review
-                                        .reviews-card-review__head
-                                            .reviews-card-review__img
-                                                .imgs
-                                                    img(data-src='assets/img/block-8/i-1.webp', alt='img')
-                                            .reviews-card-review__head-title
-                                                h4._f-24  Сергей Алексеевич
-                                                p._w-400   Владелец дома
-                                            a(href="#!").reviews-card-review__icon
-                                                svg
-                                                    use(xlink:href='/assets/img/sprite.svg#Instagram')
-                                        .reviews-card-review__text._w-400  В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности является качественно новой ступенью переосмысления внешнеэкономических политик.
-                                        .reviews-card-review__hidden._w-400    В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности является качественно новой ступенью переосмысления внешнеэкономических политик.
-                                        button(type="button").reviews-card-review__more._f-18._w-600._b1 Читать далее...
-
-                        li.reviews__item.reviews-card
-                            .reviews-card__body
-                                .reviews-card__column
-
-                                    .reviews-card__left.reviews-card-left
-                                        .slider
-                                            .slider__body.reviews-card-left-js
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-1.webp', alt='img')
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-2.webp', alt='img')
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-3.webp', alt='img')
-
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/i-1.webp', alt='img')
+                                            .reviews-card__left
+                                                section.reviews-card-left
+                                                    .container
+                                                         .posts__item.posts-item
+                                                                    a(href="#!" rel=".slide-player-1-popup").popup-init-js
+                                                                        svg
+                                                                            use(xlink:href='/assets/img/sprite.svg#Vector-video')
+                                                                    .posts-item__img.imgs
+                                                                        img(src='assets/img/block-8/galary-1.webp', alt='img')
 
 
-                                    .reviews-card__galery
 
-                                            .slider.galery
-                                                .slider__body.reviews-card-galery-js
-                                                    .galery__item.galery__item-1
-                                                        a(data-fancybox="gallery1" href="#hidden-1")
-                                                        .imgs
-                                                            img(src='assets/img/block-8/galary-1.webp', alt='img')
-                                                    .galery__item.galery__item-2
-                                                        a(data-fancybox="gallery1" href="#hidden-2")
-                                                        .imgs
-                                                            img(src='assets/img/block-8/galary-2.webp', alt='img')
-                                                    .galery__item.galery__item-3
-                                                        a(data-fancybox="gallery1" href="#hidden-3")
-                                                        .imgs
-                                                                img(src='assets/img/block-8/galary-3.webp', alt='img')
-                                                    .galery__item
-                                                        a(data-fancybox="gallery1" href="#hidden-4")
-                                                        .imgs
-                                                                img(src='assets/img/block-8/i-1.webp', alt='img')
+                                            .reviews-card__galery.reviews-card__galery-2.swiper-container
+                                                        .slider__body.galery.swiper-wrapper
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1"  name="0" ).button-popup
+                                                                .imgs
+                                                                    img(src='assets/img/block-8/galary-1.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="1").button-popup
+                                                                .imgs
+                                                                    img(src='assets/img/block-8/galary-2.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="2").button-popup
+                                                                .imgs
+                                                                        img(src='assets/img/block-8/galary-3.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="3").button-popup
+                                                                .imgs
+                                                                        img(src='assets/img/block-8/i-1.webp', alt='img')
+                                                        button.galery-arrow.arrow-prev.reviews-card-arrow-prev-2(type='button')
+                                                            svg
+                                                                    use(xlink:href='/assets/img/sprite.svg#arrow-left')
+                                                        button.galery-arrow.arrow-next.reviews-card-arrow-next-2(type='button')
+                                                            svg
+                                                                use(xlink:href='/assets/img/sprite.svg#arrow-right')
 
-                                                .galery-arrow.galery-arrow-left
-                                                    svg
-                                                        use(xlink:href='/assets/img/sprite.svg#arrow-left')
-                                                .galery-arrow.galery-arrow-right
-                                                    svg
-                                                        use(xlink:href='/assets/img/sprite.svg#arrow-right')
+                                        include includes/revieves-right
 
+                               li.reviews__item.reviews-card.swiper-slide
+                                    .reviews-card__body
+                                        .reviews-card__column
 
-                                .reviews-card__right
-                                    .reviews-card__title
-                                        h3._f-30._w-600._28   Кирпичный коттедж 257 кв.м
-                                    .reviews-card__title-line.reviews-card-title-line
-                                        .reviews-card-title-line__text
-                                            span._w-400 Проект:
-                                            span “Ракета”
-                                        .reviews-card-title-line__chip._f-18._w-500 Построили под ключ за 60 дней
-                                    .reviews-card__description._f-16._w-400  Стоимость строительства:
-                                    .reviews-card__price
-                                        span._f-50._w-700    от
-                                        span._f-50._w-700._eb    4 199 000
-                                        span._f-50._w-700    руб.
-                                    .reviews-card__review.reviews-card-review
-                                        .reviews-card-review__head
-                                            .reviews-card-review__img
-                                                .imgs
-                                                    img(data-src='assets/img/block-8/i-1.webp', alt='img')
-                                            .reviews-card-review__head-title
-                                                h4._f-24  Сергей Алексеевич
-                                                p._w-400   Владелец дома
-                                            a(href="#!").reviews-card-review__icon
-                                                svg
-                                                    use(xlink:href='/assets/img/sprite.svg#Instagram')
-                                        .reviews-card-review__text._w-400  В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности является качественно новой ступенью переосмысления внешнеэкономических политик.
-                                        .reviews-card-review__hidden._w-400    В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности является качественно новой ступенью переосмысления внешнеэкономических политик.
-                                        button(type="button").reviews-card-review__more._f-18._w-600._b1 Читать далее...
-
-                        li.reviews__item.reviews-card
-                            .reviews-card__body
-                                .reviews-card__column
-
-                                    .reviews-card__left.reviews-card-left
-                                        .slider
-                                            .slider__body.reviews-card-left-js
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-1.webp', alt='img')
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-2.webp', alt='img')
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-3.webp', alt='img')
-
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/i-1.webp', alt='img')
+                                            .reviews-card__left
+                                                section.reviews-card-left
+                                                    .container
+                                                         .posts__item.posts-item
+                                                                    a(href="#!" rel=".slide-player-1-popup").popup-init-js
+                                                                        svg
+                                                                            use(xlink:href='/assets/img/sprite.svg#Vector-video')
+                                                                    .posts-item__img.imgs
+                                                                        img(src='assets/img/block-8/galary-1.webp', alt='img')
 
 
-                                    .reviews-card__galery
 
-                                            .slider.galery
-                                                .slider__body.reviews-card-galery-js
-                                                    .galery__item.galery__item-1
-                                                        a(data-fancybox="gallery1" href="#hidden-1")
-                                                        .imgs
-                                                            img(src='assets/img/block-8/galary-1.webp', alt='img')
-                                                    .galery__item.galery__item-2
-                                                        a(data-fancybox="gallery1" href="#hidden-2")
-                                                        .imgs
-                                                            img(src='assets/img/block-8/galary-2.webp', alt='img')
-                                                    .galery__item.galery__item-3
-                                                        a(data-fancybox="gallery1" href="#hidden-3")
-                                                        .imgs
-                                                                img(src='assets/img/block-8/galary-3.webp', alt='img')
-                                                    .galery__item
-                                                        a(data-fancybox="gallery1" href="#hidden-4")
-                                                        .imgs
-                                                                img(src='assets/img/block-8/i-1.webp', alt='img')
+                                            .reviews-card__galery.reviews-card__galery-3.swiper-container
+                                                        .slider__body.galery.swiper-wrapper
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1"  name="0" ).button-popup
+                                                                .imgs
+                                                                    img(src='assets/img/block-8/galary-1.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="1").button-popup
+                                                                .imgs
+                                                                    img(src='assets/img/block-8/galary-2.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="2").button-popup
+                                                                .imgs
+                                                                        img(src='assets/img/block-8/galary-3.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="3").button-popup
+                                                                .imgs
+                                                                        img(src='assets/img/block-8/i-1.webp', alt='img')
+                                                        button.galery-arrow.arrow-prev.reviews-card-arrow-prev-3(type='button')
+                                                            svg
+                                                                    use(xlink:href='/assets/img/sprite.svg#arrow-left')
+                                                        button.galery-arrow.arrow-next.reviews-card-arrow-next-3(type='button')
+                                                            svg
+                                                                use(xlink:href='/assets/img/sprite.svg#arrow-right')
 
-                                                .galery-arrow.galery-arrow-left
-                                                    svg
-                                                        use(xlink:href='/assets/img/sprite.svg#arrow-left')
-                                                .galery-arrow.galery-arrow-right
-                                                    svg
-                                                        use(xlink:href='/assets/img/sprite.svg#arrow-right')
-
-
-                                .reviews-card__right
-                                    .reviews-card__title
-                                        h3._f-30._w-600._28   Кирпичный коттедж 257 кв.м
-                                    .reviews-card__title-line.reviews-card-title-line
-                                        .reviews-card-title-line__text
-                                            span._w-400 Проект:
-                                            span “Ракета”
-                                        .reviews-card-title-line__chip._f-18._w-500 Построили под ключ за 60 дней
-                                    .reviews-card__description._f-16._w-400  Стоимость строительства:
-                                    .reviews-card__price
-                                        span._f-50._w-700    от
-                                        span._f-50._w-700._eb    4 199 000
-                                        span._f-50._w-700    руб.
-                                    .reviews-card__review.reviews-card-review
-                                        .reviews-card-review__head
-                                            .reviews-card-review__img
-                                                .imgs
-                                                    img(data-src='assets/img/block-8/i-1.webp', alt='img')
-                                            .reviews-card-review__head-title
-                                                h4._f-24  Сергей Алексеевич
-                                                p._w-400   Владелец дома
-                                            a(href="#!").reviews-card-review__icon
-                                                svg
-                                                    use(xlink:href='/assets/img/sprite.svg#Instagram')
-                                        .reviews-card-review__text._w-400  В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности является качественно новой ступенью переосмысления внешнеэкономических политик.
-                                        .reviews-card-review__hidden._w-400    В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности является качественно новой ступенью переосмысления внешнеэкономических политик.
-                                        button(type="button").reviews-card-review__more._f-18._w-600._b1 Читать далее...
-
-                        li.reviews__item.reviews-card
-                            .reviews-card__body
-                                .reviews-card__column
-
-                                    .reviews-card__left.reviews-card-left
-                                        .slider
-                                            .slider__body.reviews-card-left-js
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-1.webp', alt='img')
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-2.webp', alt='img')
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-3.webp', alt='img')
-
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/i-1.webp', alt='img')
+                                        include includes/revieves-right
 
 
-                                    .reviews-card__galery
 
-                                            .slider.galery
-                                                .slider__body.reviews-card-galery-js
-                                                    .galery__item.galery__item-1
-                                                        a(data-fancybox="gallery1" href="#hidden-1")
-                                                        .imgs
-                                                            img(src='assets/img/block-8/galary-1.webp', alt='img')
-                                                    .galery__item.galery__item-2
-                                                        a(data-fancybox="gallery1" href="#hidden-2")
-                                                        .imgs
-                                                            img(src='assets/img/block-8/galary-2.webp', alt='img')
-                                                    .galery__item.galery__item-3
-                                                        a(data-fancybox="gallery1" href="#hidden-3")
-                                                        .imgs
-                                                                img(src='assets/img/block-8/galary-3.webp', alt='img')
-                                                    .galery__item
-                                                        a(data-fancybox="gallery1" href="#hidden-4")
-                                                        .imgs
-                                                                img(src='assets/img/block-8/i-1.webp', alt='img')
+                               li.reviews__item.reviews-card.swiper-slide
+                                    .reviews-card__body
+                                        .reviews-card__column
 
-                                                .galery-arrow.galery-arrow-left
-                                                    svg
-                                                        use(xlink:href='/assets/img/sprite.svg#arrow-left')
-                                                .galery-arrow.galery-arrow-right
-                                                    svg
-                                                        use(xlink:href='/assets/img/sprite.svg#arrow-right')
+                                            .reviews-card__left
+                                                section.reviews-card-left
+                                                    .container
+                                                         .posts__item.posts-item
+                                                                    a(href="#!" rel=".slide-player-1-popup").popup-init-js
+                                                                        svg
+                                                                            use(xlink:href='/assets/img/sprite.svg#Vector-video')
+                                                                    .posts-item__img.imgs
+                                                                        img(src='assets/img/block-8/galary-1.webp', alt='img')
 
 
-                                .reviews-card__right
-                                    .reviews-card__title
-                                        h3._f-30._w-600._28   Кирпичный коттедж 257 кв.м
-                                    .reviews-card__title-line.reviews-card-title-line
-                                        .reviews-card-title-line__text
-                                            span._w-400 Проект:
-                                            span “Ракета”
-                                        .reviews-card-title-line__chip._f-18._w-500 Построили под ключ за 60 дней
-                                    .reviews-card__description._f-16._w-400  Стоимость строительства:
-                                    .reviews-card__price
-                                        span._f-50._w-700    от
-                                        span._f-50._w-700._eb    4 199 000
-                                        span._f-50._w-700    руб.
-                                    .reviews-card__review.reviews-card-review
-                                        .reviews-card-review__head
-                                            .reviews-card-review__img
-                                                .imgs
-                                                    img(data-src='assets/img/block-8/i-1.webp', alt='img')
-                                            .reviews-card-review__head-title
-                                                h4._f-24  Сергей Алексеевич
-                                                p._w-400   Владелец дома
-                                            a(href="#!").reviews-card-review__icon
-                                                svg
-                                                    use(xlink:href='/assets/img/sprite.svg#Instagram')
-                                        .reviews-card-review__text._w-400  В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности является качественно новой ступенью переосмысления внешнеэкономических политик.
-                                        .reviews-card-review__hidden._w-400    В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности является качественно новой ступенью переосмысления внешнеэкономических политик.
-                                        button(type="button").reviews-card-review__more._f-18._w-600._b1 Читать далее...
 
-                        li.reviews__item.reviews-card
-                            .reviews-card__body
-                                .reviews-card__column
+                                            .reviews-card__galery.reviews-card__galery-4.swiper-container
+                                                        .slider__body.galery.swiper-wrapper
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1"  name="0" ).button-popup
+                                                                .imgs
+                                                                    img(src='assets/img/block-8/galary-1.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="1").button-popup
+                                                                .imgs
+                                                                    img(src='assets/img/block-8/galary-2.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="2").button-popup
+                                                                .imgs
+                                                                        img(src='assets/img/block-8/galary-3.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="3").button-popup
+                                                                .imgs
+                                                                        img(src='assets/img/block-8/i-1.webp', alt='img')
+                                                        button.galery-arrow.arrow-prev.reviews-card-arrow-prev-4(type='button')
+                                                            svg
+                                                                    use(xlink:href='/assets/img/sprite.svg#arrow-left')
+                                                        button.galery-arrow.arrow-next.reviews-card-arrow-next-4(type='button')
+                                                            svg
+                                                                use(xlink:href='/assets/img/sprite.svg#arrow-right')
 
-                                    .reviews-card__left.reviews-card-left
-                                        .slider
-                                            .slider__body.reviews-card-left-js
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-1.webp', alt='img')
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-2.webp', alt='img')
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-3.webp', alt='img')
-
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/i-1.webp', alt='img')
+                                        include includes/revieves-right
 
 
-                                    .reviews-card__galery
-
-                                            .slider.galery
-                                                .slider__body.reviews-card-galery-js
-                                                    .galery__item.galery__item-1
-                                                        a(data-fancybox="gallery1" href="#hidden-1")
-                                                        .imgs
-                                                            img(src='assets/img/block-8/galary-1.webp', alt='img')
-                                                    .galery__item.galery__item-2
-                                                        a(data-fancybox="gallery1" href="#hidden-2")
-                                                        .imgs
-                                                            img(src='assets/img/block-8/galary-2.webp', alt='img')
-                                                    .galery__item.galery__item-3
-                                                        a(data-fancybox="gallery1" href="#hidden-3")
-                                                        .imgs
-                                                                img(src='assets/img/block-8/galary-3.webp', alt='img')
-                                                    .galery__item
-                                                        a(data-fancybox="gallery1" href="#hidden-4")
-                                                        .imgs
-                                                                img(src='assets/img/block-8/i-1.webp', alt='img')
-
-                                                .galery-arrow.galery-arrow-left
-                                                    svg
-                                                        use(xlink:href='/assets/img/sprite.svg#arrow-left')
-                                                .galery-arrow.galery-arrow-right
-                                                    svg
-                                                        use(xlink:href='/assets/img/sprite.svg#arrow-right')
 
 
-                                .reviews-card__right
-                                    .reviews-card__title
-                                        h3._f-30._w-600._28   Кирпичный коттедж 257 кв.м
-                                    .reviews-card__title-line.reviews-card-title-line
-                                        .reviews-card-title-line__text
-                                            span._w-400 Проект:
-                                            span “Ракета”
-                                        .reviews-card-title-line__chip._f-18._w-500 Построили под ключ за 60 дней
-                                    .reviews-card__description._f-16._w-400  Стоимость строительства:
-                                    .reviews-card__price
-                                        span._f-50._w-700    от
-                                        span._f-50._w-700._eb    4 199 000
-                                        span._f-50._w-700    руб.
-                                    .reviews-card__review.reviews-card-review
-                                        .reviews-card-review__head
-                                            .reviews-card-review__img
-                                                .imgs
-                                                    img(data-src='assets/img/block-8/i-1.webp', alt='img')
-                                            .reviews-card-review__head-title
-                                                h4._f-24  Сергей Алексеевич
-                                                p._w-400   Владелец дома
-                                            a(href="#!").reviews-card-review__icon
-                                                svg
-                                                    use(xlink:href='/assets/img/sprite.svg#Instagram')
-                                        .reviews-card-review__text._w-400  В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности является качественно новой ступенью переосмысления внешнеэкономических политик.
-                                        .reviews-card-review__hidden._w-400    В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности является качественно новой ступенью переосмысления внешнеэкономических политик.
-                                        button(type="button").reviews-card-review__more._f-18._w-600._b1 Читать далее...
+                               li.reviews__item.reviews-card.swiper-slide
+                                    .reviews-card__body
+                                        .reviews-card__column
 
-                        li.reviews__item.reviews-card
-                            .reviews-card__body
-                                .reviews-card__column
-
-                                    .reviews-card__left.reviews-card-left
-                                        .slider
-                                            .slider__body.reviews-card-left-js
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-1.webp', alt='img')
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-2.webp', alt='img')
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/galary-3.webp', alt='img')
-
-                                                .reviews-card-left___item
-                                                    a(href="#!" rel="slide-player-1-popup").popup-player-init-js
-                                                        svg
-                                                            use(xlink:href='/assets/img/sprite.svg#arrow-yellow')
-                                                    .imgs
-                                                        img(data-src='assets/img/block-8/i-1.webp', alt='img')
+                                            .reviews-card__left
+                                                section.reviews-card-left
+                                                    .container
+                                                         .posts__item.posts-item
+                                                                    a(href="#!" rel=".slide-player-1-popup").popup-init-js
+                                                                        svg
+                                                                            use(xlink:href='/assets/img/sprite.svg#Vector-video')
+                                                                    .posts-item__img.imgs
+                                                                        img(src='assets/img/block-8/galary-1.webp', alt='img')
 
 
-                                    .reviews-card__galery
 
-                                            .slider.galery
-                                                .slider__body.reviews-card-galery-js
-                                                    .galery__item.galery__item-1
-                                                        a(data-fancybox="gallery1" href="#hidden-1")
-                                                        .imgs
-                                                            img(src='assets/img/block-8/galary-1.webp', alt='img')
-                                                    .galery__item.galery__item-2
-                                                        a(data-fancybox="gallery1" href="#hidden-2")
-                                                        .imgs
-                                                            img(src='assets/img/block-8/galary-2.webp', alt='img')
-                                                    .galery__item.galery__item-3
-                                                        a(data-fancybox="gallery1" href="#hidden-3")
-                                                        .imgs
-                                                                img(src='assets/img/block-8/galary-3.webp', alt='img')
-                                                    .galery__item
-                                                        a(data-fancybox="gallery1" href="#hidden-4")
-                                                        .imgs
-                                                                img(src='assets/img/block-8/i-1.webp', alt='img')
+                                            .reviews-card__galery.reviews-card__galery-5.swiper-container
+                                                        .slider__body.galery.swiper-wrapper
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1"  name="0" ).button-popup
+                                                                .imgs
+                                                                    img(src='assets/img/block-8/galary-1.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="1").button-popup
+                                                                .imgs
+                                                                    img(src='assets/img/block-8/galary-2.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="2").button-popup
+                                                                .imgs
+                                                                        img(src='assets/img/block-8/galary-3.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="3").button-popup
+                                                                .imgs
+                                                                        img(src='assets/img/block-8/i-1.webp', alt='img')
+                                                        button.galery-arrow.arrow-prev.reviews-card-arrow-prev-5(type='button')
+                                                            svg
+                                                                    use(xlink:href='/assets/img/sprite.svg#arrow-left')
+                                                        button.galery-arrow.arrow-next.reviews-card-arrow-next-5(type='button')
+                                                            svg
+                                                                use(xlink:href='/assets/img/sprite.svg#arrow-right')
 
-                                                .galery-arrow.galery-arrow-left
-                                                    svg
-                                                        use(xlink:href='/assets/img/sprite.svg#arrow-left')
-                                                .galery-arrow.galery-arrow-right
-                                                    svg
-                                                        use(xlink:href='/assets/img/sprite.svg#arrow-right')
+                                        include includes/revieves-right
 
 
-                                .reviews-card__right
-                                    .reviews-card__title
-                                        h3._f-30._w-600._28   Кирпичный коттедж 257 кв.м
-                                    .reviews-card__title-line.reviews-card-title-line
-                                        .reviews-card-title-line__text
-                                            span._w-400 Проект:
-                                            span “Ракета”
-                                        .reviews-card-title-line__chip._f-18._w-500 Построили под ключ за 60 дней
-                                    .reviews-card__description._f-16._w-400  Стоимость строительства:
-                                    .reviews-card__price
-                                        span._f-50._w-700    от
-                                        span._f-50._w-700._eb    4 199 000
-                                        span._f-50._w-700    руб.
-                                    .reviews-card__review.reviews-card-review
-                                        .reviews-card-review__head
-                                            .reviews-card-review__img
-                                                .imgs
-                                                    img(data-src='assets/img/block-8/i-1.webp', alt='img')
-                                            .reviews-card-review__head-title
-                                                h4._f-24  Сергей Алексеевич
-                                                p._w-400   Владелец дома
-                                            a(href="#!").reviews-card-review__icon
-                                                svg
-                                                    use(xlink:href='/assets/img/sprite.svg#Instagram')
-                                        .reviews-card-review__text._w-400  В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности является качественно новой ступенью переосмысления внешнеэкономических политик.
-                                        .reviews-card-review__hidden._w-400    В своём стремлении повысить качество жизни, они забывают, что новая модель организационной деятельности является качественно новой ступенью переосмысления внешнеэкономических политик.
-                                        button(type="button").reviews-card-review__more._f-18._w-600._b1 Читать далее...
+
+
+                               li.reviews__item.reviews-card.swiper-slide
+                                    .reviews-card__body
+                                        .reviews-card__column
+
+                                            .reviews-card__left
+                                                section.reviews-card-left
+                                                    .container
+                                                         .posts__item.posts-item
+                                                                    a(href="#!" rel=".slide-player-1-popup").popup-init-js
+                                                                        svg
+                                                                            use(xlink:href='/assets/img/sprite.svg#Vector-video')
+                                                                    .posts-item__img.imgs
+                                                                        img(src='assets/img/block-8/galary-1.webp', alt='img')
+
+
+
+                                            .reviews-card__galery.reviews-card__galery-6.swiper-container
+                                                        .slider__body.galery.swiper-wrapper
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1"  name="0" ).button-popup
+                                                                .imgs
+                                                                    img(src='assets/img/block-8/galary-1.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="1").button-popup
+                                                                .imgs
+                                                                    img(src='assets/img/block-8/galary-2.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="2").button-popup
+                                                                .imgs
+                                                                        img(src='assets/img/block-8/galary-3.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="3").button-popup
+                                                                .imgs
+                                                                        img(src='assets/img/block-8/i-1.webp', alt='img')
+                                                        button.galery-arrow.arrow-prev.reviews-card-arrow-prev-6(type='button')
+                                                            svg
+                                                                    use(xlink:href='/assets/img/sprite.svg#arrow-left')
+                                                        button.galery-arrow.arrow-next.reviews-card-arrow-next-6(type='button')
+                                                            svg
+                                                                use(xlink:href='/assets/img/sprite.svg#arrow-right')
+
+                                        include includes/revieves-right
+
+
+
+                               li.reviews__item.reviews-card.swiper-slide
+                                    .reviews-card__body
+                                        .reviews-card__column
+
+                                            .reviews-card__left
+                                                section.reviews-card-left
+                                                    .container
+                                                         .posts__item.posts-item
+                                                                    a(href="#!" rel=".slide-player-1-popup").popup-init-js
+                                                                        svg
+                                                                            use(xlink:href='/assets/img/sprite.svg#Vector-video')
+                                                                    .posts-item__img.imgs
+                                                                        img(src='assets/img/block-8/galary-1.webp', alt='img')
+
+
+
+                                            .reviews-card__galery.reviews-card__galery-7.swiper-container
+                                                        .slider__body.galery.swiper-wrapper
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1"  name="0" ).button-popup
+                                                                .imgs
+                                                                    img(src='assets/img/block-8/galary-1.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="1").button-popup
+                                                                .imgs
+                                                                    img(src='assets/img/block-8/galary-2.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="2").button-popup
+                                                                .imgs
+                                                                        img(src='assets/img/block-8/galary-3.webp', alt='img')
+                                                            .galery__item.swiper-slide
+                                                                a(href= "#!" rel="#hidden-1" name="3").button-popup
+                                                                .imgs
+                                                                        img(src='assets/img/block-8/i-1.webp', alt='img')
+                                                        button.galery-arrow.arrow-prev.reviews-card-arrow-prev-7(type='button')
+                                                            svg
+                                                                    use(xlink:href='/assets/img/sprite.svg#arrow-left')
+                                                        button.galery-arrow.arrow-next.reviews-card-arrow-next-7(type='button')
+                                                            svg
+                                                                use(xlink:href='/assets/img/sprite.svg#arrow-right')
+
+                                        include includes/revieves-right
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

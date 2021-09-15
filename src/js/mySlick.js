@@ -1,5 +1,5 @@
 
-import $ from "jquery";
+// import $ from "jquery";
 // import "./slick.js";
 
 
@@ -63,7 +63,16 @@ $(Document).ready(function() {
             nextArrow: document.querySelector('.reviews-low-slick-next'),
             // pauseOnFocus: true,
             // pauseOnHover: true,
-
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false,
+                        swipe: false
+                    },
+                }
+            ],
         });
 
 
@@ -111,7 +120,7 @@ $(Document).ready(function() {
         nextArrow: document.querySelector('.stage-inner__button'),
         });
 
-    // $('.slider-js-stage-2').find('.slick-slide').css('height', $('.slick-current ').find('.stage-inner__item').height() );
+    $('.slider-js-stage-2').find('.slick-slide').css('height', $('.slick-current ').find('.stage-inner__item').height() );
 
 
 function ChangeSlide(){
@@ -231,9 +240,11 @@ window.addEventListener('resize',(e) =>{
     });
 
 // ---------------------------
-    $(".reviews-card-galery-js").slick({
-        // dots: true,
-        arrows: false,
+// ===========================================
+
+
+    $(".reviews-card-galery-js-1").slick({
+        arrows:  false,
         slidesToShow: 3,
         slidesToScroll: 1,
         speed: 2000,
@@ -241,9 +252,9 @@ window.addEventListener('resize',(e) =>{
         autoplay: true,
         autoplaySpeed: 4000,
         infinite: true,
-        asNavFor: ".reviews-card-left-js",
-        prevArrow: document.querySelector('.galery-arrow-left'),
-        nextArrow: document.querySelector('.galery-arrow-right'),
+        asNavFor: ".reviews-card-left-js-1",
+        prevArrow: document.querySelector('.galery-arrow-left-1'),
+        nextArrow: document.querySelector('.galery-arrow-right-1'),
         responsive: [
             {
                 breakpoint: 767,
@@ -256,13 +267,13 @@ window.addEventListener('resize',(e) =>{
     });
 
 
-    $(".reviews-card-galery-js .slick-slide").on("click", function () {
+    $(".reviews-card-galery-js-1 .slick-slide").on("click", function () {
         const index = $(this).attr("data-slick-index");
-        $(".reviews-card-galery-js").slick("slickGoTo", index);
+        $(".reviews-card-galery-js-1").slick("slickGoTo", index);
     });
 
 
-    $(".reviews-card-left-js").slick({
+    $(".reviews-card-left-js-1").slick({
         // dots: true,
         arrows: false,
         slidesToShow: 1,
@@ -270,7 +281,7 @@ window.addEventListener('resize',(e) =>{
         easing: "ease",
         centerMode: false,
         fade: true,
-        asNavFor: ".reviews-card-galery-js",
+        asNavFor: ".reviews-card-galery-js-1",
         responsive: [
 
             {
@@ -284,11 +295,344 @@ window.addEventListener('resize',(e) =>{
 
     });
 
+// ---------------
+
+        $(".reviews-card-galery-js-2").slick({
+            arrows:  false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 2000,
+            easing: "ease",
+            autoplay: true,
+            autoplaySpeed: 4000,
+            infinite: true,
+            asNavFor: ".reviews-card-left-js-2",
+            prevArrow: document.querySelector('.galery-arrow-left-2'),
+            nextArrow: document.querySelector('.galery-arrow-right-2'),
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows:  true
+                    },
+                },
+            ],
+        });
+
+
+        $(".reviews-card-galery-js-2 .slick-slide").on("click", function () {
+            const index = $(this).attr("data-slick-index");
+            $(".reviews-card-galery-js-2").slick("slickGoTo", index);
+        });
+
+
+        $(".reviews-card-left-js-2").slick({
+            // dots: true,
+            arrows: false,
+            slidesToShow: 1,
+            speed: 800,
+            easing: "ease",
+            centerMode: false,
+            fade: true,
+            asNavFor: ".reviews-card-galery-js-2",
+            responsive: [
+
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: true
+                    },
+                }
+            ],
+
+        });
+
+// ---------------// ---------------
+
+        $(".reviews-card-galery-js-3").slick({
+            arrows:  false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 2000,
+            easing: "ease",
+            autoplay: true,
+            autoplaySpeed: 4000,
+            infinite: true,
+            asNavFor: ".reviews-card-left-js-3",
+            prevArrow: document.querySelector('.galery-arrow-left-3'),
+            nextArrow: document.querySelector('.galery-arrow-right-3'),
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows:  true
+                    },
+                },
+            ],
+        });
+
+
+        $(".reviews-card-galery-js-3 .slick-slide").on("click", function () {
+            const index = $(this).attr("data-slick-index");
+            $(".reviews-card-galery-js-3").slick("slickGoTo", index);
+        });
+
+
+        $(".reviews-card-left-js-3").slick({
+            // dots: true,
+            arrows: false,
+            slidesToShow: 1,
+            speed: 800,
+            easing: "ease",
+            centerMode: false,
+            fade: true,
+            asNavFor: ".reviews-card-galery-js-3",
+            responsive: [
+
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: true
+                    },
+                }
+            ],
+
+        });
+
+// ---------------// ---------------
+
+        $(".reviews-card-galery-js-4").slick({
+            arrows:  false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 2000,
+            easing: "ease",
+            autoplay: true,
+            autoplaySpeed: 4000,
+            infinite: true,
+            asNavFor: ".reviews-card-left-js-4",
+            prevArrow: document.querySelector('.galery-arrow-left-4'),
+            nextArrow: document.querySelector('.galery-arrow-right-4'),
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows:  true
+                    },
+                },
+            ],
+        });
+
+
+        $(".reviews-card-galery-js-4 .slick-slide").on("click", function () {
+            const index = $(this).attr("data-slick-index");
+            $(".reviews-card-galery-js-4").slick("slickGoTo", index);
+        });
+
+
+        $(".reviews-card-left-js-4").slick({
+            // dots: true,
+            arrows: false,
+            slidesToShow: 1,
+            speed: 800,
+            easing: "ease",
+            centerMode: false,
+            fade: true,
+            asNavFor: ".reviews-card-galery-js-4",
+            responsive: [
+
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: true
+                    },
+                }
+            ],
+
+        });
+
+// ---------------
+
+// ---------------// ---------------
+
+        $(".reviews-card-galery-js-5").slick({
+            arrows:  false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 2000,
+            easing: "ease",
+            autoplay: true,
+            autoplaySpeed: 4000,
+            infinite: true,
+            asNavFor: ".reviews-card-left-js-5",
+            prevArrow: document.querySelector('.galery-arrow-left-5'),
+            nextArrow: document.querySelector('.galery-arrow-right-5'),
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows:  true
+                    },
+                },
+            ],
+        });
+
+
+        $(".reviews-card-galery-js-5 .slick-slide").on("click", function () {
+            const index = $(this).attr("data-slick-index");
+            $(".reviews-card-galery-js-5").slick("slickGoTo", index);
+        });
+
+
+        $(".reviews-card-left-js-5").slick({
+            // dots: true,
+            arrows: false,
+            slidesToShow: 1,
+            speed: 800,
+            easing: "ease",
+            centerMode: false,
+            fade: true,
+            asNavFor: ".reviews-card-galery-js-5",
+            responsive: [
+
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: true
+                    },
+                }
+            ],
+
+        });
+
+// ---------------
+
+// ---------------// ---------------
+
+        $(".reviews-card-galery-js-6").slick({
+            arrows:  false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 2000,
+            easing: "ease",
+            autoplay: true,
+            autoplaySpeed: 4000,
+            infinite: true,
+            asNavFor: ".reviews-card-left-js-6",
+            prevArrow: document.querySelector('.galery-arrow-left-6'),
+            nextArrow: document.querySelector('.galery-arrow-right-6'),
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows:  true
+                    },
+                },
+            ],
+        });
+
+
+        $(".reviews-card-galery-js-6 .slick-slide").on("click", function () {
+            const index = $(this).attr("data-slick-index");
+            $(".reviews-card-galery-js-6").slick("slickGoTo", index);
+        });
+
+
+        $(".reviews-card-left-js-6").slick({
+            // dots: true,
+            arrows: false,
+            slidesToShow: 1,
+            speed: 800,
+            easing: "ease",
+            centerMode: false,
+            fade: true,
+            asNavFor: ".reviews-card-galery-js-6",
+            responsive: [
+
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: true
+                    },
+                }
+            ],
+
+        });
+
+// ---------------
 
 
 
 
+
+
+
+
+
+
+
+
+
+// ============================================
+// -----------
+    $(".slider-js-posts-side-1").slick({
+        slidesToShow: 1,
+        speed: 800,
+        easing: "ease",
+        centerMode: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        prevArrow: document.querySelector('.posts-slick-prev-1'),
+        nextArrow: document.querySelector('.posts-slick-next-1'),
     });
+    $(".slider-js-posts-side-2").slick({
+        slidesToShow: 1,
+        speed: 800,
+        easing: "ease",
+        centerMode: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        prevArrow: document.querySelector('.posts-slick-prev-2'),
+        nextArrow: document.querySelector('.posts-slick-next-2'),
+    });
+    $(".slider-js-posts-side-3").slick({
+        slidesToShow: 1,
+        speed: 800,
+        easing: "ease",
+        centerMode: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        prevArrow: document.querySelector('.posts-slick-prev-3'),
+        nextArrow: document.querySelector('.posts-slick-next-3'),
+    });
+    $(".slider-js-posts-side-4").slick({
+        slidesToShow: 1,
+        speed: 800,
+        easing: "ease",
+        centerMode: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        prevArrow: document.querySelector('.posts-slick-prev-4'),
+        nextArrow: document.querySelector('.posts-slick-next-4'),
+    });
+// -----------
+    });
+
+
 
 
 

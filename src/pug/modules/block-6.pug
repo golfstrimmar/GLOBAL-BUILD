@@ -11,7 +11,7 @@ section#block-6.block-6
             .block-6__title
                 h2._f-40._w-600._28 Если ни один из готовых проектов не подходит, можете <br> заказать индивидуальный проект, и мы построим для вас <br>уникальный дом, равных которому не будет.
             .block-6__text._f-24._w-400._65 Жмите на кнопку ниже, чтобы связаться с менеджером и обсудить<br> проект своего будущего дома!
-            a(href="#!").btn.btn--success.block-6__button.popup-init-js
+            a(href="#!" rel=".popup-form").btn.btn--success.block-6__button.popup-init-js
                 span._f-15._w-700 связаться с менеджером
 
         .block-6__form.block-6-form
@@ -49,147 +49,147 @@ section#block-6.block-6
                         h2._f-40._w-700._28 6 простых этапов строительства <br> вашего дома
 
                     .block-6-stage__buttons
-                        .slick-arrow-stage-1-prev.stage-arrow
+                        button(type='button').arrow-stage-1-prev.swiper-arrow.arrow--prev
                                 svg
                                     use(xlink:href='/assets/img/sprite.svg#arrow-left')
-                        .slick-arrow-stage-1-next.stage-arrow
+                        button(type='button').arrow-stage-1-next.swiper-arrow.arrow--next
                                 svg
                                     use(xlink:href='/assets/img/sprite.svg#arrow-right')
+                        .swiper-stage.swiper-container
+                           ul.swiper-wrapper
+                                li.swiper-slide
+                                    .block-6-stage__button._f-14._w-700._a8 1 этап
+                                li.swiper-slide
+                                    .block-6-stage__button._f-14._w-700._a8 2 этап
+                                li.swiper-slide
+                                    .block-6-stage__button._f-14._w-700._a8 3 этап
+                                li.swiper-slide
+                                    .block-6-stage__button._f-14._w-700._a8 4 этап
+                                li.swiper-slide
+                                    .block-6-stage__button._f-14._w-700._a8 5 этап
+                                li.swiper-slide
+                                    .block-6-stage__button._f-14._w-700._a8 6 этап
 
-                        ul.slider__body.slider-js-stage-1
-                                li
-                                    button(type="button").block-6-stage__button._f-14._w-700._a8 1 этап
-                                li
-                                    button(type="button").block-6-stage__button._f-14._w-700._a8 2 этап
-                                li
-                                    button(type="button").block-6-stage__button._f-14._w-700._a8 3 этап
-                                li
-                                    button(type="button").block-6-stage__button._f-14._w-700._a8 4 этап
-                                li
-                                    button(type="button").block-6-stage__button._f-14._w-700._a8 5 этап
-                                li
-                                    button(type="button").block-6-stage__button._f-14._w-700._a8 6 этап
-
-
-                    ul.block-6-stage__inner.stage-inner.slider__body.slider-js-stage-2
-                        li.stage-inner__item
-                            .stage-inner__img
-                                .imgs
-                                    img(data-src='assets/img/block-6/i-4.webp', alt='img')
-                            .stage-inner__column
-                                .stage-inner__pre-title._f-14._w-600._b1
-                                .stage-inner__title
-                                    h4._f-30._w-600._28  Заключаем договор
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Выбираем место под строительство
-
-
-
-
-                        li.stage-inner__item
-                            .stage-inner__img
-                                .imgs
-                                    img(data-src='assets/img/block-6/i-5.webp', alt='img')
-                            .stage-inner__column
-                                .stage-inner__pre-title._f-14._w-600._b1 2 -3 недели
-                                .stage-inner__title
-                                    h4._f-30._w-600._28  Возведение фундамента.
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Бетон М-250, нагрузка рассчитывается строго по проекту.
-
-
-                        li.stage-inner__item
-                            .stage-inner__img
-                                .imgs
-                                    img(data-src='assets/img/block-6/i-3.webp', alt='img')
-                            .stage-inner__column
-                                .stage-inner__pre-title._f-14._w-600._b1 2 -3 недели
-                                .stage-inner__title
-                                    h4._f-30._w-600._28  Возведение стен, перекрытий<br>и монтаж кровли
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Стены из заводского газобетона автоклавного производства,  облицовочного кирпича. Перекрытия только из новых железобетонных плит по ГОСТу и СНиПу.
-
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Крыша утеплённая из заводского профнастила
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Монтаж заводских МПО и входной двери с терморазрывом
-
-                        li.stage-inner__item
-                            .stage-inner__img
-                                .imgs
-                                    img(data-src='assets/img/block-6/i-6.webp', alt='img')
-                            .stage-inner__column
-                                .stage-inner__pre-title._f-14._w-600._b1 2 -3 недели
-                                .stage-inner__title
-                                    h4._f-30._w-600._28  Монтаж инженерных коммуникаций (электрика, вода, канализация).
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Установка счётчиков, оформление необходимых документов под ключ.
+                    .swiper-stage-inner.swiper-container.block-6-stage__inner.stage-inner
+                        ul.swiper-wrapper
+                                li.stage-inner__item.swiper-slide
+                                    .stage-inner__img
+                                        .imgs
+                                            img(src='assets/img/block-6/i-4.webp', alt='img')
+                                    .stage-inner__column
+                                        .stage-inner__pre-title._f-14._w-600._b1
+                                        .stage-inner__title
+                                            h4._f-30._w-600._28  Заключаем договор
+                                        .stage-inner__line
+                                            .chip
+                                                .chip__icon
+                                                    svg
+                                                        use(xlink:href='/assets/img/sprite.svg#mark')
+                                                .chip__text._f-18._w-400._2f Выбираем место под строительство
 
 
 
 
-                        li.stage-inner__item
-                            .stage-inner__img
-                                .imgs
-                                    img(data-src='assets/img/block-6/i-7.webp', alt='img')
-                            .stage-inner__column
-                                .stage-inner__pre-title._f-14._w-600._b1 1 неделя
-                                .stage-inner__title
-                                    h4._f-30._w-600._28  Внутренняя отделка (штукатурка, полы).
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Готовые стены под обои, тёплые полы под ламинат.
-
-                                .stage-inner__line
-                                    .chip
-                                        .chip__icon
-                                            svg
-                                                use(xlink:href='/assets/img/sprite.svg#mark')
-                                        .chip__text._f-18._w-400._2f Установка немецких радиаторов с высокой теплоотдачей.
+                                li.stage-inner__item.swiper-slide
+                                    .stage-inner__img
+                                        .imgs
+                                            img(src='assets/img/block-6/i-5.webp', alt='img')
+                                    .stage-inner__column
+                                        .stage-inner__pre-title._f-14._w-600._b1 2 -3 недели
+                                        .stage-inner__title
+                                            h4._f-30._w-600._28  Возведение фундамента.
+                                        .stage-inner__line
+                                            .chip
+                                                .chip__icon
+                                                    svg
+                                                        use(xlink:href='/assets/img/sprite.svg#mark')
+                                                .chip__text._f-18._w-400._2f Бетон М-250, нагрузка рассчитывается строго по проекту.
 
 
+                                li.stage-inner__item.swiper-slide
+                                    .stage-inner__img
+                                        .imgs
+                                            img(src='assets/img/block-6/i-3.webp', alt='img')
+                                    .stage-inner__column
+                                        .stage-inner__pre-title._f-14._w-600._b1 2 -3 недели
+                                        .stage-inner__title
+                                            h4._f-30._w-600._28  Возведение стен, перекрытий<br>и монтаж кровли
+                                        .stage-inner__line
+                                            .chip
+                                                .chip__icon
+                                                    svg
+                                                        use(xlink:href='/assets/img/sprite.svg#mark')
+                                                .chip__text._f-18._w-400._2f Стены из заводского газобетона автоклавного производства,  облицовочного кирпича. Перекрытия только из новых железобетонных плит по ГОСТу и СНиПу.
 
-                        li.stage-inner__item
-                            .stage-inner__img
-                                .imgs
-                                    img(data-src='assets/img/block-6/i-8.webp', alt='img')
-                            .stage-inner__column
-                                .stage-inner__pre-title._f-14._w-600._b1
-                                .stage-inner__title
-                                    h4._f-30._w-600._28  Получаете ключи и въезжаете.
+                                        .stage-inner__line.swiper-slide
+                                            .chip
+                                                .chip__icon
+                                                    svg
+                                                        use(xlink:href='/assets/img/sprite.svg#mark')
+                                                .chip__text._f-18._w-400._2f Крыша утеплённая из заводского профнастила
+                                        .stage-inner__line
+                                            .chip
+                                                .chip__icon
+                                                    svg
+                                                        use(xlink:href='/assets/img/sprite.svg#mark')
+                                                .chip__text._f-18._w-400._2f Монтаж заводских МПО и входной двери с терморазрывом
+
+                                li.stage-inner__item.swiper-slide
+                                    .stage-inner__img
+                                        .imgs
+                                            img(src='assets/img/block-6/i-6.webp', alt='img')
+                                    .stage-inner__column
+                                        .stage-inner__pre-title._f-14._w-600._b1 2 -3 недели
+                                        .stage-inner__title
+                                            h4._f-30._w-600._28  Монтаж инженерных коммуникаций (электрика, вода, канализация).
+                                        .stage-inner__line
+                                            .chip
+                                                .chip__icon
+                                                    svg
+                                                        use(xlink:href='/assets/img/sprite.svg#mark')
+                                                .chip__text._f-18._w-400._2f Установка счётчиков, оформление необходимых документов под ключ.
+
+
+
+
+                                li.stage-inner__item.swiper-slide
+                                    .stage-inner__img
+                                        .imgs
+                                            img(src='assets/img/block-6/i-7.webp', alt='img')
+                                    .stage-inner__column
+                                        .stage-inner__pre-title._f-14._w-600._b1 1 неделя
+                                        .stage-inner__title
+                                            h4._f-30._w-600._28  Внутренняя отделка (штукатурка, полы).
+                                        .stage-inner__line
+                                            .chip
+                                                .chip__icon
+                                                    svg
+                                                        use(xlink:href='/assets/img/sprite.svg#mark')
+                                                .chip__text._f-18._w-400._2f Готовые стены под обои, тёплые полы под ламинат.
+
+                                        .stage-inner__line
+                                            .chip
+                                                .chip__icon
+                                                    svg
+                                                        use(xlink:href='/assets/img/sprite.svg#mark')
+                                                .chip__text._f-18._w-400._2f Установка немецких радиаторов с высокой теплоотдачей.
+
+
+
+                                li.stage-inner__item.swiper-slide
+                                    .stage-inner__img
+                                        .imgs
+                                            img(src='assets/img/block-6/i-8.webp', alt='img')
+                                    .stage-inner__column
+                                        .stage-inner__pre-title._f-14._w-600._b1
+                                        .stage-inner__title
+                                            h4._f-30._w-600._28  Получаете ключи и въезжаете.
 
 
 
 
 
-                    button(type="button").stage-inner__button
+                        button(type="button").stage-inner__button
                                     span._f-12._w-700._2f    Следующий шаг
                                     svg
                                         use(xlink:href='/assets/img/sprite.svg#Arrow-2')

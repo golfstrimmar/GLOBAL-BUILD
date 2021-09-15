@@ -1,5 +1,6 @@
+'use strict';
 
-if(window.location.pathname == '/') {
+
 
     const MyQuiz = () => {
         let Q = document.querySelector('.Q-js');
@@ -122,7 +123,7 @@ if(window.location.pathname == '/') {
             // } else {
 
 
-            console.log(step);
+            // console.log(step);
 
 
 
@@ -141,8 +142,11 @@ if(window.location.pathname == '/') {
         // -------/-------MyQuiz
     };
 
+let quises =document.querySelectorAll('.Q-js')
+if(quises.length){
     MyQuiz();
-
 }
+
+
 
 

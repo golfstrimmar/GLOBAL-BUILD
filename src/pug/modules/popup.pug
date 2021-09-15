@@ -1,102 +1,224 @@
-#popup.popup
+.popup.popup-form
     .popup__overlay
-      .popup__inner
-          h4._f-24 Оставьте свой телефон <br>  и мы перезвоним Вам в течение часа.
-          .block-6-form__body
-              .block-6-form__item
-                  label._f-12._w-600._28
-                      | Введите Ваше имя:
-                      input.block-6-form__input(type='text' placeholder='Алексей')
-              .block-6-form__item
-                  label._f-12._w-600._28
-                      | Введите Ваш номер телефона:
-                      input.block-6-form__input(type='phone' placeholder='+7 983 358 25-20')
-              .block-6-form__item
-                  a.btn.btn--success.block-6-form__button(href='#!')
-                      span._f-12._w-700 заказать звонок
-              .block-6-form__politic
-                  svg
-                      use(xlink:href='/assets/img/sprite.svg#bird')
-                  span._f-10._w-400._39
-                      | Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+            .popup__inner
+                h4._f-24 Оставьте свой телефон <br>  и мы перезвоним Вам в течение часа.
+                .block-6-form__body
+                    .block-6-form__item
+                        label._f-12._w-600._28
+                            | Введите Ваше имя:
+                            input.block-6-form__input(type='text' placeholder='Алексей')
+                    .block-6-form__item
+                        label._f-12._w-600._28
+                            | Введите Ваш номер телефона:
+                            input.block-6-form__input(type='phone' placeholder='+7 983 358 25-20')
+                    .block-6-form__item
+                        a.btn.btn--success.block-6-form__button(href='#!')
+                            span._f-12._w-700 заказать звонок
+                    .block-6-form__politic
+                        svg
+                            use(xlink:href='/assets/img/sprite.svg#bird')
+                        span._f-10._w-400._39
+                            | Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
 
-          i.popup__close.popup__close
-              svg
-                use(xlink:href='/assets/img/sprite.svg#close')
-
-
-
-
-
-section#modaL.modaL
-    .popup-player.slide-player-1-popup
-        .popup-player__overlay
-            .popup-player__inner
-                i.popup__close.close-js
+                i.popup__close.popup__close
                     svg
                         use(xlink:href='/assets/img/sprite.svg#close')
-                .player-1(data-plyr-provider='youtube' data-plyr-embed-id="bTqVqk7FSmY")
-    .popup-player.slide-player-2-popup
-        .popup-player__overlay
-            .popup-player__inner
-                i.popup__close.close-js
-                  svg
+
+
+
+.popup.slide-player-1-popup.popup-video
+    .popup__overlay
+        .popup__inner
+            iframe(width='560' height='315' src='https://www.youtube.com/embed/bTqVqk7FSmY?enablejsapi=1'  id='v1' title='YouTube video player' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='true' )
+            i.popup__close.close-js
+                svg
                     use(xlink:href='/assets/img/sprite.svg#close')
-                .player-2(data-plyr-provider='youtube' data-plyr-embed-id="75UQsEeH0jo")
-    .popup-player.slide-player-3-popup
-        .popup-player__overlay
-            .popup-player__inner
-                i.popup__close.close-js
-                  svg
-                    use(xlink:href='/assets/img/sprite.svg#close')
-                .player-3(data-plyr-provider='youtube' data-plyr-embed-id="vr0qNXmkUJ8")
-    .popup-player.slide-player-4-popup
-        .popup-player__overlay
-            .popup-player__inner
-                i.popup__close.close-js
-                    svg
-                        use(xlink:href='/assets/img/sprite.svg#close')
-                .player-4(data-plyr-provider='youtube' data-plyr-embed-id="x4Xb8yACha4")
-    .popup-player.slide-player-5-popup
-        .popup-player__overlay
-            .popup-player__inner
-                i.popup__close.close-js
-                    svg
-                        use(xlink:href='/assets/img/sprite.svg#close')
-                .player-5(data-plyr-provider='youtube' data-plyr-embed-id="x4Xb8yACha4")
-    .popup-player.slide-player-6-popup
-        .popup-player__overlay
-            .popup-player__inner
-                i.popup__close.close-js
-                    svg
-                        use(xlink:href='/assets/img/sprite.svg#close')
-                .player-6(data-plyr-provider='youtube' data-plyr-embed-id="x4Xb8yACha4")
+
+//section#modaL.modaL
+//    .popup-player.slide-player-2-popup.popup
+//        .popup-player__overlay.popup__overlay
+//            .popup-player__inner.popup__inner
+//                i.popup__close.close-js
+//                  svg
+//                    use(xlink:href='/assets/img/sprite.svg#close')
+//                //.player-2(data-plyr-provider='youtube' data-plyr-embed-id="75UQsEeH0jo")
+//    .popup-player.slide-player-3-popup.popup
+//        .popup-player__overlay.popup__overlay
+//            .popup-player__inner.popup__inner
+//                i.popup__close.close-js
+//                  svg
+//                    use(xlink:href='/assets/img/sprite.svg#close')
+//                //.player-3(data-plyr-provider='youtube' data-plyr-embed-id="vr0qNXmkUJ8")
+//    .popup-player.slide-player-4-popup.popup
+//        .popup-player__overlay.popup__overlay
+//            .popup-player__inner.popup__inner
+//                i.popup__close.close-js
+//                    svg
+//                        use(xlink:href='/assets/img/sprite.svg#close')
+//                //.player-4(data-plyr-provider='youtube' data-plyr-embed-id="x4Xb8yACha4")
+//    .popup-player.slide-player-5-popup.popup
+//        .popup-player__overlay.popup__overlay
+//            .popup-player__inner.popup__inner
+//                i.popup__close.close-js
+//                    svg
+//                        use(xlink:href='/assets/img/sprite.svg#close')
+//                .player-5(data-plyr-provider='youtube' data-plyr-embed-id="x4Xb8yACha4")
+//    .popup-player.slide-player-6-popup.popup
+//        .popup-player__overlay.popup__overlay
+//            .popup-player__inner.popup__inner
+//                i.popup__close.close-js
+//                    svg
+//                        use(xlink:href='/assets/img/sprite.svg#close')
+//                //.player-6(data-plyr-provider='youtube' data-plyr-embed-id="x4Xb8yACha4")
+
+//модалкa на слайдере отзывов нижнем
+#hidden-1.popup.popup-common
+        .popup__overlay
+            .popup__inner
+                    .slider-popup--1.slider-popup
+                        button.swiper-arrow.swiper-button-prev.slider-popup-arrow-prev(type='button')
+                            svg
+                                use(xlink:href='/assets/img/sprite.svg#arrow-left')
+                        button.swiper-arrow.swiper-button-next.slider-popup-arrow-next(type='button')
+                            svg
+                                use(xlink:href='/assets/img/sprite.svg#arrow-right')
+                        .slider-popup__container.swiper-container
+                            ul.slider-popup__track.swiper-wrapper
+                                li.slike__item.swiper-slide
+                                    h2 1
+                                    .imgs
+                                        img(src='assets/img/block-8/galary-1.webp', alt='img')
+                                li.slike__item.swiper-slide
+                                    h2 2
+                                    .imgs
+                                        img(src='assets/img/block-8/galary-2.webp', alt='img')
+                                li.slike__item.swiper-slide
+                                    h2 3
+                                    .imgs
+                                        img(src='assets/img/block-8/galary-3.webp', alt='img')
+                                li.slike__item.swiper-slide
+                                    h2 4
+                                    .imgs
+                                        img(src='assets/img/block-8/i-1.webp', alt='img')
 
 
-#hidden-1.hidden-modal
-    img(src='assets/img/block-8/galary-1.webp', alt='img')
-
-#hidden-2.hidden-modal
-    img(src='assets/img/block-8/galary-2.webp', alt='img')
-
-#hidden-3.hidden-modal
-    img(src='assets/img/block-8/galary-3.webp', alt='img')
-
-#hidden-4.hidden-modal
-    img(src='assets/img/block-8/i-1.webp', alt='img')
+                    i.popup__close.popup__close
+                                        svg
+                                            use(xlink:href='/assets/img/sprite.svg#close')
 
 
+//#hidden-2.popup.popup-common
+//        .popup__overlay
+//            .popup__inner
+//                section.posts
+//                        .posts__body
+//                            .slider
+//                                .posts-slick-prev-2.slick-arrow.slick-prev
+//                                    svg
+//                                        use(xlink:href='/assets/img/sprite.svg#arrow-left')
+//                                .posts-slick-next-2.slick-arrow.slick-next
+//                                    svg
+//                                        use(xlink:href='/assets/img/sprite.svg#arrow-right')
+//                                .slider-js-posts-side-2
+//                                    .posts__item.object-card
+//                                        .object-card__img.imgs
+//                                            img(src='assets/img/block-8/galary-1.webp', alt='img')
+//                                    .posts__item.object-card
+//                                        .object-card__img.imgs
+//                                            img(src='assets/img/block-8/galary-2.webp', alt='img')
+//                                    .posts__item.object-card
+//                                        .object-card__img.imgs
+//                                            img(src='assets/img/block-8/galary-3.webp', alt='img')
+//                                    .posts__item.object-card
+//                                        .object-card__img.imgs
+//                                            img(src='assets/img/block-8/i-1.webp', alt='img')
+//                i.popup__close.popup__close
+//                    svg
+//                        use(xlink:href='/assets/img/sprite.svg#close')
+//
+//
+//#hidden-3.popup.popup-common
+//        .popup__overlay
+//            .popup__inner
+//                section.posts
+//                        .posts__body
+//                            .slider
+//                                .posts-slick-prev-3.slick-arrow.slick-prev
+//                                    svg
+//                                        use(xlink:href='/assets/img/sprite.svg#arrow-left')
+//                                .posts-slick-next-3.slick-arrow.slick-next
+//                                    svg
+//                                        use(xlink:href='/assets/img/sprite.svg#arrow-right')
+//                                .slider-js-posts-side-3
+//                                    .posts__item.object-card
+//                                        .object-card__img.imgs
+//                                            img(src='assets/img/block-8/galary-1.webp', alt='img')
+//                                    .posts__item.object-card
+//                                        .object-card__img.imgs
+//                                            img(src='assets/img/block-8/galary-2.webp', alt='img')
+//                                    .posts__item.object-card
+//                                        .object-card__img.imgs
+//                                            img(src='assets/img/block-8/galary-3.webp', alt='img')
+//                                    .posts__item.object-card
+//                                        .object-card__img.imgs
+//                                            img(src='assets/img/block-8/i-1.webp', alt='img')
+//                i.popup__close.popup__close
+//                    svg
+//                        use(xlink:href='/assets/img/sprite.svg#close')
+//
+//
+//#hidden-4.popup.popup-common
+//        .popup__overlay
+//            .popup__inner
+//                section.posts
+//                        .posts__body
+//                            .slider
+//                                .posts-slick-prev-4.slick-arrow.slick-prev
+//                                    svg
+//                                        use(xlink:href='/assets/img/sprite.svg#arrow-left')
+//                                .posts-slick-next-4.slick-arrow.slick-next
+//                                    svg
+//                                        use(xlink:href='/assets/img/sprite.svg#arrow-right')
+//                                .slider-js-posts-side-4
+//                                    .posts__item.object-card
+//                                        .object-card__img.imgs
+//                                            img(src='assets/img/block-8/galary-1.webp', alt='img')
+//                                    .posts__item.object-card
+//                                        .object-card__img.imgs
+//                                            img(src='assets/img/block-8/galary-2.webp', alt='img')
+//                                    .posts__item.object-card
+//                                        .object-card__img.imgs
+//                                            img(src='assets/img/block-8/galary-3.webp', alt='img')
+//                                    .posts__item.object-card
+//                                        .object-card__img.imgs
+//                                            img(src='assets/img/block-8/i-1.webp', alt='img')
+//                i.popup__close.popup__close
+//                    svg
+//                        use(xlink:href='/assets/img/sprite.svg#close')
 
-#hidden-2-1.hidden-modal
-    img(src='assets/img/single/i-1-1.webp', alt='img')
 
 
-#hidden-2-2.hidden-modal
-    img(src='assets/img/single/i-2-2.webp', alt='img')
 
 
-#hidden-2-3.hidden-modal
-    img(src='assets/img/single/i-3-3.webp', alt='img')
+
+
+
+
+
+
+
+
+
+//#hidden-2-1.hidden-modal
+//    img(src='assets/img/single/i-1-1.webp', alt='img')
+//
+//
+//#hidden-2-2.hidden-modal
+//    img(src='assets/img/single/i-2-2.webp', alt='img')
+//
+//
+//#hidden-2-3.hidden-modal
+//    img(src='assets/img/single/i-3-3.webp', alt='img')
 
 
 

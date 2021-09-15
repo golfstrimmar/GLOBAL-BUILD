@@ -1,4 +1,3 @@
-
 if(window.location.pathname == '/') {
     const MyQCard = () => {
         var ul = document.querySelector(".QContent__cards");

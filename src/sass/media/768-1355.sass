@@ -12,7 +12,7 @@
 			transform: scale(.7)
 
 	.reviews-card__column--plan
-		min-height: 584px
+		min-height: 450px
 
 	.block-6
 		&.plan-stages
@@ -80,7 +80,8 @@
 
 
 	.QContent__column
-		max-height: 500px
+		//max-height: 500px
+		height: auto
 
 
 
@@ -136,8 +137,8 @@
 	.stage-inner__img
 		flex: 1 0 480px
 	.stage-inner__button
-		left: 533px
-		bottom: 25px
+		left: 0
+		bottom: -76px
 	.block-6-stage__title
 		h2
 			padding: 0 20px
@@ -162,14 +163,18 @@
 
 	.footer__body
 		grid-template-columns: 412px 1fr 224px
-	.block-logo__logo
-		transform: scale(.7)
-	.block-logo
-		padding: 0 0 0 0
+	//.block-logo__logo
+	//	transform: scale(.7)
+	//.block-logo
+	//	padding: 0 0 0 0
 
-	.block-10
-		padding: 0 30px
-		max-width: 100%
+	.stage-inner__column .stage-inner__title, .stage-inner__column .stage-inner__line
+			+jucc
+			text-align: center
+	.stage-inner__column .chip
+		grid-template-columns: 1fr
+		justify-items: center
+		row-gap: 10px
 
 	.block-9-content__cards
 		grid-template-columns: repeat(3,1fr)
@@ -205,15 +210,7 @@
 		.reviews__top .slick-next
 			right:  -20px
 
-		.block-10__slider .slick-arrow
-			top: auto
-			bottom: -110px
 
-		.block-10__slider .slick-prev
-			left: 128px
-
-		.block-10__slider .slick-next
-			right: 128px
 
 
 
@@ -250,7 +247,6 @@
 		left: 128px
 	.block-10__slider .slick-next
 		right: 128px
-
 
 
 

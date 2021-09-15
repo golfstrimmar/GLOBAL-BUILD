@@ -1,7 +1,7 @@
 
-import $ from "jquery";
 
-// --------------------------------------------
+
+
 if(window.location.pathname == '/') {
 
 

@@ -1,26 +1,27 @@
 // import $ from 'jquery';
 //
 
-const jquery = require("jquery");
-const $ = require("jquery");
-const jQuery = require("jquery");
-window.jQuery = $;
-const fancybox = require("@fancyapps/fancybox");
+// const jquery = require("jquery");
+// const $ = require("jquery");
+// const jQuery = require("jquery");
+// window.jQuery = $;
+// const fancybox = require("@fancyapps/fancybox");
 
 // ==============================================
 import './js/common'
 import './js/first'
-import './js/modal'
+import './js/popup'
 import './js/quiz'
 import "./js/polzunki";
 import "./js/tabs";
-// import "./js/infinity-galary";
 import "./js/more-button";
-import "./js/myPlyr";
 import "./js/MyQcard";
-import "./js/more-reviewes";
 import './js/scrolling';
 import './js/bg-6';
+// import './js/galery-reviewes-autoplay';
+
+// import './js/slike';
+
 // import './js/yandex-map';
 
 
@@ -35,46 +36,49 @@ import './js/bg-6';
 
 
 
-import "./js/slick.js";
-import "./js/mySlick.js";
-import './css/slick.css';
 
 
-import './css/fonts.css'
-import './css/jquery.fancybox.min.css'
-import './css/plyr.css';
+
+
+
+
+
+import 'swiper/swiper-bundle.min.css';
+import './js/MySwiper';
+
+
+
 
 
 
 
 // import './css/main.css';
 
-
-// главный файл стилей
+import './css/fonts.css'
+// import './css/plyr.css';
 import './sass/style.sass';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ==================================
 // ==================================
 // ==================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
