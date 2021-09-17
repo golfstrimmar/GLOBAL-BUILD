@@ -13,9 +13,6 @@ section#block-9.block-9
                             .imgs
                                 img(src="assets/img/block-9/i-2.webp" alt="img")
 
-
-
-
                     .block-9__content.block-9-content
                         .block-9-content__pre-title._f-14._w-500._eb   Слово основателя
                         .block-9-content__title._f-40._w-700._28
@@ -61,20 +58,35 @@ section#block-9.block-9
 
 
                     .block-9__form
-                        form.block-9-content__form.block-6-form__body
+                        //form.block-9-content__form.block-6-form__body
+                        form.block-6-form__body(action="#" method="POST").feedback
                             span._f-18._w-600._28.block-9-content__span   Задайте мне вопрос напрямую:
                             .block-6-form__item
-                                label._f-12._w-600._28
-                                    | Введите Ваш номер телефона:
-                                    input.block-6-form__input(type='phone' placeholder='+7 983 358 25-20')
+                                label._f-12._w-600._28   Введите Ваш номер телефона:
+                                    input(type="phone" name="phone" placeholder="+7 983 358 25-20").block-6-form__input._phone._req
+                            //.block-6-form__item
+                            //    label._f-12._w-600._28
+                            //        | Введите Ваш номер телефона:
+                            //        input.block-6-form__input(type='phone' placeholder='+7 983 358 25-20')
                             .block-6-form__item
-                                a.btn.btn--success.block-6-form__button(href='#!')
-                                    span._f-12._w-700._2f заказать звонок
+                                button(type="submit").btn.btn--success.block-6-form__button
+                                    span._f-12._w-700._2f Заказать звонок
+                            //.block-6-form__item
+                            //    a.btn.btn--success.block-6-form__button(href='#!')
+                            //        span._f-12._w-700._2f заказать звонок
                             .block-6-form__politic.block-6-form__politic--9
-                                svg
-                                    use(xlink:href='/assets/img/sprite.svg#bird')
-                                span._f-10._w-400._39
-                                    | Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+                                input#cbform-1(type='checkbox')._req
+                                label(for='cbform-1')._f-10._w-400._39 Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+                            //.block-6-form__politic.block-6-form__politic--9
+                            //    svg
+                            //        use(xlink:href='/assets/img/sprite.svg#bird')
+                            //    span._f-10._w-400._39
+                            //        | Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+
+
+
+
+
 
 
 

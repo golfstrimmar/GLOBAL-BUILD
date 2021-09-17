@@ -15,17 +15,37 @@ section#block-12.block-12
                     span._w-400._w    Для обсуждения деталей свяжитесь с главным архитектором.
                     //span._f-18._w-400._ff   получите консультацию главного архитектора
                     //span._f-18._w-400._w  по телефону <br> или с выездом на ваш объект совершенно бесплатно!
-            form.block-6-form__body
+            //form.block-6-form__body
+            //    .block-6-form__item
+            //        label._f-12._w-600._28   Введите Ваше имя:
+            //            input(type="text" placeholder="Алексей").block-6-form__input
+            //    .block-6-form__item
+            //        label._f-12._w-600._28   Введите Ваш номер телефона:
+            //            input(type="phone" placeholder="+7 983 358 25-20").block-6-form__input
+            //    .block-6-form__item
+            //        a(href="#!").btn.btn--success.block-6-form__button
+            //            span._f-12._w-700._2f Обсудить дом своей мечты
+            //    .block-6-form__politic
+            //        svg
+            //            use(xlink:href='/assets/img/sprite.svg#bird')
+            //        span._f-10._w-400._39 Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+
+            form#form-12.block-6-form__body(action="#" method="POST").feedback
                 .block-6-form__item
                     label._f-12._w-600._28   Введите Ваше имя:
-                        input(type="text" placeholder="Алексей").block-6-form__input
+                        input(type="text" name="name" placeholder="Алексей" ).block-6-form__input._name._req
                 .block-6-form__item
                     label._f-12._w-600._28   Введите Ваш номер телефона:
-                        input(type="phone" placeholder="+7 983 358 25-20").block-6-form__input
+                        input(type="phone" name="phone" placeholder="+7 983 358 25-20").block-6-form__input._phone._req
                 .block-6-form__item
-                    a(href="#!").btn.btn--success.block-6-form__button
-                        span._f-12._w-700._2f Обсудить дом своей мечты
+                    button(type="submit").btn.btn--success.block-6-form__button
+                        span._f-12._w-700._2f Заказать звонок
                 .block-6-form__politic
-                    svg
-                        use(xlink:href='/assets/img/sprite.svg#bird')
-                    span._f-10._w-400._39 Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+                    input#cbform-12(type='checkbox')._req
+                    label(for='cbform-12')._f-10._w-400._39 Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+                //.loader
+                //    .loader__items
+                //        .loader__item
+                //        .loader__item
+                //        .loader__item
+                //    p.loader__name Отправка...

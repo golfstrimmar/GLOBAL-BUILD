@@ -29,21 +29,24 @@ section#block-6.block-6
                     span._f-18._w-400._w    Оставьте заявку и
                     span._f-18._w-400._ff   получите консультацию главного архитектора
                     span._f-18._w-400._w  по телефону <br> или с выездом на ваш объект совершенно бесплатно!
-            .block-6-form__body
+            form#feedback-6.block-6-form__body(action="#" ).feedback
                 .block-6-form__item
                     label._f-12._w-600._28   Введите Ваше имя:
-                        input(type="text" placeholder="Алексей").block-6-form__input
+                        input(type="text" name="name" placeholder="Алексей" ).block-6-form__input._name._req
                 .block-6-form__item
                     label._f-12._w-600._28   Введите Ваш номер телефона:
-                        input(type="phone" placeholder="+7 983 358 25-20").block-6-form__input
+                        input(type="phone" name="phone" placeholder="+7 983 358 25-20").block-6-form__input._phone._req
                 .block-6-form__item
-                    a(href="#!").btn.btn--success.block-6-form__button
-                        span._f-12._w-700._2f заказать звонок
+                    input(type="submit" placeholder="Заказать звонок").btn.btn--success.block-6-form__button._f-12._w-700._2f
                 .block-6-form__politic
-                    svg
-                        use(xlink:href='/assets/img/sprite.svg#bird')
-                    span._f-10._w-400._39 Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
-
+                    input#cbform(type='checkbox')._req
+                    label(for='cbform')._f-10._w-400._39 Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+                .loader
+                    .loader__items
+                        .loader__item
+                        .loader__item
+                        .loader__item
+                    p.loader__name Отправка...
         section#block-6-stage.block-6-stage
                     .block-6-stage__title
                         h2._f-40._w-700._28 6 простых этапов строительства <br> вашего дома

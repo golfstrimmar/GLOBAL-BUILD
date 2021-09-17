@@ -1,7 +1,9 @@
+
 section#quiz.quiz
     .container
       .quiz__body
         .quiz__top
+
             .quiz__pre-title._f-14._w-500   Пройдите наш бесплатный опрос
             .quiz__title
                 h2._f-30._w-700 Ответьте всего на несколько вопросов, <br> и вы узнаете приблизительную стоимость<br> своего будущего дома.
@@ -93,24 +95,36 @@ section#quiz.quiz
                                     input.calculator-section__double._f-18._w-500(type="text")
                             span.range-currency руб.
 
-                .QBlock.block-6-form__body
-                        .block-6-form__item
-                            label._f-12._w-600._28
-                                | Введите Ваше имя:
-                                input.block-6-form__input(type='text' placeholder='Алексей')
-                        .block-6-form__item
-                            label._f-12._w-600._28
-                                | Введите Ваш номер телефона:
-                                input.block-6-form__input(type='phone' placeholder='+7 983 358 25-20')
-                        .block-6-form__item
-                            a.btn.btn--success.block-6-form__button(href='#!')
-                                span._f-12._w-700._2f заказать звонок
-                        .block-6-form__politic
-                            svg
-                                use(xlink:href='/assets/img/sprite.svg#bird')
-                            span._f-10._w-400._39
-                                | Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
-
+                .QBlock
+                        //.block-6-form__item
+                        //    label._f-12._w-600._28
+                        //        | Введите Ваше имя:
+                        //        input.block-6-form__input(type='text' placeholder='Алексей')
+                        //.block-6-form__item
+                        //    label._f-12._w-600._28
+                        //        | Введите Ваш номер телефона:
+                        //        input.block-6-form__input(type='phone' placeholder='+7 983 358 25-20')
+                        //.block-6-form__item
+                        //    a.btn.btn--success.block-6-form__button(href='#!')
+                        //        span._f-12._w-700._2f заказать звонок
+                        //.block-6-form__politic
+                        //    svg
+                        //        use(xlink:href='/assets/img/sprite.svg#bird')
+                        //    span._f-10._w-400._39
+                        //        | Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+                        form(action="#" method="POST").feedback.block-6-form__body
+                            .block-6-form__item
+                                label._f-12._w-600._28   Введите Ваше имя:
+                                    input(type="text" name="name" placeholder="Алексей" ).block-6-form__input._name._req
+                            .block-6-form__item
+                                label._f-12._w-600._28   Введите Ваш номер телефона:
+                                    input(type="phone" name="phone" placeholder="+7 983 358 25-20").block-6-form__input._phone._req
+                            .block-6-form__item
+                                button(type="submit").btn.btn--success.block-6-form__button
+                                    span._f-12._w-700._2f Заказать звонок
+                            .block-6-form__politic
+                                input#cbform-quiz(type='checkbox')._req
+                                label(for='cbform-quiz')._f-10._w-400._39 Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
 
 
 

@@ -18,6 +18,7 @@ import "./js/more-button";
 import "./js/MyQcard";
 import './js/scrolling';
 import './js/bg-6';
+import './js/form-js';
 // import './js/galery-reviewes-autoplay';
 
 // import './js/slike';

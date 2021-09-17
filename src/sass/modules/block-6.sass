@@ -44,7 +44,6 @@
 
 .block-6-form__body
 	margin: 40px 0 0 0
-	position: relative
 	z-index: 2
 	width: 808px
 	height: 153px
@@ -56,7 +55,104 @@
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
 	column-gap: 11px
 	row-gap: 10px
+	position: relative
+	&:after
+		content:   ""
+		background: rgba(0, 0, 0, 0.72)
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		transform: translate(0%,0%)
+		z-index: 2
+		border-radius: 10px
+		transition: all .2s ease-in-out
+		opacity: 0
+		visibility: hidden
 
+	.loader
+		//width: 30px
+		//height: 30px
+		background-color: #000
+		position: relative
+		transform: translate(-50%, -50%)
+		top: 50%
+		left: 50%
+		position: absolute
+
+		opacity: 0
+		visibility: hidden
+		transition: opacity .2s ease-in-out , visibility .2s ease-in-out
+		z-index: -1
+
+	.loader__name
+		color: #fff
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		font-size: 20px
+		line-height: 20px
+
+	.loader__items
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, calc(-50% - 20px)) rotate(-90deg)
+		animation-name: loading
+		animation-duration: 1s
+		animation-iteration-count: infinite
+
+	.loader__item
+		width: 10px
+		height: 10px
+		border: 1px solid #fff
+		border-radius: 50%
+		display: inline-block
+		animation-name: loadingColor
+		animation-duration: 1s
+		animation-iteration-count: infinite
+
+		&:nth-child(1)
+			animation-delay: 0s
+
+		&:nth-child(2)
+			animation-delay: 0.2s
+
+		&:nth-child(3)
+			animation-delay: 0.4s
+
+	@keyframes loading
+		0%
+			transform: translate(calc(-50% - 20px), calc(-50% - 20px)) rotate(-90deg)
+
+		50%
+			transform: translate(calc(-50% + 20px), calc(-50% - 20px)) rotate(-90deg)
+
+		100%
+			transform: translate(calc(-50% - 20px), calc(-50% - 20px)) rotate(-90deg)
+
+	@keyframes loadingColor
+		0%
+			background-color: #fff
+
+		50%
+			background-color: #f00
+			border-color: #f00
+
+		100%
+			background-color: #fff
+			border-color: #fff
+
+._sending:after
+		opacity: 1
+		visibility: visible
+		z-index: 20
+._sending .loader
+	opacity: 1
+	visibility: visible
+	z-index: 25
 
 .block-6-form__item
 	label
@@ -85,15 +181,7 @@
 
 .block-6-form__politic
 	grid-column: 1/4
-	display: grid
-	grid-template-columns: 11px 1fr
-	column-gap: 10px
-	align-items: start
 	margin: 5px 0 0 0
-	svg
-		width: 11px
-		height:  11px
-		margin: 0 10px 0 0
 
 .block-6-form__pre-title
 	text-transform: uppercase
@@ -101,9 +189,16 @@
 .block-6-form__button
 	width: 249px
 	height: 56px
-	margin: 21px 0 0
+	margin: 27px 0 0
+	padding: 0 0 0 0
 
+.block-6-form__input
+	&._error
+		box-shadow:  0 0 8px rgba(255, 0, 0, 0.4)
 
+._error
+	& + label:before
+		box-shadow:  0 0 8px rgba(255, 0, 0, 0.4)
 
 
 //----------------------
@@ -143,7 +238,8 @@
 		cursor: pointer
 	.swiper-slide-active
 		background-color: #ffe484
-		color: #2f2e2e
+		.block-6-stage__button
+			color: #2f2e2e
 .block-6-stage__buttons
 	.swiper-arrow
 		display: none
@@ -218,5 +314,8 @@
 		img
 			object-fit: contain
 
+
+#form
+	#cbform
 
 

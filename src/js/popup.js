@@ -73,9 +73,16 @@ if (popup.classList.contains('popup-video')){
     });
 });
 
+};
 
 
-};Mypopup();
+
+let popups = document.querySelectorAll('.popup-init-js ');
+
+if (popups.length){
+    Mypopup();
+}
+
 
 
 

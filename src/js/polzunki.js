@@ -1,10 +1,4 @@
 
-
-
-
-if(window.location.pathname == '/') {
-
-
   const MyRange = () => {
     sliders();
 
@@ -106,7 +100,12 @@ if(window.location.pathname == '/') {
 
 
   };
-  MyRange();
+  var sliderGroups = document.querySelectorAll(
+      "section[data-type=slider-group]"
+  );
+  if (sliderGroups.length){
+    MyRange();
+  }
 
 
-}
+

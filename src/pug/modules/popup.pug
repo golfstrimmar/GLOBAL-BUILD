@@ -2,23 +2,37 @@
     .popup__overlay
             .popup__inner
                 h4._f-24 Оставьте свой телефон <br>  и мы перезвоним Вам в течение часа.
-                .block-6-form__body
+                //.block-6-form__body
+                //    .block-6-form__item
+                //        label._f-12._w-600._28
+                //            | Введите Ваше имя:
+                //            input.block-6-form__input(type='text' placeholder='Алексей')
+                //    .block-6-form__item
+                //        label._f-12._w-600._28
+                //            | Введите Ваш номер телефона:
+                //            input.block-6-form__input(type='phone' placeholder='+7 983 358 25-20')
+                //    .block-6-form__item
+                //        a.btn.btn--success.block-6-form__button(href='#!')
+                //            span._f-12._w-700 заказать звонок
+                //    .block-6-form__politic
+                //        svg
+                //            use(xlink:href='/assets/img/sprite.svg#bird')
+                //        span._f-10._w-400._39
+                //            | Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+
+                form#form-popup.block-6-form__body(action="#" method="POST").feedback
                     .block-6-form__item
-                        label._f-12._w-600._28
-                            | Введите Ваше имя:
-                            input.block-6-form__input(type='text' placeholder='Алексей')
+                        label._f-12._w-600._28   Введите Ваше имя:
+                            input(type="text" name="name" placeholder="Алексей" ).block-6-form__input._name._req
                     .block-6-form__item
-                        label._f-12._w-600._28
-                            | Введите Ваш номер телефона:
-                            input.block-6-form__input(type='phone' placeholder='+7 983 358 25-20')
+                        label._f-12._w-600._28   Введите Ваш номер телефона:
+                            input(type="phone" name="phone" placeholder="+7 983 358 25-20").block-6-form__input._phone._req
                     .block-6-form__item
-                        a.btn.btn--success.block-6-form__button(href='#!')
-                            span._f-12._w-700 заказать звонок
+                        button(type="submit").btn.btn--success.block-6-form__button
+                            span._f-12._w-700._2f Заказать звонок
                     .block-6-form__politic
-                        svg
-                            use(xlink:href='/assets/img/sprite.svg#bird')
-                        span._f-10._w-400._39
-                            | Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+                        input#cbform-popup(type='checkbox')._req
+                        label(for='cbform-popup')._f-10._w-400._39 Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
 
                 i.popup__close.popup__close
                     svg
@@ -107,34 +121,39 @@
                                             use(xlink:href='/assets/img/sprite.svg#close')
 
 
-//#hidden-2.popup.popup-common
-//        .popup__overlay
-//            .popup__inner
-//                section.posts
-//                        .posts__body
-//                            .slider
-//                                .posts-slick-prev-2.slick-arrow.slick-prev
-//                                    svg
-//                                        use(xlink:href='/assets/img/sprite.svg#arrow-left')
-//                                .posts-slick-next-2.slick-arrow.slick-next
-//                                    svg
-//                                        use(xlink:href='/assets/img/sprite.svg#arrow-right')
-//                                .slider-js-posts-side-2
-//                                    .posts__item.object-card
-//                                        .object-card__img.imgs
-//                                            img(src='assets/img/block-8/galary-1.webp', alt='img')
-//                                    .posts__item.object-card
-//                                        .object-card__img.imgs
-//                                            img(src='assets/img/block-8/galary-2.webp', alt='img')
-//                                    .posts__item.object-card
-//                                        .object-card__img.imgs
-//                                            img(src='assets/img/block-8/galary-3.webp', alt='img')
-//                                    .posts__item.object-card
-//                                        .object-card__img.imgs
-//                                            img(src='assets/img/block-8/i-1.webp', alt='img')
-//                i.popup__close.popup__close
-//                    svg
-//                        use(xlink:href='/assets/img/sprite.svg#close')
+//модалка на single по клику на нижний слайд
+
+#hidden-2.popup.popup-common
+        .popup__overlay
+            .popup__inner
+                    .slider-popup--1.slider-popup
+                        button.swiper-arrow.swiper-button-prev.slider-popup-2-arrow-prev(type='button')
+                            svg
+                                use(xlink:href='/assets/img/sprite.svg#arrow-left')
+                        button.swiper-arrow.swiper-button-next.slider-popup-2-arrow-next(type='button')
+                            svg
+                                use(xlink:href='/assets/img/sprite.svg#arrow-right')
+                        .slider-popup__container-2.swiper-container
+                            ul.slider-popup__track.swiper-wrapper
+                                li.slike__item.swiper-slide
+                                    h2 1
+                                    .imgs
+                                        img(src='assets/img/single/i-1-1.webp', alt='img')
+                                li.slike__item.swiper-slide
+                                    h2 2
+                                    .imgs
+                                        img(src='assets/img/single/i-2-2.webp', alt='img')
+                                li.slike__item.swiper-slide
+                                    h2 3
+                                    .imgs
+                                        img(src='assets/img/single/i-3-3.webp', alt='img')
+
+
+                    i.popup__close.popup__close
+                                        svg
+                                            use(xlink:href='/assets/img/sprite.svg#close')
+
+
 //
 //
 //#hidden-3.popup.popup-common
