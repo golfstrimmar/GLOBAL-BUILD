@@ -1,0 +1,72 @@
+.swiper-button-next:after, .swiper-button-prev:after
+	display: none
+
+
+.swiper-container
+		overflow: hidden
+		min-width: 0px
+
+.arrow--prev
+		left: -129px
+
+.arrow--next
+		right: -129px
+
+.swiper-arrow
+		position: relative
+		position: absolute
+		top: 50%
+		z-index: 20
+		border-radius: 50%
+		transition: all 0.2s ease-in-out
+		width: 90px
+		height: 90px
+		transform: translate(0%, -50%)
+		background-color: #ebebeb
+		svg
+			width: 36px
+			height: 28px
+			stroke: #2F2E2E
+			stroke-width: 3px
+			transition: all .2s ease-in-out
+
+		&:hover
+			cursor: pointer
+			svg
+				stroke: white
+				stroke-width: 6px
+
+
+
+@media (min-width: 768px) and (max-width: 1600px)
+	.swiper-arrow
+		width: 60px
+		height: 60px
+		svg
+			width: 26px
+			height: 18px
+	//.arrow--prev
+	//	left: 128px
+	//.arrow--next
+	//	right: 128px
+
+
+
+
+@media (max-width: 767px)
+
+	//.arrow--prev
+	//	left: 10px
+	//.arrow--next
+	//	right: 10px
+
+
+	.swiper-arrow
+		width: 38px
+		height: 38px
+		background: $active
+		svg
+			width: 10px
+			height: 12px
+
+

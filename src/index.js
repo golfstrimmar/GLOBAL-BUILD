@@ -44,9 +44,8 @@ import './js/form-js';
 
 
 
-import 'swiper/swiper-bundle.min.css';
 import './js/MySwiper';
-
+import 'swiper/swiper-bundle.min.css';
 
 
 
